@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://theopn.github.io/posts/initial_post/</loc>
+    <loc>https://theopn.github.io/posts/initial_post/</loc>
     <lastmod>2022-06-01T16:46:31-04:00</lastmod>
   </url><url>
-    <loc>http://theopn.github.io/posts/</loc>
+    <loc>https://theopn.github.io/posts/</loc>
     <lastmod>2022-06-01T16:46:31-04:00</lastmod>
   </url><url>
-    <loc>http://theopn.github.io/</loc>
+    <loc>https://theopn.github.io/</loc>
     <lastmod>2022-06-01T16:46:31-04:00</lastmod>
   </url><url>
-    <loc>http://theopn.github.io/about/</loc>
+    <loc>https://theopn.github.io/about/</loc>
   </url><url>
-    <loc>http://theopn.github.io/categories/</loc>
+    <loc>https://theopn.github.io/categories/</loc>
   </url><url>
-    <loc>http://theopn.github.io/tags/</loc>
+    <loc>https://theopn.github.io/tags/</loc>
   </url>
 </urlset>
