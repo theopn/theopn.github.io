@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theo&#39;s website!</title>
+    <link>http://theopn.github.io/</link>
+    <description>Recent content on Theo&#39;s website!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jun 2022 16:46:31 -0400</lastBuildDate><atom:link href="http://theopn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Initial post</title>
+      <link>http://theopn.github.io/posts/initial_post/</link>
+      <pubDate>Wed, 01 Jun 2022 16:46:31 -0400</pubDate>
+      
+      <guid>http://theopn.github.io/posts/initial_post/</guid>
+      <description>hello what&amp;rsquo;s up I am testing this looks pretty good</description>
+      <content>&lt;h1 id=&#34;hello-whats-up&#34;&gt;hello what&amp;rsquo;s up&lt;/h1&gt;
+&lt;p&gt;I am testing this looks pretty good&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://theopn.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://theopn.github.io/about/</guid>
+      <description> My name is Theo Park, and I am a student at Purdue University majoring in computer science and philosophy. </description>
+      <content>
+  &lt;img src=&#34;http://theopn.github.io/img/cat_buckle_up.jpg&#34;  alt=&#34;Hello Friend&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;h3 id=&#34;my-name-is-theo-park-and-i-am-a-student-at-purdue-university-majoring-in-computer-sciencehttpscatalogpurdueedupreview_programphpcatoid14poid18776-and-philosophyhttpscatalogpurdueedupreview_programphpcatoid14poid18803&#34;&gt;My name is Theo Park, and I am a student at Purdue University majoring in &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18776&#34;&gt;computer science&lt;/a&gt; and &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18803&#34;&gt;philosophy&lt;/a&gt;.&lt;/h3&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
