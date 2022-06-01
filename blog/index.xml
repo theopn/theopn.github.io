@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Theo&#39;s website!</title>
+    <link>https://theopn.github.io/blog/</link>
+    <description>Recent content in Blogs on Theo&#39;s website!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jun 2022 19:05:47 -0400</lastBuildDate><atom:link href="https://theopn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first post</title>
+      <link>https://theopn.github.io/blog/my_first_post/</link>
+      <pubDate>Wed, 01 Jun 2022 19:05:47 -0400</pubDate>
+      
+      <guid>https://theopn.github.io/blog/my_first_post/</guid>
+      <description>I made a website yay</description>
+      <content>&lt;p&gt;&lt;strong&gt;I made a website yay&lt;/strong&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
