@@ -5,6 +5,7 @@
     <link>https://theopark.me/categories/</link>
     <description>Recent content in Categories on Theo&#39;s Park</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://theopark.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>Theo Park</copyright><atom:link href="https://theopark.me/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
