@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Theo Park</copyright>
-    <lastBuildDate>Wed, 01 Jun 2022 21:22:04 -0400</lastBuildDate><atom:link href="https://theopark.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 10:31:10 -0400</lastBuildDate><atom:link href="https://theopark.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thanks Linux</title>
+      <link>https://theopark.me/writings/2022-08-02_thanks_linux/</link>
+      <pubDate>Tue, 02 Aug 2022 10:31:10 -0400</pubDate>
+      
+      <guid>https://theopark.me/writings/2022-08-02_thanks_linux/</guid>
+      <description>Hi Hi</description>
+      <content>&lt;p&gt;Hi Hi&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>https://theopark.me/writings/2022-06-01_helloworld/</link>
@@ -28,15 +39,15 @@
       <description>Hi! My name is Theo, and I do&amp;hellip; a lot of different things. Academics I am a student at Purdue University studying computer science and philosophy. When I was in middle school, I would collect ISO files for old operating systems, (shout out to WinWorld), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C from CS50, I knew I loved playing with computers.</description>
       <content>&lt;h1 id=&#34;hi-my-name-is-theo-and-i-do-a-lot-of-different-things&#34;&gt;Hi! My name is Theo, and I do&amp;hellip; a lot of different things.&lt;/h1&gt;
 &lt;h2 id=&#34;academics&#34;&gt;Academics&lt;/h2&gt;
-&lt;p&gt;I am a student at &lt;a href=&#34;https://www.purdue.edu/&#34;&gt;Purdue University&lt;/a&gt; studying &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18776&#34;&gt;computer science&lt;/a&gt; and &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18803&#34;&gt;philosophy&lt;/a&gt;. When I was in middle school, I would collect ISO files for old operating systems, (shout out to &lt;a href=&#34;https://winworldpc.com/&#34;&gt;WinWorld&lt;/a&gt;), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C from &lt;a href=&#34;https://cs50.harvard.edu/&#34;&gt;CS50&lt;/a&gt;, I knew I loved playing with computers. This turns out to be true, and I enjoy studying computer science. My favorite courses include CS18000: OOP, CS182: Discrete math for CS, and CS240: C Programming. However, my all-time favorite is MA351: Linear algebra with Professor Sinclair.&lt;/p&gt;
+&lt;p&gt;I am a student at &lt;a href=&#34;https://www.purdue.edu/&#34;&gt;Purdue University&lt;/a&gt; studying &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18776&#34;&gt;computer science&lt;/a&gt; and &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18803&#34;&gt;philosophy&lt;/a&gt;. When I was in middle school, I would collect ISO files for old operating systems, (shout out to &lt;a href=&#34;https://winworldpc.com/&#34;&gt;WinWorld&lt;/a&gt;), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C from &lt;a href=&#34;https://cs50.harvard.edu/&#34;&gt;CS50&lt;/a&gt;, I knew I loved playing with computers. This turns out to be true, and I enjoy studying computer science. My favorite courses include CS18000: OOP, CS182: Foundations of CS, and CS240: C Programming. However, my all-time favorite is MA351: Linear Algebra with Professor Sinclair.&lt;/p&gt;
 &lt;p&gt;I also like writing and math, particularly logic and discrete math, which helped me major in philosophy along with the influence of my dad.&lt;/p&gt;
 &lt;p&gt;Outside of the school work, I am a member of &lt;a href=&#34;https://purdueusb.com/&#34;&gt;Undergraduate Student Board&lt;/a&gt; for the CS department.&lt;/p&gt;
 &lt;h2 id=&#34;career&#34;&gt;Career&lt;/h2&gt;
 &lt;p&gt;My love for teaching is reflected in some of my past and current jobs. I worked as an undergraduate teaching assistant for &lt;a href=&#34;https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html&#34;&gt;CS18000: Problem Solving and Objected-Oriented Programming&lt;/a&gt; from the second semester of the freshman year to the following summer. I also worked as a course content developer during the same summer, developing homework, projects, and exams for CS180 using the JUnit framework.&lt;/p&gt;
 &lt;p&gt;In the fall semester of my sophomore year, I will be working as a lecturer for &lt;a href=&#34;https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=202010&amp;amp;subj_code_in=CS&amp;amp;crse_numb_in=19300&#34;&gt;CS193000: Tools&lt;/a&gt;, teaching 800+ computer science and data science freshmen CS tools such as Git, *nix shell and commands, and Vim.&lt;/p&gt;
-&lt;p&gt;You can view &lt;a href=&#34;./TP_Resume-4_website.pdf&#34;&gt;my resume&lt;/a&gt; for detailed explanations.&lt;/p&gt;
+&lt;p&gt;You can view &lt;a href=&#34;https://theopark.me/img/about/2022-08-02_my_resume.pdf&#34;&gt;my resume&lt;/a&gt; for detailed explanations.&lt;/p&gt;
 &lt;h2 id=&#34;more-about-me&#34;&gt;More about me&lt;/h2&gt;
-&lt;p&gt;I love messing with shell, particularly different text editors, but I always come back to Vim and Neovim. Check out my &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;dotfiles&lt;/a&gt; for the vim/Nvim configuration.&lt;/p&gt;
+&lt;p&gt;I love tiling window managers. I have used AwesomeWM, i3, and Sway, and my favorite is i3 for its simplicity and Vim style keybindings. I am currently working on a project to make AwesomeWM a full desktop environment with completed Wibar, layout, and integration with other programs like Vim. Meanwhile, you can checkout my i3 and Sway configurations (along with Vim, Neovim, Emacs, Mutt, Zsh etc) in my &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;dotfiles repository&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I love taking photos. I own Canon EOS M50 with EF-M 15-45mm f/3.5-6.3 lens, and I have taken many portraits with it. Maybe one day I will share my photos online.&lt;/p&gt;
 &lt;p&gt;I am colorblind.&lt;/p&gt;
 &lt;p&gt;I collect, modify, and make mechanical watches. If you want to take a peek at my collection (which the Seiko NH movement makes up 80% of), let me know.&lt;/p&gt;
@@ -52,8 +63,22 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://theopark.me/projects/</guid>
-      <description>Hi! You can find descriptions and links to my projects here!</description>
+      <description>Hi! You can find descriptions and links to my projects here!
+My Dotfiles Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and absolute weirdos like Mutt and w3m.</description>
       <content>&lt;p&gt;Hi! You can find descriptions and links to my projects here!&lt;/p&gt;
+&lt;h1 id=&#34;my-dotfileshttpsgithubcomtheopndotfiles&#34;&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;My Dotfiles&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and absolute weirdos like Mutt and w3m.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/projects/2022-07-25_Fedora_Screenshot.png&#34;  alt=&#34;Me looking at you&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34;  style=&#34;color: black;&#34; &gt;My i3 setup&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h1 id=&#34;awesomewmhttpstheoparkme&#34;&gt;&lt;a href=&#34;https:/theopark.me&#34;&gt;AwesomeWM&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.&lt;/p&gt;
 </content>
     </item>
     
