@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writings on Theo&#39;s Park</title>
-    <link>https://theopark.me/writings/</link>
-    <description>Recent content in Writings on Theo&#39;s Park</description>
+    <title>Vim on Theo&#39;s Park</title>
+    <link>https://theopark.me/tags/vim/</link>
+    <description>Recent content in Vim on Theo&#39;s Park</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Theo Park</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 19:52:11 -0400</lastBuildDate><atom:link href="https://theopark.me/writings/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Thanks Linux (and tiling WM and Dr. T)</title>
-      <link>https://theopark.me/writings/2022-08-02_thankslinux/</link>
-      <pubDate>Tue, 02 Aug 2022 19:52:11 -0400</pubDate>
-      
-      <guid>https://theopark.me/writings/2022-08-02_thankslinux/</guid>
-      <description>Placeholder for now</description>
-      <content>&lt;p&gt;Placeholder for now&lt;/p&gt;
-</content>
-    </item>
-    
+    <lastBuildDate>Mon, 20 Jun 2022 18:58:40 -0400</lastBuildDate><atom:link href="https://theopark.me/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vimrc Guide Part 1</title>
       <link>https://theopark.me/writings/2022-06-20_vimrcguide/</link>
@@ -68,17 +57,6 @@ endfunction
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Paste the function above in your &lt;code&gt;.vimrc&lt;/code&gt;, reopen Vim, and type &lt;code&gt;:call Hi()&lt;/code&gt;. You will see that it opens your &lt;code&gt;.vimrc&lt;/code&gt; with a welcome message! (Both double quotes and single quotes can be used for strings - there is only one technical difference, though I recommend you to stick with a single quote to prevent confusion with comments.)&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Vim is a powerful text editor that is present on pretty much every *nix system, and you can easily unlock many potentials of Vim by configuring &lt;code&gt;.vimrc&lt;/code&gt;. If you want more inspiration, check out &lt;a href=&#34;https://docs.j7k6.org/my-minimal-vimrc/&#34;&gt;an article for a simple .vimrc&lt;/a&gt; and &lt;a href=&#34;https://github.com/amix/vimrc&#34;&gt;&amp;ldquo;ultimate .vimrc&amp;rdquo; for power users&lt;/a&gt;. You can also check out &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;my dotfiles repository&lt;/a&gt;, which also includes Lua configuration files for Neovim (a fork of Vim that is community-developed and supports a wide variety of plugins). :wq!&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://theopark.me/writings/2022-06-01_helloworld/</link>
-      <pubDate>Wed, 01 Jun 2022 21:22:04 -0400</pubDate>
-      
-      <guid>https://theopark.me/writings/2022-06-01_helloworld/</guid>
-      <description>I just made a website yay! Hugo is a life saver.</description>
-      <content>&lt;p&gt;I just made a website yay! Hugo is a life saver.&lt;/p&gt;
 </content>
     </item>
     

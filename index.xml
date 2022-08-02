@@ -7,15 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Theo Park</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 10:31:10 -0400</lastBuildDate><atom:link href="https://theopark.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 19:52:11 -0400</lastBuildDate><atom:link href="https://theopark.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Thanks Linux</title>
-      <link>https://theopark.me/writings/2022-08-02_thanks_linux/</link>
-      <pubDate>Tue, 02 Aug 2022 10:31:10 -0400</pubDate>
+      <title>Thanks Linux (and tiling WM and Dr. T)</title>
+      <link>https://theopark.me/writings/2022-08-02_thankslinux/</link>
+      <pubDate>Tue, 02 Aug 2022 19:52:11 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-08-02_thanks_linux/</guid>
-      <description>Hi Hi</description>
-      <content>&lt;p&gt;Hi Hi&lt;/p&gt;
+      <guid>https://theopark.me/writings/2022-08-02_thankslinux/</guid>
+      <description>Placeholder for now</description>
+      <content>&lt;p&gt;Placeholder for now&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Vimrc Guide Part 1</title>
+      <link>https://theopark.me/writings/2022-06-20_vimrcguide/</link>
+      <pubDate>Mon, 20 Jun 2022 18:58:40 -0400</pubDate>
+      
+      <guid>https://theopark.me/writings/2022-06-20_vimrcguide/</guid>
+      <description>Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?
+Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with vim --clean). Now in normal mode in Vim, type the command :set number, and you will see that your Vim now shows the line numbers on the left side.</description>
+      <content>&lt;p&gt;Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?&lt;/p&gt;
+&lt;p&gt;Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with &lt;code&gt;vim --clean&lt;/code&gt;). Now in normal mode in Vim, type the command &lt;code&gt;:set number&lt;/code&gt;, and you will see that your Vim now shows the line numbers on the left side. You can turn this off with &lt;code&gt;:set nonumber&lt;/code&gt;. What about changing the theme? Try typing in &lt;code&gt;:colorscheme blue&lt;/code&gt; to execute one of the beautiful built-in themes. However, when you close the Vim and open it again (in case you forgot, &lt;code&gt;:q&lt;/code&gt; or &lt;code&gt;:q!&lt;/code&gt; to force close), the settings you executed in the previous sessions are not saved. This is why if you have settings that you want to be executed every time you open up Vim, you will have to configure them in .vimrc.&lt;/p&gt;
+&lt;h2 id=&#34;understanding-vimrc&#34;&gt;Understanding .vimrc&lt;/h2&gt;
+&lt;p&gt;The dot in front of the .vimrc indicates *nix system that the file is hidden. You can test this by executing &lt;code&gt;ls&lt;/code&gt; and &lt;code&gt;ls -a&lt;/code&gt; in your home directory (&lt;code&gt;~/&lt;/code&gt;), notice how many hidden files you have in the system when you view them using &lt;code&gt;-a&lt;/code&gt; flag. Hidden files are used by many programs to store configuration files, and many programmers configure, export, and import these &amp;ldquo;dotfiles&amp;rdquo; to personalize and back up their programming environment. &lt;code&gt;vim&lt;/code&gt; in the file name stands for Vim, of course, and &lt;code&gt;rc&lt;/code&gt; stands for &amp;ldquo;run commands.&amp;rdquo; These are commonly used by command-line tools to indicate files with user-configured settings that get executed on the startup. Some examples include &lt;code&gt;.bashrc&lt;/code&gt;, &lt;code&gt;.npmrc&lt;/code&gt;, and &lt;code&gt;.zshrc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-vimrc&#34;&gt;Configuring .vimrc&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s begin to configure &lt;code&gt;.vimrc&lt;/code&gt;. The first step is to create one since Vim does not make one by default. In your home directory (&lt;code&gt;~/&lt;/code&gt;), create &lt;code&gt;.vimrc&lt;/code&gt; using &lt;code&gt;touch ~/.vimrc&lt;/code&gt;. Now let&amp;rsquo;s open this up with &lt;code&gt;vi ~/.vimrc&lt;/code&gt;.
+(Notes: You might already have &lt;code&gt;.vimrc&lt;/code&gt; if you&amp;rsquo;re using the Purdue CS SSH server).&lt;/p&gt;
+&lt;p&gt;Here, you can add settings and even more complicated auto-commands and functions using Vimscript language. Let&amp;rsquo;s start with some easy but essential settings, shall we?&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;&amp;#34; Double quotes are used for comments!
+&amp;#34; Below are .vimrc contents!
+
+&amp;#34; Display line numbers
+set number
+&amp;#34; Alternatively, some people prefer to see line numbers relative to the current line
+set relativenumber
+&amp;#34; Automatically indent code
+set autoindent
+&amp;#34; Highlight search result
+set hlsearch
+&amp;#34; With this, you can use a mouse for scrolling, moving cursor, etc!
+set mouse=a
+&amp;#34; Turn syntax coloring for supported files
+syntax on
+&amp;#34; For the aesthetic
+colorscheme blue
+&amp;#34; These makes tabs to be 2 spaces, which is a convention with C programming
+set tapstop=2 shiftwidth=2 expandtab
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can explore more commands in built-in Vim manual, using &lt;code&gt;:help&lt;/code&gt; followed by the commands (e.g &lt;code&gt;:help number&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;You can map some keys as well. Let&amp;rsquo;s map &lt;code&gt;(&lt;/code&gt; in insert mode to &lt;code&gt;()&lt;/code&gt; so that all the parenthesis are automatically closed!&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;inoremap ( ()&amp;lt;LEFT&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;i&lt;/code&gt; stands for the insert mode and &lt;code&gt;noremap&lt;/code&gt; stands for non-recursive mapping. Recursive mapping (achieved using &lt;code&gt;map&lt;/code&gt;) can be expanded to another mapping (ex: You map a to b, c to b, then c does what a does), whereas non-recursive mapping does not extend the mapping to another mapping. I personally use and recommend &lt;code&gt;noremap&lt;/code&gt; for most cases to prevent confusion and errors. Finally, &amp;lt;LEFT&amp;gt; moves the cursor back inside of the parenthesis (left arrow key)!&lt;/p&gt;
+&lt;h2 id=&#34;taking-vimrc-further&#34;&gt;Taking .vimrc further&lt;/h2&gt;
+&lt;p&gt;Vim comes with a language called &amp;ldquo;Vimscript,&amp;rdquo; which is a full-fledged (Turing complete) language, albeit limited in its syntax and usability. You can make custom functions and auto-commands, so Let&amp;rsquo;s make a simple function that displays a message and opens your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;function Hi()
+  &amp;#34; e command is used to open a file
+  exec &amp;#39;e ~/.vimrc&amp;#39;
+  echo &amp;#39;Hello! You just opened .vimrc!&amp;#39;
+endfunction
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Paste the function above in your &lt;code&gt;.vimrc&lt;/code&gt;, reopen Vim, and type &lt;code&gt;:call Hi()&lt;/code&gt;. You will see that it opens your &lt;code&gt;.vimrc&lt;/code&gt; with a welcome message! (Both double quotes and single quotes can be used for strings - there is only one technical difference, though I recommend you to stick with a single quote to prevent confusion with comments.)&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Vim is a powerful text editor that is present on pretty much every *nix system, and you can easily unlock many potentials of Vim by configuring &lt;code&gt;.vimrc&lt;/code&gt;. If you want more inspiration, check out &lt;a href=&#34;https://docs.j7k6.org/my-minimal-vimrc/&#34;&gt;an article for a simple .vimrc&lt;/a&gt; and &lt;a href=&#34;https://github.com/amix/vimrc&#34;&gt;&amp;ldquo;ultimate .vimrc&amp;rdquo; for power users&lt;/a&gt;. You can also check out &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;my dotfiles repository&lt;/a&gt;, which also includes Lua configuration files for Neovim (a fork of Vim that is community-developed and supports a wide variety of plugins). :wq!&lt;/p&gt;
 </content>
     </item>
     
@@ -36,18 +88,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://theopark.me/about/</guid>
-      <description>Hi! My name is Theo, and I do&amp;hellip; a lot of different things. Academics I am a student at Purdue University studying computer science and philosophy. When I was in middle school, I would collect ISO files for old operating systems, (shout out to WinWorld), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C from CS50, I knew I loved playing with computers.</description>
+      <description>Hi! My name is Theo, and I do&amp;hellip; a lot of different things. Academics I am a student at Purdue University studying computer science and philosophy. When I was in middle school, I would collect ISO files for old operating systems, (shout out to WinWorld), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C, I knew I loved playing with computers.</description>
       <content>&lt;h1 id=&#34;hi-my-name-is-theo-and-i-do-a-lot-of-different-things&#34;&gt;Hi! My name is Theo, and I do&amp;hellip; a lot of different things.&lt;/h1&gt;
 &lt;h2 id=&#34;academics&#34;&gt;Academics&lt;/h2&gt;
-&lt;p&gt;I am a student at &lt;a href=&#34;https://www.purdue.edu/&#34;&gt;Purdue University&lt;/a&gt; studying &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18776&#34;&gt;computer science&lt;/a&gt; and &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18803&#34;&gt;philosophy&lt;/a&gt;. When I was in middle school, I would collect ISO files for old operating systems, (shout out to &lt;a href=&#34;https://winworldpc.com/&#34;&gt;WinWorld&lt;/a&gt;), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C from &lt;a href=&#34;https://cs50.harvard.edu/&#34;&gt;CS50&lt;/a&gt;, I knew I loved playing with computers. This turns out to be true, and I enjoy studying computer science. My favorite courses include CS18000: OOP, CS182: Foundations of CS, and CS240: C Programming. However, my all-time favorite is MA351: Linear Algebra with Professor Sinclair.&lt;/p&gt;
+&lt;p&gt;I am a student at &lt;a href=&#34;https://www.purdue.edu/&#34;&gt;Purdue University&lt;/a&gt; studying &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18776&#34;&gt;computer science&lt;/a&gt; and &lt;a href=&#34;https://catalog.purdue.edu/preview_program.php?catoid=14&amp;amp;poid=18803&#34;&gt;philosophy&lt;/a&gt;. When I was in middle school, I would collect ISO files for old operating systems, (shout out to &lt;a href=&#34;https://winworldpc.com/&#34;&gt;WinWorld&lt;/a&gt;), install them on virtual machines, and be fascinated by not only the OS themselves but the installation processes. While I did not have a coding background besides a little bit of C, I knew I loved playing with computers. This turns out to be true, and I enjoy studying computer science. My favorite courses include CS18000: OOP, CS182: Foundations of CS (discrete math mostly), and CS240: C Programming. However, my all-time favorite is MA351: Linear Algebra with Professor Sinclair.&lt;/p&gt;
 &lt;p&gt;I also like writing and math, particularly logic and discrete math, which helped me major in philosophy along with the influence of my dad.&lt;/p&gt;
 &lt;p&gt;Outside of the school work, I am a member of &lt;a href=&#34;https://purdueusb.com/&#34;&gt;Undergraduate Student Board&lt;/a&gt; for the CS department.&lt;/p&gt;
 &lt;h2 id=&#34;career&#34;&gt;Career&lt;/h2&gt;
-&lt;p&gt;My love for teaching is reflected in some of my past and current jobs. I worked as an undergraduate teaching assistant for &lt;a href=&#34;https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html&#34;&gt;CS18000: Problem Solving and Objected-Oriented Programming&lt;/a&gt; from the second semester of the freshman year to the following summer. I also worked as a course content developer during the same summer, developing homework, projects, and exams for CS180 using the JUnit framework.&lt;/p&gt;
-&lt;p&gt;In the fall semester of my sophomore year, I will be working as a lecturer for &lt;a href=&#34;https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=202010&amp;amp;subj_code_in=CS&amp;amp;crse_numb_in=19300&#34;&gt;CS193000: Tools&lt;/a&gt;, teaching 800+ computer science and data science freshmen CS tools such as Git, *nix shell and commands, and Vim.&lt;/p&gt;
+&lt;p&gt;My love for teaching is reflected in some of my past and current jobs. I worked as an undergraduate teaching assistant for CS18000: Problem Solving and Objected-Oriented Programming from the second semester of the freshman year to the following summer. I also worked as a course content developer during the same summer, developing homework assignments and auto-grading programs for CS180 using the JUnit framework.&lt;/p&gt;
+&lt;p&gt;In the fall semester of my sophomore year, I will be working as an instructor for CS193000: Tools, teaching 800+ computer science and data science freshmen Git, *nix shell and commands, Vim, and other fundamental CS tools.&lt;/p&gt;
 &lt;p&gt;You can view &lt;a href=&#34;https://theopark.me/img/about/2022-08-02_my_resume.pdf&#34;&gt;my resume&lt;/a&gt; for detailed explanations.&lt;/p&gt;
 &lt;h2 id=&#34;more-about-me&#34;&gt;More about me&lt;/h2&gt;
-&lt;p&gt;I love tiling window managers. I have used AwesomeWM, i3, and Sway, and my favorite is i3 for its simplicity and Vim style keybindings. I am currently working on a project to make AwesomeWM a full desktop environment with completed Wibar, layout, and integration with other programs like Vim. Meanwhile, you can checkout my i3 and Sway configurations (along with Vim, Neovim, Emacs, Mutt, Zsh etc) in my &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;dotfiles repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I love tiling window managers. My favorite is i3/Sway for its simplicity and Vim style keybindings. I am currently working on a project to make AwesomeWM a full desktop environment with completed Wibar, layout, and integration with other programs like Vim. Meanwhile, you can checkout my i3 and Sway configurations (along with Vim, Neovim, Emacs, Mutt, Zsh etc) in my &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;dotfiles repository&lt;/a&gt;. I use Fedora, btw.&lt;/p&gt;
 &lt;p&gt;I love taking photos. I own Canon EOS M50 with EF-M 15-45mm f/3.5-6.3 lens, and I have taken many portraits with it. Maybe one day I will share my photos online.&lt;/p&gt;
 &lt;p&gt;I am colorblind.&lt;/p&gt;
 &lt;p&gt;I collect, modify, and make mechanical watches. If you want to take a peek at my collection (which the Seiko NH movement makes up 80% of), let me know.&lt;/p&gt;
@@ -64,21 +116,36 @@
       
       <guid>https://theopark.me/projects/</guid>
       <description>Hi! You can find descriptions and links to my projects here!
-My Dotfiles Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and absolute weirdos like Mutt and w3m.</description>
+AwesomeWM In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.
+My Dotfiles Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!</description>
       <content>&lt;p&gt;Hi! You can find descriptions and links to my projects here!&lt;/p&gt;
+&lt;h1 id=&#34;awesomewm&#34;&gt;&lt;a href=&#34;&#34;&gt;AwesomeWM&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.&lt;/p&gt;
 &lt;h1 id=&#34;my-dotfileshttpsgithubcomtheopndotfiles&#34;&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;My Dotfiles&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and absolute weirdos like Mutt and w3m.&lt;/p&gt;
+&lt;p&gt;Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
-    &lt;img src=&#34;https://theopark.me/img/projects/2022-07-25_Fedora_Screenshot.png&#34;  alt=&#34;Me looking at you&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    &lt;img src=&#34;https://theopark.me/img/projects/2022-07-25_Fedora_Screenshot.png&#34;  alt=&#34;My i3 setup&#34;   /&gt;
     
       &lt;figcaption class=&#34;center&#34;  style=&#34;color: black;&#34; &gt;My i3 setup&lt;/figcaption&gt;
     
   &lt;/figure&gt;
 
 
-&lt;h1 id=&#34;awesomewmhttpstheoparkme&#34;&gt;&lt;a href=&#34;https:/theopark.me&#34;&gt;AwesomeWM&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.&lt;/p&gt;
+&lt;h1 id=&#34;i3--sway-tipshttpsgitlabcomtheopni3_sway_tips&#34;&gt;&lt;a href=&#34;https://gitlab.com/theopn/i3_sway_tips&#34;&gt;i3 &amp;amp; Sway Tips&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Collection of commands, keybindings, and recommended applications for i3 or Sway window manager beginners. Some of the recommendations are subjective and does not contain all the information you might need, but I would love to make this a community project so feel free to suggest or correct information through issues or to me personally!
+If you love Microsoft, you can read this in the &lt;a href=&#34;https://github.com/theopn/i3_sway_tips&#34;&gt;GitHub mirror repository&lt;/a&gt; instead of in GitLab.&lt;/p&gt;
+&lt;h1 id=&#34;clean-linear-algebra-templatehttpsgithubcomtheopnclean-la-hw-template&#34;&gt;&lt;a href=&#34;https://github.com/theopn/clean-la-hw-template&#34;&gt;Clean Linear Algebra Template&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Linear algebra is fun, but it can be more fun with the right LaTeX template.&lt;/p&gt;
+&lt;h1 id=&#34;cs240-comprehensive-reviewhttpsgithubcomtheopncs240_comprehensive_review&#34;&gt;&lt;a href=&#34;https://github.com/theopn/CS240_Comprehensive_Review&#34;&gt;CS240 Comprehensive Review&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;17 pages of C.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/projects/2022-05-03_CS240Review_joke.jpg&#34;  alt=&#34;Joke of the century&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
 </content>
     </item>
     
