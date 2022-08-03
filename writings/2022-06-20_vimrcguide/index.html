@@ -142,7 +142,7 @@
       <span class="post-author">:: Theo</span>
     
     
-      <span class="post-reading-time">:: 4 min read (791 words)</span>
+      <span class="post-reading-time">:: 4 min read (794 words)</span>
     
   </div>
 
@@ -165,7 +165,7 @@
 <p>The dot in front of the .vimrc indicates *nix system that the file is hidden. You can test this by executing <code>ls</code> and <code>ls -a</code> in your home directory (<code>~/</code>), notice how many hidden files you have in the system when you view them using <code>-a</code> flag. Hidden files are used by many programs to store configuration files, and many programmers configure, export, and import these &ldquo;dotfiles&rdquo; to personalize and back up their programming environment. <code>vim</code> in the file name stands for Vim, of course, and <code>rc</code> stands for &ldquo;run commands.&rdquo; These are commonly used by command-line tools to indicate files with user-configured settings that get executed on the startup. Some examples include <code>.bashrc</code>, <code>.npmrc</code>, and <code>.zshrc</code>.</p>
 <h2 id="configuring-vimrc">Configuring .vimrc<a href="#configuring-vimrc" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Now let&rsquo;s begin to configure <code>.vimrc</code>. The first step is to create one since Vim does not make one by default. In your home directory (<code>~/</code>), create <code>.vimrc</code> using <code>touch ~/.vimrc</code>. Now let&rsquo;s open this up with <code>vi ~/.vimrc</code>.
-(Notes: You might already have <code>.vimrc</code> if you&rsquo;re using the Purdue CS SSH server).</p>
+(Notes: You might already have <code>.vimrc</code> with some settings if you&rsquo;re using the Purdue CS SSH server).</p>
 <p>Here, you can add settings and even more complicated auto-commands and functions using Vimscript language. Let&rsquo;s start with some easy but essential settings, shall we?</p>
 <pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">&#34; Double quotes are used for comments!
 &#34; Below are .vimrc contents!
@@ -186,10 +186,10 @@ syntax on
 colorscheme blue
 &#34; These makes tabs to be 2 spaces, which is a convention with C programming
 set tapstop=2 shiftwidth=2 expandtab
-</code></pre><p>You can explore more commands in built-in Vim manual, using <code>:help</code> followed by the commands (e.g <code>:help number</code>).</p>
+</code></pre><p>You can explore more commands in built-in Vim manual, using <code>:help</code> followed by the commands (e.g. <code>:help number</code>).</p>
 <p>You can map some keys as well. Let&rsquo;s map <code>(</code> in insert mode to <code>()</code> so that all the parenthesis are automatically closed!</p>
 <pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">inoremap ( ()&lt;LEFT&gt;
-</code></pre><p><code>i</code> stands for the insert mode and <code>noremap</code> stands for non-recursive mapping. Recursive mapping (achieved using <code>map</code>) can be expanded to another mapping (ex: You map a to b, c to b, then c does what a does), whereas non-recursive mapping does not extend the mapping to another mapping. I personally use and recommend <code>noremap</code> for most cases to prevent confusion and errors. Finally, &lt;LEFT&gt; moves the cursor back inside of the parenthesis (left arrow key)!</p>
+</code></pre><p><code>i</code> stands for the insert mode and <code>noremap</code> stands for non-recursive mapping. Recursive mapping (achieved using <code>map</code>) can be expanded to another mapping (i.e. You map a to b, c to b, then c does what a does), whereas non-recursive mapping does not extend the mapping to another mapping. I personally use and recommend <code>noremap</code> for most cases to prevent confusion and errors. Finally, &lt;LEFT&gt; moves the cursor back inside of the parenthesis (left arrow key)!</p>
 <h2 id="taking-vimrc-further">Taking .vimrc further<a href="#taking-vimrc-further" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Vim comes with a language called &ldquo;Vimscript,&rdquo; which is a full-fledged (Turing complete) language, albeit limited in its syntax and usability. You can make custom functions and auto-commands, so Let&rsquo;s make a simple function that displays a message and opens your <code>.vimrc</code>.</p>
 <pre tabindex="0"><code class="language-vimscript" data-lang="vimscript">function Hi()
