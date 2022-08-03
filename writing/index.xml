@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writings on Theo&#39;s Park</title>
-    <link>https://theopark.me/writings/</link>
+    <link>https://theopark.me/writing/</link>
     <description>Recent content in Writings on Theo&#39;s Park</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Theo Park</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 19:52:11 -0400</lastBuildDate><atom:link href="https://theopark.me/writings/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 19:52:11 -0400</lastBuildDate><atom:link href="https://theopark.me/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thanks Linux (and tiling WM and Dr. T)</title>
-      <link>https://theopark.me/writings/2022-08-02_thankslinux/</link>
+      <link>https://theopark.me/writing/2022-08-02_thankslinux/</link>
       <pubDate>Tue, 02 Aug 2022 19:52:11 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-08-02_thankslinux/</guid>
+      <guid>https://theopark.me/writing/2022-08-02_thankslinux/</guid>
       <description>Placeholder for now</description>
       <content>&lt;p&gt;Placeholder for now&lt;/p&gt;
 </content>
@@ -21,10 +21,10 @@
     
     <item>
       <title>Vimrc Guide Part 1</title>
-      <link>https://theopark.me/writings/2022-06-20_vimrcguide/</link>
+      <link>https://theopark.me/writing/2022-06-20_vimrcguide/</link>
       <pubDate>Mon, 20 Jun 2022 18:58:40 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-06-20_vimrcguide/</guid>
+      <guid>https://theopark.me/writing/2022-06-20_vimrcguide/</guid>
       <description>Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?
 Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with vim --clean). Now in normal mode in Vim, type the command :set number, and you will see that your Vim now shows the line numbers on the left side.</description>
       <content>&lt;p&gt;Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?&lt;/p&gt;
@@ -73,10 +73,10 @@ endfunction
     
     <item>
       <title>Hello World</title>
-      <link>https://theopark.me/writings/2022-06-01_helloworld/</link>
+      <link>https://theopark.me/writing/2022-06-01_helloworld/</link>
       <pubDate>Wed, 01 Jun 2022 21:22:04 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-06-01_helloworld/</guid>
+      <guid>https://theopark.me/writing/2022-06-01_helloworld/</guid>
       <description>I just made a website yay! Hugo is a life saver.</description>
       <content>&lt;p&gt;I just made a website yay! Hugo is a life saver.&lt;/p&gt;
 </content>

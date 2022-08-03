@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 02 Aug 2022 19:52:11 -0400</lastBuildDate><atom:link href="https://theopark.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thanks Linux (and tiling WM and Dr. T)</title>
-      <link>https://theopark.me/writings/2022-08-02_thankslinux/</link>
+      <link>https://theopark.me/writing/2022-08-02_thankslinux/</link>
       <pubDate>Tue, 02 Aug 2022 19:52:11 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-08-02_thankslinux/</guid>
+      <guid>https://theopark.me/writing/2022-08-02_thankslinux/</guid>
       <description>Placeholder for now</description>
       <content>&lt;p&gt;Placeholder for now&lt;/p&gt;
 </content>
@@ -21,10 +21,10 @@
     
     <item>
       <title>Vimrc Guide Part 1</title>
-      <link>https://theopark.me/writings/2022-06-20_vimrcguide/</link>
+      <link>https://theopark.me/writing/2022-06-20_vimrcguide/</link>
       <pubDate>Mon, 20 Jun 2022 18:58:40 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-06-20_vimrcguide/</guid>
+      <guid>https://theopark.me/writing/2022-06-20_vimrcguide/</guid>
       <description>Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?
 Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with vim --clean). Now in normal mode in Vim, type the command :set number, and you will see that your Vim now shows the line numbers on the left side.</description>
       <content>&lt;p&gt;Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?&lt;/p&gt;
@@ -73,10 +73,10 @@ endfunction
     
     <item>
       <title>Hello World</title>
-      <link>https://theopark.me/writings/2022-06-01_helloworld/</link>
+      <link>https://theopark.me/writing/2022-06-01_helloworld/</link>
       <pubDate>Wed, 01 Jun 2022 21:22:04 -0400</pubDate>
       
-      <guid>https://theopark.me/writings/2022-06-01_helloworld/</guid>
+      <guid>https://theopark.me/writing/2022-06-01_helloworld/</guid>
       <description>I just made a website yay! Hugo is a life saver.</description>
       <content>&lt;p&gt;I just made a website yay! Hugo is a life saver.&lt;/p&gt;
 </content>
@@ -115,18 +115,18 @@ endfunction
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://theopark.me/projects/</guid>
-      <description>Collections of my projects, both for career and fun (often overlaps with each other)
+      <description>Collection of my projects, both for career and fun (often overlapping with each other).
 AwesomeWM My Dotfiles i3 &amp;amp; Sway Tips Clean Linear Algebra Homework Template vimrc Guide CS240 Comprehensive Review AwesomeWM GitLab Repository ⧉ | GitHub Mirror Repository ⧉
 In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.
 My Dotfiles GitHub Repository ⧉</description>
       <content>&lt;blockquote&gt;
-&lt;p&gt;Collections of my projects, both for career and fun (often overlaps with each other)&lt;/p&gt;
+&lt;p&gt;Collection of my projects, both for career and fun (often overlapping with each other).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#awesomewm&#34;&gt;AwesomeWM&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#my-dotfiles&#34;&gt;My Dotfiles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#i3--sway-tips&#34;&gt;i3 &amp;amp; Sway Tips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#clean-lnear-algebra-homework-template&#34;&gt;Clean Linear Algebra Homework Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#clean-linear-algebra-homework-template&#34;&gt;Clean Linear Algebra Homework Template&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#vimrc-guides&#34;&gt;vimrc Guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#CS240-Comprehensive-Review&#34;&gt;CS240 Comprehensive Review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -135,7 +135,7 @@ My Dotfiles GitHub Repository ⧉</description>
 &lt;p&gt;In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.&lt;/p&gt;
 &lt;h1 id=&#34;my-dotfiles&#34;&gt;My Dotfiles&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Well, it really isn&amp;rsquo;t a project, isn&amp;rsquo;t it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
+&lt;p&gt;Well, it really isn&amp;rsquo;t a project, is it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
     &lt;img src=&#34;https://theopark.me/img/projects/2022-07-25_Fedora_Screenshot.png&#34;  alt=&#34;My i3 setup&#34;   /&gt;
@@ -153,9 +153,9 @@ If you love Microsoft, you can read this in the &lt;a href=&#34;https://github.c
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/clean-la-hw-template&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linear algebra is fun, but it can be more fun with the right LaTeX template.&lt;/p&gt;
 &lt;h1 id=&#34;vimrc-guides&#34;&gt;vimrc Guides&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://theopark.me/writings/2022-06-20_vimrcguide/&#34;&gt;&lt;em&gt;Part 1 ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Right here on this website.&lt;/p&gt;
-&lt;h1 id=&#34;cs240-cs240-comprehensive-review&#34;&gt;CS240 CS240 Comprehensive Review&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://theopark.me/writing/2022-06-20_vimrcguide/&#34; title=&#34;vimrc Guide Part 1&#34;&gt;&lt;em&gt;Part 1 ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Guides to create a personal Vim environment and boosting your productivity. Right here on this website.&lt;/p&gt;
+&lt;h1 id=&#34;cs240-comprehensive-review&#34;&gt;CS240 Comprehensive Review&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/CS240_Comprehensive_Review&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;17 pages of C.&lt;/p&gt;
 
