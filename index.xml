@@ -117,7 +117,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; _, v &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; ipairs(key_opt) &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  vim_map(v[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;])
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it&amp;rsquo;s a very simple and clean solution that I don&amp;rsquo;t have many complaints about (I also experienced some weird bugs, when using &lt;code&gt;nvim-autopairs&lt;/code&gt; such as &amp;quot; not being inserted when it&amp;rsquo;s adjacent to parentheses).&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it&amp;rsquo;s a very simple and clean solution that I don&amp;rsquo;t have many complaints about (I also experienced some weird bugs when using &lt;code&gt;nvim-autopairs&lt;/code&gt;, such as &amp;quot; not being inserted when it&amp;rsquo;s adjacent to parentheses).&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;nvim-cmp&lt;/code&gt; comes with a &lt;a href=&#34;https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-codicons-to-the-menu&#34;&gt;way&lt;/a&gt; to customize menu appearance, including VS-Code like pictogram. This eliminates the need for plug-ins like &lt;code&gt;lspkind.nvim&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Neovim has several built-in LSP-related commands. On example is &lt;code&gt;vim.lsp.buf.hover()&lt;/code&gt; to view LSP hover doc. All you have to do is map &lt;code&gt;&amp;lt;CMD&amp;gt;lua vim.lsp...&lt;/code&gt; to your choice of keybindings, and you can view hover docs for code components without extra plug-in (although plug-in like LSPSage makes it easier to access the LSP features).&lt;/p&gt;
 &lt;p&gt;I also utilize Packer&amp;rsquo;s lazy load features to minimize boot time, particularly &lt;code&gt;ft&lt;/code&gt; keyword. You can specify plug-ins to be loaded in a certain file using &lt;code&gt;ft&lt;/code&gt; keyword, so I block tree-sitter to be launched only with files I have language servers for and markdown-related plug-ins to markdown files.&lt;/p&gt;
@@ -261,24 +261,23 @@ endfunction
       
       <guid>https://theopark.me/projects/</guid>
       <description>Collection of my projects, both for career and fun (often overlapping with each other).
-AwesomeWM My Dotfiles i3 &amp;amp; Sway Tips Clean Linear Algebra Homework Template vimrc Guide CS240 Comprehensive Review AwesomeWM GitLab Repository ⧉ | GitHub Mirror Repository ⧉
-In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.
-My Dotfiles GitHub Repository ⧉</description>
+Hunted Tiles My Dotfiles i3 &amp;amp; Sway Tips Clean Linear Algebra Homework Template vimrc Guide CS240 Comprehensive Review Hunted Tiles GitLab Repository ⧉ | GitHub Mirror Repository ⧉
+Hunted Tiles is my custom Linux window manager environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools. From system monitors like battery, volume, brightness, CPU &amp;amp; memory widgets to integration with Vim and other terminal based applications, Hunted Tiles try to be a complete desktop environment without requiring many dependencies and allow users to choose dependencies.</description>
       <content>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Collection of my projects, both for career and fun (often overlapping with each other).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#awesomewm&#34;&gt;AwesomeWM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#hunted-tiles&#34;&gt;Hunted Tiles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#my-dotfiles&#34;&gt;My Dotfiles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#i3--sway-tips&#34;&gt;i3 &amp;amp; Sway Tips&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#clean-linear-algebra-homework-template&#34;&gt;Clean Linear Algebra Homework Template&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#vimrc-guides&#34;&gt;vimrc Guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#CS240-Comprehensive-Review&#34;&gt;CS240 Comprehensive Review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;awesomewm&#34;&gt;AwesomeWM&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;em&gt;GitLab Repository ⧉&lt;/em&gt;&lt;/a&gt; | &lt;a href=&#34;&#34;&gt;&lt;em&gt;GitHub Mirror Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;In progress! I am creating my custom desktop environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools.&lt;/p&gt;
+&lt;h2 id=&#34;hunted-tiles&#34;&gt;Hunted Tiles&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitLab Repository ⧉&lt;/em&gt;&lt;/a&gt; | &lt;a href=&#34;https://github.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitHub Mirror Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hunted Tiles is my custom Linux window manager environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools. From system monitors like battery, volume, brightness, CPU &amp;amp; memory widgets to integration with Vim and other terminal based applications, Hunted Tiles try to be a complete desktop environment without requiring many dependencies and allow users to choose dependencies. The name &amp;ldquo;Hunted Tiles&amp;rdquo; was inspired by my favorite color scheme (and main theme of Hunted Tiles), &lt;a href=&#34;https://draculatheme.com/&#34;&gt;Dracula&lt;/a&gt;, and the fact that AwesomeWM is a tiling WM.&lt;/p&gt;
 &lt;h2 id=&#34;my-dotfiles&#34;&gt;My Dotfiles&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Well, it really isn&amp;rsquo;t a project, is it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
