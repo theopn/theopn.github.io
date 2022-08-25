@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writings on Theo&#39;s Park</title>
+    <link>https://theopark.me/writing/</link>
+    <description>Recent content in Writings on Theo&#39;s Park</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Theo Park</copyright>
+    <lastBuildDate>Thu, 25 Aug 2022 13:39:11 -0400</lastBuildDate><atom:link href="https://theopark.me/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE</title>
+      <link>https://theopark.me/writing/2022-08-25_neovim_ide/</link>
+      <pubDate>Thu, 25 Aug 2022 13:39:11 -0400</pubDate>
+      
+      <guid>https://theopark.me/writing/2022-08-25_neovim_ide/</guid>
+      <description>30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a &amp;ldquo;fork&amp;rdquo; of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language.</description>
+      <content>&lt;h1 id=&#34;30-plug-ins-and-700-lines-of-code-later-neovim-is-my-favorite-ide&#34;&gt;30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE&lt;/h1&gt;
+&lt;p&gt;If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a &amp;ldquo;fork&amp;rdquo; of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language. Vimscript is still supported, and many people simply migrate their old &lt;code&gt;.vimrc&lt;/code&gt; while enjoying all the new Lua plug-ins. This is totally okay, but I wanted to take full advantage of Neovim by building a 100% Lua configuration. As with all migration of framework, it&amp;rsquo;s not porting the old base configuration that is difficult; it is the process of optimizing the settings and programs around it to take full advantage of the new framework (think of the migration process from i3 WM to Sway). The result was my half-baked Neovim configuration that I stuck for a month. I migrated all the settings and keybindings to Lua, but I got stuck with complex Neovim LSP and tree-sitter framework, so I kept using &lt;code&gt;coc.nvim&lt;/code&gt; and traditional highlighting. Sure they worked well, but I wanted more efficient and improved features of Neovim. Coincidentally, I have been working on my Awesome WM setup, and as the project grew, I felt a need for a stronger Lua IDE. So I set down for the weekend and worked on improving my Neovim.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/writing/neovim_c.jpg&#34;  alt=&#34;C Editing in Neovim&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The result? A simple yet powerful IDE for C, Lua, or any language you want (except for Java. That thing is just too bloated). I will go through 30 plug-ins that make up my Neovim.&lt;/p&gt;
+&lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
+&lt;h3 id=&#34;onedarknvim&#34;&gt;OneDark.nvim&lt;/h3&gt;
+&lt;p&gt;My choice of theme. It offers 6 different color tones and configurable styles for components. Supports transparency too!&lt;/p&gt;
+&lt;h3 id=&#34;lualinenvim&#34;&gt;Lualine.nvim&lt;/h3&gt;
+&lt;p&gt;Lightweight and customizable status line plug-in. I do not use a whole lot of features and would be perfectly happy with building a status line with built-in features as I did with the vanilla Vim, but LSP integration (to show the number of warnings, errors, etc) is essential for me.&lt;/p&gt;
+&lt;h3 id=&#34;barbarnvim&#34;&gt;Barbar.nvim&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;Tabbar&amp;rdquo; plug-in. The built-in tab/buffer system of Vim/Neovim is a bit untraditional and frankly not very productive for me. Barbar is very simple and offers a more &amp;ldquo;traditional&amp;rdquo; approach to the tab system. I am planning on trying out &lt;code&gt;bufferline.nvim&lt;/code&gt;, which seems to be an improved approach to Vim buffer management.&lt;/p&gt;
+&lt;h3 id=&#34;dashboard-nvim&#34;&gt;Dashboard-nvim&lt;/h3&gt;
+&lt;p&gt;Very customizable startup screen.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-notify&#34;&gt;Nvim-notify&lt;/h3&gt;
+&lt;p&gt;It redirects all the bottom notification (basically whenever &lt;code&gt;vim.notify&lt;/code&gt; is called) to the top right, prettier notification. &lt;code&gt;vim.notify&lt;/code&gt; is a Neovim-only protocol, and not all plug-ins utilize it, but plug-ins like &lt;code&gt;Telescope&lt;/code&gt; and LSP components can display useful information. If you have a lot of Vimscript-based plug-ins or are okay with bottom error messages, you can skip this plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;vim-pets&#34;&gt;vim-pets&lt;/h3&gt;
+&lt;p&gt;Must have.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/writing/vim_pets.jpg&#34;  alt=&#34;C Editing in Neovim&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h2 id=&#34;file-et-search&#34;&gt;File et Search&lt;/h2&gt;
+&lt;h3 id=&#34;gitsignsnvim&#34;&gt;Gitsigns.nvim&lt;/h3&gt;
+&lt;p&gt;It displays git diff and blame information, and much more useful Git information within the file.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-treesitter&#34;&gt;nvim-treesitter&lt;/h3&gt;
+&lt;p&gt;Tree sitter is an incremental parsing library. Long story short, it provides much more useful syntax highlighting and information about the source code. Like LSP, it is a built-in back-end feature of Neovim that needs to be enabled through the official plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-ts-rainbow&#34;&gt;nvim-ts-rainbow&lt;/h3&gt;
+&lt;p&gt;Rainbow matches for parentheses that utilize the tree-sitter library.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-treelua&#34;&gt;nvim-tree.lua&lt;/h3&gt;
+&lt;p&gt;Basically NERD Tree but written in Lua.&lt;/p&gt;
+&lt;h3 id=&#34;telescopenvim&#34;&gt;Telescope.nvim&lt;/h3&gt;
+&lt;p&gt;A fuzzy finder within Vim. It not only can be used for finding files and text within the file, but also can be used for browsing commands, Git commits, LSP information, and much more. It is one of the essential plug-ins for my Neovim setup.&lt;/p&gt;
+&lt;h3 id=&#34;telescope-file-browsernvim&#34;&gt;Telescope-file-browser.nvim&lt;/h3&gt;
+&lt;p&gt;A file browser extension for Telescope. I use this and &lt;code&gt;Telescope find_files&lt;/code&gt; all the time. File browser for the files in the parent directories, find files for the files in the child directories.&lt;/p&gt;
+&lt;h2 id=&#34;lsp&#34;&gt;LSP&lt;/h2&gt;
+&lt;p&gt;Ah, here we go&lt;/p&gt;
+&lt;h3 id=&#34;nvim-lspconfig&#34;&gt;nvim-lspconfig&lt;/h3&gt;
+&lt;p&gt;Third-party plug-ins cannot take advantage of the built-in LSP until you configure LSP using this official plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;masonnvim&#34;&gt;Mason.nvim&lt;/h3&gt;
+&lt;p&gt;A language server management tool. It is by the same author of &lt;code&gt;nvim-lsp-installer&lt;/code&gt;, and I find Mason to be mature enough to be used over the outgoing &lt;code&gt;nvim-lsp-installer&lt;/code&gt;. Install a language server of your choice, activate it in the &lt;code&gt;nvim-lspconfig&lt;/code&gt;, and boom, you will see all the warning messages and feel horrible about your code.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-cmp&#34;&gt;nvim-cmp&lt;/h3&gt;
+&lt;p&gt;Auto-completion program that can receive snippets from&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;LSP server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmp-&lt;/code&gt; plug-ins that I will introduce shortly&lt;/li&gt;
+&lt;li&gt;Snippet engine like &lt;code&gt;LuaSnip&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It also supports a tab completion as well with a little tweak.&lt;/p&gt;
+&lt;h3 id=&#34;cmp-buffer-cmp-path-cmp-cmdline&#34;&gt;cmp-buffer, cmp-path, cmp-cmdline&lt;/h3&gt;
+&lt;p&gt;Completion engines for words in the current buffer, the file path of your computer, and Vim command lines. &lt;code&gt;cmp-cmdline&lt;/code&gt; is a plug-in that I didn&amp;rsquo;t know I needed until I started using it. So much better than the built-in command line completion.&lt;/p&gt;
+&lt;h3 id=&#34;cmp-luasnip-cmp-nvim-lsp&#34;&gt;cmp-luasnip, cmp-nvim-lsp&lt;/h3&gt;
+&lt;p&gt;Bridge plug-ins between &lt;code&gt;nvim-cmp&lt;/code&gt; and &lt;code&gt;luasnip&lt;/code&gt;/&lt;code&gt;nvim-lspconfig&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;luasnip&#34;&gt;LuaSnip&lt;/h3&gt;
+&lt;p&gt;LuaSnip is a snippet &lt;em&gt;engine&lt;/em&gt;. By itself, it does not add anything to &lt;code&gt;nvim-cmp&lt;/code&gt;, which I will talk about later. However, once you feed a collection of snippets into it, it will parse them and recommend them through &lt;code&gt;nvim-cmp&lt;/code&gt; when appropriate.&lt;/p&gt;
+&lt;h3 id=&#34;friendly-snippets&#34;&gt;friendly-snippets&lt;/h3&gt;
+&lt;p&gt;The collection of snippets. The repository contains a lot of good VS Code style snippets. I am using my own fork of it because the original C snippet does not put the opening curly brace next to the function header (&lt;code&gt;int main(int good, char* programmer[]) {&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;troublenvim&#34;&gt;Trouble.nvim&lt;/h3&gt;
+&lt;p&gt;JetBrains IDE style view of errors, warnings, etc from the LSP server.&lt;/p&gt;
+&lt;h3 id=&#34;lspsaganvim&#34;&gt;Lspsaga.nvim&lt;/h3&gt;
+&lt;p&gt;It bundles LSP-related actions like refactoring, code actions for warning/error items, reference finder, etc.&lt;/p&gt;
+&lt;h2 id=&#34;note-taking&#34;&gt;Note Taking&lt;/h2&gt;
+&lt;p&gt;I am planning on using Neovim for my notes next semester and here are some plug-ins that will assist me with that (and also with general markdown editing).&lt;/p&gt;
+&lt;h3 id=&#34;glownvim&#34;&gt;Glow.nvim&lt;/h3&gt;
+&lt;p&gt;Glow is a command line markdown previewer, and this plug-in displays the preview in a pop-up window inside of Neovim. I was worried since Fedora DNF repository does not ship with Glow and I don&amp;rsquo;t like binary installs, but the plug-in provides a binary file of Glow in &lt;code&gt;~/.local/bin/&lt;/code&gt;, which is nice.&lt;/p&gt;
+&lt;h3 id=&#34;vimwiki&#34;&gt;vimwiki&lt;/h3&gt;
+&lt;p&gt;Vimwiki is a personal wiki management plug-in for Vim/Neovim. It offers a lot of features, but I mainly use it for its quick file reference feature. I do not like the fact that Vimwiki is completely written in Vimscript and that it does not play nicely with the markdown LSP/tree-sitter server, and I am considering making the vanilla Vim to be the dedicated note taker. I have tried &lt;code&gt;neorg&lt;/code&gt; to take notes, but Vimwiki still offers the best functionality for me.&lt;/p&gt;
+&lt;h3 id=&#34;vim-figlet&#34;&gt;Vim-figlet&lt;/h3&gt;
+&lt;p&gt;It connects to the command line tool &lt;code&gt;figlet&lt;/code&gt; and generates ASCII text art within Vim. Fun and potentially useful for making more engaging notes (I am a sucker for ASCII art. Take a look at my dotfiles).&lt;/p&gt;
+&lt;h2 id=&#34;others&#34;&gt;Others&lt;/h2&gt;
+&lt;h3 id=&#34;packernvim&#34;&gt;Packer.nvim&lt;/h3&gt;
+&lt;p&gt;The package manager for Neovim. Makes this all possible. Mwah.&lt;/p&gt;
+&lt;h3 id=&#34;plenarynvim&#34;&gt;Plenary.nvim&lt;/h3&gt;
+&lt;p&gt;Lua function library for Neovim. I believe Telescope and Gitsigns need this as a dependency.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-web-devicon&#34;&gt;nvim-web-devicon&lt;/h3&gt;
+&lt;p&gt;Have no clue why it&amp;rsquo;s named like that, but it&amp;rsquo;s an icon pack for Barbar, Lualine, and NvimTree.&lt;/p&gt;
+&lt;h2 id=&#34;minimalist-ish-approach&#34;&gt;Minimalist-ish approach&lt;/h2&gt;
+&lt;p&gt;I am not opposed of having plug-ins if it significantly improves my workflow (or if they are cute), but I also try to rely on Vim&amp;rsquo;s built-in feature if they don&amp;rsquo;t have a significant downside. One example is using custom keybindings instead of &lt;code&gt;nvim-autopairs&lt;/code&gt;. The bindings are&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- I am also sharing this for loop way of setting keybindings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;vim_map&lt;/span&gt;(mode, shortcut, target)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  vim.keymap.set(mode, shortcut, target, { noremap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, silent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; key_opt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;-- Stuffs ...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;()&amp;lt;LEFT&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[]&amp;lt;LEFT&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&amp;lt;CR&amp;gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&amp;lt;CR&amp;gt;}&amp;lt;ESC&amp;gt;&amp;lt;S-o&amp;gt;&amp;lt;ESC&amp;gt;&amp;lt;S-i&amp;gt;&amp;lt;TAB&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;-- Stuffs ...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; _, v &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; ipairs(key_opt) &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  vim_map(v[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it&amp;rsquo;s a very simple and clean solution that I don&amp;rsquo;t have many complaints about (I also experienced some weird bugs, when using &lt;code&gt;nvim-autopairs&lt;/code&gt; such as &amp;quot; not being inserted when it&amp;rsquo;s adjacent to parentheses).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nvim-cmp&lt;/code&gt; comes with a &lt;a href=&#34;https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-codicons-to-the-menu&#34;&gt;way&lt;/a&gt; to customize menu appearance, including VS-Code like pictogram. This eliminates the need for plug-ins like &lt;code&gt;lspkind.nvim&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Neovim has several built-in LSP-related commands. On example is &lt;code&gt;vim.lsp.buf.hover()&lt;/code&gt; to view LSP hover doc. All you have to do is map &lt;code&gt;&amp;lt;CMD&amp;gt;lua vim.lsp...&lt;/code&gt; to your choice of keybindings, and you can view hover docs for code components without extra plug-in (although plug-in like LSPSage makes it easier to access the LSP features).&lt;/p&gt;
+&lt;p&gt;I also utilize Packer&amp;rsquo;s lazy load features to minimize boot time, particularly &lt;code&gt;ft&lt;/code&gt; keyword. You can specify plug-ins to be loaded in a certain file using &lt;code&gt;ft&lt;/code&gt; keyword, so I block tree-sitter to be launched only with files I have language servers for and markdown-related plug-ins to markdown files.&lt;/p&gt;
+&lt;h2 id=&#34;you-got-more-things-to-say&#34;&gt;You got more things to say?&lt;/h2&gt;
+&lt;p&gt;No. Not for now. I am trying to keep the number of plug-ins around 30 - 33, and I am really happy with the current setup. Two things I am considering now are moving Vimwiki to Vim and integrating a CLI PDF reader for LaTeX editing. Other than that, I am significantly more productive when I use and tweak Neovim, compared to any other IDE/text editor (including VS Code).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:q!&lt;/code&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>My Linux Journey So Far</title>
+      <link>https://theopark.me/writing/2022-08-10_my_linux_journey_so_far/</link>
+      <pubDate>Wed, 10 Aug 2022 23:48:34 -0400</pubDate>
+      
+      <guid>https://theopark.me/writing/2022-08-10_my_linux_journey_so_far/</guid>
+      <description>I told you it&#39;s a cute picture This spring semester, I took a C Programming class with, hmm, &amp;ldquo;Dr. T.&amp;rdquo; Before meeting him, I have never seen a person in real life using Linux. In the first lecture, he emphasized the importance of command line editors when coding in C and announced that TA won&amp;rsquo;t help the student if they are not using Vim or other command line text editors during office hours.</description>
+      <content>
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/writing/thinkpad_et_ollie.jpg&#34;  alt=&#34;ThinkPad and Oliver&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;left&#34;  style=&#34;color: black;&#34; &gt;I told you it&#39;s a cute picture&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;This spring semester, I took a C Programming class with, hmm, &amp;ldquo;Dr. T.&amp;rdquo; Before meeting him, I have never seen a person in real life using Linux. In the first lecture, he emphasized the importance of command line editors when coding in C and announced that TA won&amp;rsquo;t help the student if they are not using Vim or other command line text editors during office hours. Many students seemed to hate this, with many of them discovering the &amp;ldquo;hack&amp;rdquo; of using VS Code to connect to the SSH server and doing the homework in a GUI environment. I barely knew what Vim was at the time, let alone other command line tools and debuggers. Nevertheless, Dr. T&amp;rsquo;s transparent terminal was enough to persuade me (It&amp;rsquo;s a known fact that your programming credibility directly correlates to the number of monitors you have and how &amp;ldquo;riced&amp;rdquo; out your window manager is), and my life in the terminal has begun.&lt;/p&gt;
+&lt;p&gt;And my oh my, Vim instantly became my favorite editor. If it wasn&amp;rsquo;t the intuitive keyboard shortcuts that boosted my productivity, it was the fact that I can configure it to my taste and import/export those settings in one text file. I spent lots of time modifying my &lt;code&gt;.vimrc&lt;/code&gt; and had a lot of fun discovering hidden features and making custom auto commands and functions. This naturally made me discover more about command line tools, and in just a matter of 2 - 3 months, I was more comfortable editing text files on &lt;code&gt;Neovim&lt;/code&gt;, multitasking with &lt;code&gt;tmux&lt;/code&gt;, and installing applications through &lt;code&gt;homebrew&lt;/code&gt;, than doing the same actions using mouse.&lt;/p&gt;
+&lt;p&gt;Up until this point, I&amp;rsquo;ve been a Mac user for years, and the 2020 M1 Macbook Air that I had for about 4 months at the time was fantastic. But I wanted more. I naturally was exposed to a lot of Linux users when I tried to find resources for Vim, and in no time, I was browsing r/Linux with the &amp;ldquo;Canonical bad, Arch good&amp;rdquo; mindset despite having never used Linux outside of the school CS labs. Nevertheless, after much research and consideration, I purchased a used Lenovo ThinkPad T460s for $130 in May to try using Linux.&lt;/p&gt;
+&lt;p&gt;While the laptop was in transit, I thought about the Linux distribution for the laptop. Should I go with Ubuntu as many people recommend? But cool Arch users said that Ubuntu was bad, because, because&amp;hellip; (on a serious note, now that I learned more about Linux, I do think that Ubuntu is no longer a gold standard of desktop distribution and shouldn&amp;rsquo;t be recommended to beginners). Or POP!_OS that my friend recommended? Or Linux Mint? Then I remembered that one time I saw the Fedora logo on Dr. T&amp;rsquo;s laptop screen, and without giving it too much thought, I made an installation USB for Fedora Workstation.&lt;/p&gt;
+&lt;p&gt;The laptop came with Windows 10, which was painfully slow (granted, the laptop had only 4GB of RAM at the time), so I erased the disk and installed Fedora without any hesitation (which performed much better than Windows, even with GNOME). The first impression was good, if not underwhelming. Everything except the fingerprint sensor worked without any configuration. GNOME 42 looked attractive and was intuitive to use, but I quickly got tired of installing GNOME extensions. Where is that &amp;ldquo;Linux customizability&amp;rdquo; that I was promised? I asked people on Purdue CS Discord for a DE recommendation, and experienced Linux users started to jokingly recommend pure window managers because &amp;ldquo;DEs are bloated.&amp;rdquo; And I fell for it. Before I even realized it, I was installing the i3 window manager.&lt;/p&gt;
+&lt;p&gt;The i3 window manager was a cultural shock for me. My brightness and volume keys didn&amp;rsquo;t work, it didn&amp;rsquo;t show the battery information, and there was no graphical interface to launch an application, how am I supposed to use this? Yet, not wanting to look &amp;ldquo;uncool,&amp;rdquo; I stuck with i3 and try to configure things myself. What made it harder (and more rewarding in the end) was that I didn&amp;rsquo;t pay attention to other people&amp;rsquo;s dotfiles and was making my i3 configuration from the scratch. Thankfully, my experience with command line text editors, relatively intuitive i3 and Polybar configuration structure, and the instant productivity boost that i3 bought made me stuck to the i3, and I made a complete i3 + Polybar (and Sway + Waybar) environment that I still use to this date.&lt;/p&gt;
+&lt;p&gt;Working with i3 changed my perspective on how I view operating systems and graphical interfaces. Most importantly, I realized that virtually every action done through GUI is just wrappers for command lines. Who knew that locking the computer before going to the suspend mode, recognizing the external display and rendering contents to it, and changing the volume of the speaker are all command line actions? I wouldn&amp;rsquo;t have known if I weren&amp;rsquo;t making widgets and custom keybindings for those actions.&lt;/p&gt;
+&lt;p&gt;It exposed me to more efficient programs too. Because &lt;code&gt;Mod + Enter&lt;/code&gt; is bound to opening a terminal, I found myself wanting to utilize more out of the terminal. &lt;code&gt;mutt&lt;/code&gt; is a simple yet powerful email client that is capable of 90% of what I need from an email client. I use &lt;code&gt;w3m&lt;/code&gt; every day for a simple web search because no ads, fancy animations, or JavaScript contents are there to distract me. Need to see images or JS contents? Launching the current URL on Firefox is one keystroke away. I invested some time learning &lt;code&gt;Emacs&lt;/code&gt; and still prefer &lt;code&gt;vim&lt;/code&gt; and &lt;code&gt;Neovim&lt;/code&gt; for text editing, but it&amp;rsquo;s staying with me because of the &lt;code&gt;Org-mode&lt;/code&gt;. It turned out to be the perfect to-do list and project management application, and I no longer pay for the Todoist subscription.&lt;/p&gt;
+&lt;p&gt;As the fall semester is around the corner, I am wrapping up my Awesome WM configuration and starting to prepare the laptop for actual daily school use. You heard me right, 7 years old, $130 dollar ThinkPad running Linux over M1 MacBook Air. I have used the laptop daily throughout the summer while working as a teaching assistant and course content developer, and I am confident that it can handle all of my work. Most importantly, using Linux and tiling window manager have become integral parts of my workflow that I really can&amp;rsquo;t see myself going back to other operating systems. I have never had this much fun and joy when using a computer, so thanks to Linux, tiling window managers, and all the command line tools (and of course, Dr. T).&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Vimrc Guide Part 1</title>
+      <link>https://theopark.me/writing/2022-06-20_vimrc_guide/</link>
+      <pubDate>Mon, 20 Jun 2022 18:58:40 -0400</pubDate>
+      
+      <guid>https://theopark.me/writing/2022-06-20_vimrc_guide/</guid>
+      <description>Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?
+Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with vim --clean). Now in normal mode in Vim, type the command :set number, and you will see that your Vim now shows the line numbers on the left side.</description>
+      <content>&lt;p&gt;Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people&amp;rsquo;s cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people&amp;rsquo;s Vim. Why is that?&lt;/p&gt;
+&lt;p&gt;Assuming you haven&amp;rsquo;t configured your .vimrc when you open up Vim, it will not load any settings (if you have, open up Vim with &lt;code&gt;vim --clean&lt;/code&gt;). Now in normal mode in Vim, type the command &lt;code&gt;:set number&lt;/code&gt;, and you will see that your Vim now shows the line numbers on the left side. You can turn this off with &lt;code&gt;:set nonumber&lt;/code&gt;. What about changing the theme? Try typing in &lt;code&gt;:colorscheme blue&lt;/code&gt; to execute one of the beautiful built-in themes. However, when you close the Vim and open it again (in case you forgot, &lt;code&gt;:q&lt;/code&gt; or &lt;code&gt;:q!&lt;/code&gt; to force close), the settings you executed in the previous sessions are not saved. This is why if you have settings that you want to be executed every time you open up Vim, you will have to configure them in .vimrc.&lt;/p&gt;
+&lt;h2 id=&#34;understanding-vimrc&#34;&gt;Understanding .vimrc&lt;/h2&gt;
+&lt;p&gt;The dot in front of the .vimrc indicates *nix system that the file is hidden. You can test this by executing &lt;code&gt;ls&lt;/code&gt; and &lt;code&gt;ls -a&lt;/code&gt; in your home directory (&lt;code&gt;~/&lt;/code&gt;), notice how many hidden files you have in the system when you view them using &lt;code&gt;-a&lt;/code&gt; flag. Hidden files are used by many programs to store configuration files, and many programmers configure, export, and import these &amp;ldquo;dotfiles&amp;rdquo; to personalize and back up their programming environment. &lt;code&gt;vim&lt;/code&gt; in the file name stands for Vim, of course, and &lt;code&gt;rc&lt;/code&gt; stands for &amp;ldquo;run commands.&amp;rdquo; These are commonly used by command-line tools to indicate files with user-configured settings that get executed on the startup. Some examples include &lt;code&gt;.bashrc&lt;/code&gt;, &lt;code&gt;.npmrc&lt;/code&gt;, and &lt;code&gt;.zshrc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-vimrc&#34;&gt;Configuring .vimrc&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s begin to configure &lt;code&gt;.vimrc&lt;/code&gt;. The first step is to create one since Vim does not make one by default. In your home directory (&lt;code&gt;~/&lt;/code&gt;), create &lt;code&gt;.vimrc&lt;/code&gt; using &lt;code&gt;touch ~/.vimrc&lt;/code&gt;. Now let&amp;rsquo;s open this up with &lt;code&gt;vi ~/.vimrc&lt;/code&gt;.
+(Notes: You might already have &lt;code&gt;.vimrc&lt;/code&gt; with some settings if you&amp;rsquo;re using the Purdue CS SSH server).&lt;/p&gt;
+&lt;p&gt;Here, you can add settings and even more complicated auto-commands and functions using Vimscript language. Let&amp;rsquo;s start with some easy but essential settings, shall we?&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;&amp;#34; Double quotes are used for comments!
+&amp;#34; Below are .vimrc contents!
+
+&amp;#34; Display line numbers
+set number
+&amp;#34; Alternatively, some people prefer to see line numbers relative to the current line
+set relativenumber
+&amp;#34; Automatically indent code
+set autoindent
+&amp;#34; Highlight search result
+set hlsearch
+&amp;#34; With this, you can use a mouse for scrolling, moving cursor, etc!
+set mouse=a
+&amp;#34; Turn syntax coloring for supported files
+syntax on
+&amp;#34; For the aesthetic
+colorscheme blue
+&amp;#34; These makes tabs to be 2 spaces, which is a convention with C programming
+set tapstop=2 shiftwidth=2 expandtab
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can explore more commands in built-in Vim manual, using &lt;code&gt;:help&lt;/code&gt; followed by the commands (e.g. &lt;code&gt;:help number&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;You can map some keys as well. Let&amp;rsquo;s map &lt;code&gt;(&lt;/code&gt; in insert mode to &lt;code&gt;()&lt;/code&gt; so that all the parenthesis are automatically closed!&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;inoremap ( ()&amp;lt;LEFT&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;i&lt;/code&gt; stands for the insert mode and &lt;code&gt;noremap&lt;/code&gt; stands for non-recursive mapping. Recursive mapping (achieved using &lt;code&gt;map&lt;/code&gt;) can be expanded to another mapping (i.e. You map a to b, c to b, then c does what a does), whereas non-recursive mapping does not extend the mapping to another mapping. I personally use and recommend &lt;code&gt;noremap&lt;/code&gt; for most cases to prevent confusion and errors. Finally, &amp;lt;LEFT&amp;gt; moves the cursor back inside of the parenthesis (left arrow key)!&lt;/p&gt;
+&lt;h2 id=&#34;taking-vimrc-further&#34;&gt;Taking .vimrc further&lt;/h2&gt;
+&lt;p&gt;Vim comes with a language called &amp;ldquo;Vimscript,&amp;rdquo; which is a full-fledged (Turing complete) language, albeit limited in its syntax and usability. You can make custom functions and auto-commands, so Let&amp;rsquo;s make a simple function that displays a message and opens your &lt;code&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vimscript&#34; data-lang=&#34;vimscript&#34;&gt;function Hi()
+  &amp;#34; e command is used to open a file
+  exec &amp;#39;e ~/.vimrc&amp;#39;
+  echo &amp;#39;Hello! You just opened .vimrc!&amp;#39;
+endfunction
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Paste the function above in your &lt;code&gt;.vimrc&lt;/code&gt;, reopen Vim, and type &lt;code&gt;:call Hi()&lt;/code&gt;. You will see that it opens your &lt;code&gt;.vimrc&lt;/code&gt; with a welcome message! (Both double quotes and single quotes can be used for strings - there is only one technical difference, though I recommend you to stick with a single quote to prevent confusion with comments.)&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Vim is a powerful text editor that is present on pretty much every *nix system, and you can easily unlock many potentials of Vim by configuring &lt;code&gt;.vimrc&lt;/code&gt;. If you want more inspiration, check out &lt;a href=&#34;https://docs.j7k6.org/my-minimal-vimrc/&#34;&gt;an article for a simple .vimrc&lt;/a&gt; and &lt;a href=&#34;https://github.com/amix/vimrc&#34;&gt;&amp;ldquo;ultimate .vimrc&amp;rdquo; for power users&lt;/a&gt;. You can also check out &lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;my dotfiles repository&lt;/a&gt;, which also includes Lua configuration files for Neovim (a fork of Vim that is community-developed and supports a wide variety of plugins). :wq!&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://theopark.me/writing/2022-06-01_hello_world/</link>
+      <pubDate>Wed, 01 Jun 2022 21:22:04 -0400</pubDate>
+      
+      <guid>https://theopark.me/writing/2022-06-01_hello_world/</guid>
+      <description>I just made a website yay! Hugo is a life saver.</description>
+      <content>&lt;p&gt;I just made a website yay! Hugo is a life saver.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

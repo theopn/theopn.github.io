@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neovim on Theo&#39;s Park</title>
+    <link>https://theopark.me/tags/neovim/</link>
+    <description>Recent content in Neovim on Theo&#39;s Park</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Theo Park</copyright>
+    <lastBuildDate>Thu, 25 Aug 2022 13:39:11 -0400</lastBuildDate><atom:link href="https://theopark.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE</title>
+      <link>https://theopark.me/writing/2022-08-25_neovim_ide/</link>
+      <pubDate>Thu, 25 Aug 2022 13:39:11 -0400</pubDate>
+      
+      <guid>https://theopark.me/writing/2022-08-25_neovim_ide/</guid>
+      <description>30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a &amp;ldquo;fork&amp;rdquo; of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language.</description>
+      <content>&lt;h1 id=&#34;30-plug-ins-and-700-lines-of-code-later-neovim-is-my-favorite-ide&#34;&gt;30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE&lt;/h1&gt;
+&lt;p&gt;If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a &amp;ldquo;fork&amp;rdquo; of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language. Vimscript is still supported, and many people simply migrate their old &lt;code&gt;.vimrc&lt;/code&gt; while enjoying all the new Lua plug-ins. This is totally okay, but I wanted to take full advantage of Neovim by building a 100% Lua configuration. As with all migration of framework, it&amp;rsquo;s not porting the old base configuration that is difficult; it is the process of optimizing the settings and programs around it to take full advantage of the new framework (think of the migration process from i3 WM to Sway). The result was my half-baked Neovim configuration that I stuck for a month. I migrated all the settings and keybindings to Lua, but I got stuck with complex Neovim LSP and tree-sitter framework, so I kept using &lt;code&gt;coc.nvim&lt;/code&gt; and traditional highlighting. Sure they worked well, but I wanted more efficient and improved features of Neovim. Coincidentally, I have been working on my Awesome WM setup, and as the project grew, I felt a need for a stronger Lua IDE. So I set down for the weekend and worked on improving my Neovim.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/writing/neovim_c.jpg&#34;  alt=&#34;C Editing in Neovim&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The result? A simple yet powerful IDE for C, Lua, or any language you want (except for Java. That thing is just too bloated). I will go through 30 plug-ins that make up my Neovim.&lt;/p&gt;
+&lt;h2 id=&#34;appearance&#34;&gt;Appearance&lt;/h2&gt;
+&lt;h3 id=&#34;onedarknvim&#34;&gt;OneDark.nvim&lt;/h3&gt;
+&lt;p&gt;My choice of theme. It offers 6 different color tones and configurable styles for components. Supports transparency too!&lt;/p&gt;
+&lt;h3 id=&#34;lualinenvim&#34;&gt;Lualine.nvim&lt;/h3&gt;
+&lt;p&gt;Lightweight and customizable status line plug-in. I do not use a whole lot of features and would be perfectly happy with building a status line with built-in features as I did with the vanilla Vim, but LSP integration (to show the number of warnings, errors, etc) is essential for me.&lt;/p&gt;
+&lt;h3 id=&#34;barbarnvim&#34;&gt;Barbar.nvim&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;Tabbar&amp;rdquo; plug-in. The built-in tab/buffer system of Vim/Neovim is a bit untraditional and frankly not very productive for me. Barbar is very simple and offers a more &amp;ldquo;traditional&amp;rdquo; approach to the tab system. I am planning on trying out &lt;code&gt;bufferline.nvim&lt;/code&gt;, which seems to be an improved approach to Vim buffer management.&lt;/p&gt;
+&lt;h3 id=&#34;dashboard-nvim&#34;&gt;Dashboard-nvim&lt;/h3&gt;
+&lt;p&gt;Very customizable startup screen.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-notify&#34;&gt;Nvim-notify&lt;/h3&gt;
+&lt;p&gt;It redirects all the bottom notification (basically whenever &lt;code&gt;vim.notify&lt;/code&gt; is called) to the top right, prettier notification. &lt;code&gt;vim.notify&lt;/code&gt; is a Neovim-only protocol, and not all plug-ins utilize it, but plug-ins like &lt;code&gt;Telescope&lt;/code&gt; and LSP components can display useful information. If you have a lot of Vimscript-based plug-ins or are okay with bottom error messages, you can skip this plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;vim-pets&#34;&gt;vim-pets&lt;/h3&gt;
+&lt;p&gt;Must have.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/writing/vim_pets.jpg&#34;  alt=&#34;C Editing in Neovim&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h2 id=&#34;file-et-search&#34;&gt;File et Search&lt;/h2&gt;
+&lt;h3 id=&#34;gitsignsnvim&#34;&gt;Gitsigns.nvim&lt;/h3&gt;
+&lt;p&gt;It displays git diff and blame information, and much more useful Git information within the file.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-treesitter&#34;&gt;nvim-treesitter&lt;/h3&gt;
+&lt;p&gt;Tree sitter is an incremental parsing library. Long story short, it provides much more useful syntax highlighting and information about the source code. Like LSP, it is a built-in back-end feature of Neovim that needs to be enabled through the official plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-ts-rainbow&#34;&gt;nvim-ts-rainbow&lt;/h3&gt;
+&lt;p&gt;Rainbow matches for parentheses that utilize the tree-sitter library.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-treelua&#34;&gt;nvim-tree.lua&lt;/h3&gt;
+&lt;p&gt;Basically NERD Tree but written in Lua.&lt;/p&gt;
+&lt;h3 id=&#34;telescopenvim&#34;&gt;Telescope.nvim&lt;/h3&gt;
+&lt;p&gt;A fuzzy finder within Vim. It not only can be used for finding files and text within the file, but also can be used for browsing commands, Git commits, LSP information, and much more. It is one of the essential plug-ins for my Neovim setup.&lt;/p&gt;
+&lt;h3 id=&#34;telescope-file-browsernvim&#34;&gt;Telescope-file-browser.nvim&lt;/h3&gt;
+&lt;p&gt;A file browser extension for Telescope. I use this and &lt;code&gt;Telescope find_files&lt;/code&gt; all the time. File browser for the files in the parent directories, find files for the files in the child directories.&lt;/p&gt;
+&lt;h2 id=&#34;lsp&#34;&gt;LSP&lt;/h2&gt;
+&lt;p&gt;Ah, here we go&lt;/p&gt;
+&lt;h3 id=&#34;nvim-lspconfig&#34;&gt;nvim-lspconfig&lt;/h3&gt;
+&lt;p&gt;Third-party plug-ins cannot take advantage of the built-in LSP until you configure LSP using this official plug-in.&lt;/p&gt;
+&lt;h3 id=&#34;masonnvim&#34;&gt;Mason.nvim&lt;/h3&gt;
+&lt;p&gt;A language server management tool. It is by the same author of &lt;code&gt;nvim-lsp-installer&lt;/code&gt;, and I find Mason to be mature enough to be used over the outgoing &lt;code&gt;nvim-lsp-installer&lt;/code&gt;. Install a language server of your choice, activate it in the &lt;code&gt;nvim-lspconfig&lt;/code&gt;, and boom, you will see all the warning messages and feel horrible about your code.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-cmp&#34;&gt;nvim-cmp&lt;/h3&gt;
+&lt;p&gt;Auto-completion program that can receive snippets from&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;LSP server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmp-&lt;/code&gt; plug-ins that I will introduce shortly&lt;/li&gt;
+&lt;li&gt;Snippet engine like &lt;code&gt;LuaSnip&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It also supports a tab completion as well with a little tweak.&lt;/p&gt;
+&lt;h3 id=&#34;cmp-buffer-cmp-path-cmp-cmdline&#34;&gt;cmp-buffer, cmp-path, cmp-cmdline&lt;/h3&gt;
+&lt;p&gt;Completion engines for words in the current buffer, the file path of your computer, and Vim command lines. &lt;code&gt;cmp-cmdline&lt;/code&gt; is a plug-in that I didn&amp;rsquo;t know I needed until I started using it. So much better than the built-in command line completion.&lt;/p&gt;
+&lt;h3 id=&#34;cmp-luasnip-cmp-nvim-lsp&#34;&gt;cmp-luasnip, cmp-nvim-lsp&lt;/h3&gt;
+&lt;p&gt;Bridge plug-ins between &lt;code&gt;nvim-cmp&lt;/code&gt; and &lt;code&gt;luasnip&lt;/code&gt;/&lt;code&gt;nvim-lspconfig&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;luasnip&#34;&gt;LuaSnip&lt;/h3&gt;
+&lt;p&gt;LuaSnip is a snippet &lt;em&gt;engine&lt;/em&gt;. By itself, it does not add anything to &lt;code&gt;nvim-cmp&lt;/code&gt;, which I will talk about later. However, once you feed a collection of snippets into it, it will parse them and recommend them through &lt;code&gt;nvim-cmp&lt;/code&gt; when appropriate.&lt;/p&gt;
+&lt;h3 id=&#34;friendly-snippets&#34;&gt;friendly-snippets&lt;/h3&gt;
+&lt;p&gt;The collection of snippets. The repository contains a lot of good VS Code style snippets. I am using my own fork of it because the original C snippet does not put the opening curly brace next to the function header (&lt;code&gt;int main(int good, char* programmer[]) {&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;troublenvim&#34;&gt;Trouble.nvim&lt;/h3&gt;
+&lt;p&gt;JetBrains IDE style view of errors, warnings, etc from the LSP server.&lt;/p&gt;
+&lt;h3 id=&#34;lspsaganvim&#34;&gt;Lspsaga.nvim&lt;/h3&gt;
+&lt;p&gt;It bundles LSP-related actions like refactoring, code actions for warning/error items, reference finder, etc.&lt;/p&gt;
+&lt;h2 id=&#34;note-taking&#34;&gt;Note Taking&lt;/h2&gt;
+&lt;p&gt;I am planning on using Neovim for my notes next semester and here are some plug-ins that will assist me with that (and also with general markdown editing).&lt;/p&gt;
+&lt;h3 id=&#34;glownvim&#34;&gt;Glow.nvim&lt;/h3&gt;
+&lt;p&gt;Glow is a command line markdown previewer, and this plug-in displays the preview in a pop-up window inside of Neovim. I was worried since Fedora DNF repository does not ship with Glow and I don&amp;rsquo;t like binary installs, but the plug-in provides a binary file of Glow in &lt;code&gt;~/.local/bin/&lt;/code&gt;, which is nice.&lt;/p&gt;
+&lt;h3 id=&#34;vimwiki&#34;&gt;vimwiki&lt;/h3&gt;
+&lt;p&gt;Vimwiki is a personal wiki management plug-in for Vim/Neovim. It offers a lot of features, but I mainly use it for its quick file reference feature. I do not like the fact that Vimwiki is completely written in Vimscript and that it does not play nicely with the markdown LSP/tree-sitter server, and I am considering making the vanilla Vim to be the dedicated note taker. I have tried &lt;code&gt;neorg&lt;/code&gt; to take notes, but Vimwiki still offers the best functionality for me.&lt;/p&gt;
+&lt;h3 id=&#34;vim-figlet&#34;&gt;Vim-figlet&lt;/h3&gt;
+&lt;p&gt;It connects to the command line tool &lt;code&gt;figlet&lt;/code&gt; and generates ASCII text art within Vim. Fun and potentially useful for making more engaging notes (I am a sucker for ASCII art. Take a look at my dotfiles).&lt;/p&gt;
+&lt;h2 id=&#34;others&#34;&gt;Others&lt;/h2&gt;
+&lt;h3 id=&#34;packernvim&#34;&gt;Packer.nvim&lt;/h3&gt;
+&lt;p&gt;The package manager for Neovim. Makes this all possible. Mwah.&lt;/p&gt;
+&lt;h3 id=&#34;plenarynvim&#34;&gt;Plenary.nvim&lt;/h3&gt;
+&lt;p&gt;Lua function library for Neovim. I believe Telescope and Gitsigns need this as a dependency.&lt;/p&gt;
+&lt;h3 id=&#34;nvim-web-devicon&#34;&gt;nvim-web-devicon&lt;/h3&gt;
+&lt;p&gt;Have no clue why it&amp;rsquo;s named like that, but it&amp;rsquo;s an icon pack for Barbar, Lualine, and NvimTree.&lt;/p&gt;
+&lt;h2 id=&#34;minimalist-ish-approach&#34;&gt;Minimalist-ish approach&lt;/h2&gt;
+&lt;p&gt;I am not opposed of having plug-ins if it significantly improves my workflow (or if they are cute), but I also try to rely on Vim&amp;rsquo;s built-in feature if they don&amp;rsquo;t have a significant downside. One example is using custom keybindings instead of &lt;code&gt;nvim-autopairs&lt;/code&gt;. The bindings are&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- I am also sharing this for loop way of setting keybindings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;vim_map&lt;/span&gt;(mode, shortcut, target)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  vim.keymap.set(mode, shortcut, target, { noremap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;, silent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; key_opt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;-- Stuffs ...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;()&amp;lt;LEFT&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[]&amp;lt;LEFT&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;i&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&amp;lt;CR&amp;gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{&amp;lt;CR&amp;gt;}&amp;lt;ESC&amp;gt;&amp;lt;S-o&amp;gt;&amp;lt;ESC&amp;gt;&amp;lt;S-i&amp;gt;&amp;lt;TAB&amp;gt;&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;-- Stuffs ...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; _, v &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; ipairs(key_opt) &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  vim_map(v[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;], v[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it&amp;rsquo;s a very simple and clean solution that I don&amp;rsquo;t have many complaints about (I also experienced some weird bugs, when using &lt;code&gt;nvim-autopairs&lt;/code&gt; such as &amp;quot; not being inserted when it&amp;rsquo;s adjacent to parentheses).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nvim-cmp&lt;/code&gt; comes with a &lt;a href=&#34;https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-codicons-to-the-menu&#34;&gt;way&lt;/a&gt; to customize menu appearance, including VS-Code like pictogram. This eliminates the need for plug-ins like &lt;code&gt;lspkind.nvim&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Neovim has several built-in LSP-related commands. On example is &lt;code&gt;vim.lsp.buf.hover()&lt;/code&gt; to view LSP hover doc. All you have to do is map &lt;code&gt;&amp;lt;CMD&amp;gt;lua vim.lsp...&lt;/code&gt; to your choice of keybindings, and you can view hover docs for code components without extra plug-in (although plug-in like LSPSage makes it easier to access the LSP features).&lt;/p&gt;
+&lt;p&gt;I also utilize Packer&amp;rsquo;s lazy load features to minimize boot time, particularly &lt;code&gt;ft&lt;/code&gt; keyword. You can specify plug-ins to be loaded in a certain file using &lt;code&gt;ft&lt;/code&gt; keyword, so I block tree-sitter to be launched only with files I have language servers for and markdown-related plug-ins to markdown files.&lt;/p&gt;
+&lt;h2 id=&#34;you-got-more-things-to-say&#34;&gt;You got more things to say?&lt;/h2&gt;
+&lt;p&gt;No. Not for now. I am trying to keep the number of plug-ins around 30 - 33, and I am really happy with the current setup. Two things I am considering now are moving Vimwiki to Vim and integrating a CLI PDF reader for LaTeX editing. Other than that, I am significantly more productive when I use and tweak Neovim, compared to any other IDE/text editor (including VS Code).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:q!&lt;/code&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
