@@ -262,7 +262,7 @@ endfunction
       <guid>https://theopark.me/projects/</guid>
       <description>Collection of my projects, both for career and fun (often overlapping with each other).
 Hunted Tiles My Dotfiles i3 &amp;amp; Sway Tips Clean Linear Algebra Homework Template vimrc Guide CS240 Comprehensive Review Hunted Tiles GitLab Repository ⧉ | GitHub Mirror Repository ⧉
-Hunted Tiles is my custom Linux window manager environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools. From system monitors like battery, volume, brightness, CPU &amp;amp; memory widgets to integration with Vim and other terminal based applications, Hunted Tiles try to be a complete desktop environment without requiring many dependencies and allow users to choose dependencies.</description>
+Hunted Tiles is a custom Linux window manager environment built with Awesome WM framework and other tools surrounding the X11 window server. The goal of Hunted Tiles is a complete, lightweight, and aesthetically pleasing desktop environment that provides users freedom of dependency choice and an easily modifiable code base.</description>
       <content>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Collection of my projects, both for career and fun (often overlapping with each other).&lt;/p&gt;
@@ -277,10 +277,10 @@ Hunted Tiles is my custom Linux window manager environment using Lua, AwesomeWM 
 &lt;/ul&gt;
 &lt;h2 id=&#34;hunted-tiles&#34;&gt;Hunted Tiles&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitLab Repository ⧉&lt;/em&gt;&lt;/a&gt; | &lt;a href=&#34;https://github.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitHub Mirror Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hunted Tiles is my custom Linux window manager environment using Lua, AwesomeWM framework, and shell scripts to integrate the dynamic tiling window manager with other essential tools. From system monitors like battery, volume, brightness, CPU &amp;amp; memory widgets to integration with Vim and other terminal based applications, Hunted Tiles try to be a complete desktop environment without requiring many dependencies and allow users to choose dependencies. The name &amp;ldquo;Hunted Tiles&amp;rdquo; was inspired by my favorite color scheme (and main theme of Hunted Tiles), &lt;a href=&#34;https://draculatheme.com/&#34;&gt;Dracula&lt;/a&gt;, and the fact that AwesomeWM is a tiling WM.&lt;/p&gt;
+&lt;p&gt;Hunted Tiles is a custom Linux window manager environment built with &lt;a href=&#34;https://awesomewm.org/&#34;&gt;Awesome WM framework&lt;/a&gt; and other tools surrounding the X11 window server. The goal of Hunted Tiles is a complete, lightweight, and aesthetically pleasing desktop environment that provides users freedom of dependency choice and an easily modifiable code base. The name “Hunted Tiles” was inspired by my favorite color scheme (and the main theme of Hunted Tiles), &lt;a href=&#34;https://draculatheme.com&#34;&gt;Dracula&lt;/a&gt;, and the fact that AwesomeWM is a tiling WM.&lt;/p&gt;
 &lt;h2 id=&#34;my-dotfiles&#34;&gt;My Dotfiles&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Well, it really isn&amp;rsquo;t a project, is it? But this might be the repository where I spend most of my time committing. This repository includes configurations for text editors like Vim, Neovim, and Emacs (Vim is better!), zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
+&lt;p&gt;Well, does this count as a project? But this is the repository I spend most of my time committing for sure. This repository includes configurations for text editors like Vim, Neovim, and Emacs, zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
     &lt;img src=&#34;https://theopark.me/img/projects/2022-07-25_Fedora_Screenshot.png&#34;  alt=&#34;My i3 setup&#34;   /&gt;
