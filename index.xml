@@ -278,6 +278,13 @@ Hunted Tiles is a custom Linux window manager environment built with Awesome WM 
 &lt;h2 id=&#34;hunted-tiles&#34;&gt;Hunted Tiles&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitlab.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitLab Repository ⧉&lt;/em&gt;&lt;/a&gt; | &lt;a href=&#34;https://github.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitHub Mirror Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hunted Tiles is a custom Linux window manager environment built with &lt;a href=&#34;https://awesomewm.org/&#34;&gt;Awesome WM framework&lt;/a&gt; and other tools surrounding the X11 window server. The goal of Hunted Tiles is a complete, lightweight, and aesthetically pleasing desktop environment that provides users freedom of dependency choice and an easily modifiable code base. The name “Hunted Tiles” was inspired by my favorite color scheme (and the main theme of Hunted Tiles), &lt;a href=&#34;https://draculatheme.com&#34;&gt;Dracula&lt;/a&gt;, and the fact that AwesomeWM is a tiling WM.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://theopark.me/img/projects/2022-09-05_Hunted-Tiles_Screenshot.png&#34;  alt=&#34;Hunted Tiles screenshot&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
 &lt;h2 id=&#34;my-dotfiles&#34;&gt;My Dotfiles&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/dotfiles&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Well, does this count as a project? But this is the repository I spend most of my time committing for sure. This repository includes configurations for text editors like Vim, Neovim, and Emacs, zsh, kitty, tmux, and other terminal/shell related programs, i3 &amp;amp; Polybar and Sway &amp;amp; Waybar, and weirdos like Mutt and w3m.&lt;/p&gt;
