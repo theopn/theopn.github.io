@@ -292,9 +292,9 @@ endfunction
       <guid>https://theopark.me/projects/</guid>
       <description>Collection of my projects, both for career and fun (often overlapping with each other).
 Theovim Hunted Tiles My Dotfiles i3 &amp;amp; Sway Tips Clean Linear Algebra Homework Template vimrc Guide CS240 Comprehensive Review Theovim GitHub Repository ⧉
-Theovim is //TODO
-Hunted Tiles GitLab Repository ⧉ | GitHub Mirror Repository ⧉
-Hunted Tiles is a custom Linux window manager environment built with Awesome WM framework and other tools surrounding the X11 window server.</description>
+Theovim is a Neovim IDE configuration aimed toward CS majors. More description coming soon&amp;hellip;
+Hunted Tiles GitHub Repository ⧉
+Hunted Tiles is a collection of tiling Wayland compositor configurations along with other scripts to provide a DE-like Wayland experience.</description>
       <content>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Collection of my projects, both for career and fun (often overlapping with each other).&lt;/p&gt;
@@ -310,10 +310,10 @@ Hunted Tiles is a custom Linux window manager environment built with Awesome WM 
 &lt;/ul&gt;
 &lt;h2 id=&#34;theovim&#34;&gt;Theovim&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/theovim&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Theovim is //TODO&lt;/p&gt;
+&lt;p&gt;Theovim is a Neovim IDE configuration aimed toward CS majors. More description coming soon&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;hunted-tiles&#34;&gt;Hunted Tiles&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://gitlab.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitLab Repository ⧉&lt;/em&gt;&lt;/a&gt; | &lt;a href=&#34;https://github.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitHub Mirror Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hunted Tiles is a custom Linux window manager environment built with &lt;a href=&#34;https://awesomewm.org/&#34;&gt;Awesome WM framework&lt;/a&gt; and other tools surrounding the X11 window server. The goal of Hunted Tiles is a complete, lightweight, and aesthetically pleasing desktop environment that provides users freedom of dependency choice and an easily modifiable code base. The name “Hunted Tiles” was inspired by my favorite color scheme (and the main theme of Hunted Tiles), &lt;a href=&#34;https://draculatheme.com&#34;&gt;Dracula&lt;/a&gt;, and the fact that AwesomeWM is a tiling WM.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/theopn/hunted-tiles&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hunted Tiles is a collection of tiling Wayland compositor configurations along with other scripts to provide a DE-like Wayland experience. Currently, Sway and Hyprland (work in progress) are supported. More description coming soon&amp;hellip;&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
     &lt;img src=&#34;https://theopark.me/img/projects/2022-09-05_Hunted-Tiles_Screenshot.png&#34;  alt=&#34;Hunted Tiles screenshot&#34;   /&gt;
@@ -336,6 +336,9 @@ Hunted Tiles is a custom Linux window manager environment built with Awesome WM 
 &lt;h2 id=&#34;i3--sway-tips&#34;&gt;i3 &amp;amp; Sway Tips&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/i3-sway-tips&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Collection of commands, keybindings, and recommended applications for i3 or Sway window manager beginners. Some of the recommendations are subjective and does not contain all the information you might need, but I would love to make this a community project so feel free to suggest or correct information through issues or to me personally!&lt;/p&gt;
+&lt;h2 id=&#34;pytranscript&#34;&gt;Pytranscript&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/theopn/pytranscript&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This A-worthy-cs-freshman-level Python project is a simple CLI GPA calculator I use when I cannot wait a week for my professors to finalize my grades.&lt;/p&gt;
 &lt;h2 id=&#34;clean-linear-algebra-homework-template&#34;&gt;Clean Linear Algebra Homework Template&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/theopn/clean-la-hw-template&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Linear algebra is fun, but it can be more fun with the right LaTeX template.&lt;/p&gt;
@@ -343,7 +346,7 @@ Hunted Tiles is a custom Linux window manager environment built with Awesome WM 
 &lt;p&gt;&lt;a href=&#34;https://theopark.me/writing/2022-06-20_vimrc_guide/&#34; title=&#34;vimrc Guide Part 1&#34;&gt;&lt;em&gt;Part 1 ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Guides to create a personal Vim environment and boosting your productivity. Right here on this website.&lt;/p&gt;
 &lt;h2 id=&#34;cs240-comprehensive-review&#34;&gt;CS240 Comprehensive Review&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/theopn/CS240_Comprehensive_Review&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/theopn/cs240-comprehensive-review&#34;&gt;&lt;em&gt;GitHub Repository ⧉&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;17 pages of C.&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
