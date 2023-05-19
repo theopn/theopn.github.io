@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE :: Theo&#39;s Park</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="List and descriptions of plug-ins I use with Neovim" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://theopark.me/writing/2022-08-25_neovim_ide/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://theopark.me/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://theopark.me/favicon.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE">
+<meta property="og:description" content="List and descriptions of plug-ins I use with Neovim" />
+<meta property="og:url" content="https://theopark.me/writing/2022-08-25_neovim_ide/" />
+<meta property="og:site_name" content="Theo&#39;s Park" />
+
+  
+    <meta property="og:image" content="https://theopark.me/favicon.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2022-08-25 13:39:11 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Theo&#39;s Park
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About Me</a></li>
+        
+      
+        
+          <li><a href="/projects">Projects</a></li>
+        
+      
+        
+          <li><a href="/writing">Writing</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About Me</a></li>
+        
+      
+        
+          <li><a href="/projects" >Projects</a></li>
+        
+      
+        
+          <li><a href="/writing" >Writing</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://theopark.me/writing/2022-08-25_neovim_ide/">30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2022-08-25 ::
+        
+      </time>
+    
+    
+      <span class="post-author">Theo</span>
+    
+    
+      <span class="post-reading-time">:: 8 min read (1544 words)</span>
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://theopark.me/tags/vim/">Vim</a>&nbsp;
+      
+      #<a href="https://theopark.me/tags/neovim/">Neovim</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="30-plug-ins-and-700-lines-of-code-later-neovim-is-my-favorite-ide">30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE<a href="#30-plug-ins-and-700-lines-of-code-later-neovim-is-my-favorite-ide" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a &ldquo;fork&rdquo; of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language. Vimscript is still supported, and many people simply migrate their old <code>.vimrc</code> while enjoying all the new Lua plug-ins. This is totally okay, but I wanted to take full advantage of Neovim by building a 100% Lua configuration. As with all migration of framework, it&rsquo;s not porting the old base configuration that is difficult; it is the process of optimizing the settings and programs around it to take full advantage of the new framework (think of the migration process from i3 WM to Sway). The result was my half-baked Neovim configuration that I stuck for a month. I migrated all the settings and keybindings to Lua, but I got stuck with complex Neovim LSP and tree-sitter framework, so I kept using <code>coc.nvim</code> and traditional highlighting. Sure they worked well, but I wanted more efficient and improved features of Neovim. Coincidentally, I have been working on my Awesome WM setup, and as the project grew, I felt a need for a stronger Lua IDE. So I set down for the weekend and worked on improving my Neovim.</p>
+
+  <figure class="center" >
+    <img src="/img/writing/neovim_c.jpg"  alt="C Editing in Neovim"   style="border-radius: 8px;"  />
+    
+  </figure>
+
+
+<p>The result? A simple yet powerful IDE for C, Lua, or any language you want (except for Java. That thing is just too bloated). I will go through 30 plug-ins that make up my Neovim.</p>
+<h2 id="appearance">Appearance<a href="#appearance" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="onedarknvim">OneDark.nvim<a href="#onedarknvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>My choice of theme. It offers 6 different color tones and configurable styles for components. Supports transparency too!</p>
+<h3 id="lualinenvim">Lualine.nvim<a href="#lualinenvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Lightweight and customizable status line plug-in. I do not use a whole lot of features and would be perfectly happy with building a status line with built-in features as I did with the vanilla Vim, but LSP integration (to show the number of warnings, errors, etc) is essential for me.</p>
+<h3 id="barbarnvim">Barbar.nvim<a href="#barbarnvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>&ldquo;Tabbar&rdquo; plug-in. The built-in tab/buffer system of Vim/Neovim is a bit untraditional and frankly not very productive for me. Barbar is very simple and offers a more &ldquo;traditional&rdquo; approach to the tab system. I am planning on trying out <code>bufferline.nvim</code>, which seems to be an improved approach to Vim buffer management.</p>
+<h3 id="dashboard-nvim">Dashboard-nvim<a href="#dashboard-nvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Very customizable startup screen.</p>
+<h3 id="nvim-notify">Nvim-notify<a href="#nvim-notify" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It redirects all the bottom notification (basically whenever <code>vim.notify</code> is called) to the top right, prettier notification. <code>vim.notify</code> is a Neovim-only protocol, and not all plug-ins utilize it, but plug-ins like <code>Telescope</code> and LSP components can display useful information. If you have a lot of Vimscript-based plug-ins or are okay with bottom error messages, you can skip this plug-in.</p>
+<h3 id="vim-pets">vim-pets<a href="#vim-pets" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Must have.</p>
+
+  <figure class="center" >
+    <img src="/img/writing/vim_pets.jpg"  alt="C Editing in Neovim"   style="border-radius: 8px;"  />
+    
+  </figure>
+
+
+<h2 id="file-et-search">File et Search<a href="#file-et-search" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="gitsignsnvim">Gitsigns.nvim<a href="#gitsignsnvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It displays git diff and blame information, and much more useful Git information within the file.</p>
+<h3 id="nvim-treesitter">nvim-treesitter<a href="#nvim-treesitter" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Tree sitter is an incremental parsing library. Long story short, it provides much more useful syntax highlighting and information about the source code. Like LSP, it is a built-in back-end feature of Neovim that needs to be enabled through the official plug-in.</p>
+<h3 id="nvim-ts-rainbow">nvim-ts-rainbow<a href="#nvim-ts-rainbow" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Rainbow matches for parentheses that utilize the tree-sitter library.</p>
+<h3 id="nvim-treelua">nvim-tree.lua<a href="#nvim-treelua" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Basically NERD Tree but written in Lua.</p>
+<h3 id="telescopenvim">Telescope.nvim<a href="#telescopenvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>A fuzzy finder within Vim. It not only can be used for finding files and text within the file, but also can be used for browsing commands, Git commits, LSP information, and much more. It is one of the essential plug-ins for my Neovim setup.</p>
+<h3 id="telescope-file-browsernvim">Telescope-file-browser.nvim<a href="#telescope-file-browsernvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>A file browser extension for Telescope. I use this and <code>Telescope find_files</code> all the time. File browser for the files in the parent directories, find files for the files in the child directories.</p>
+<h2 id="lsp">LSP<a href="#lsp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Ah, here we go</p>
+<h3 id="nvim-lspconfig">nvim-lspconfig<a href="#nvim-lspconfig" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Third-party plug-ins cannot take advantage of the built-in LSP until you configure LSP using this official plug-in.</p>
+<h3 id="masonnvim">Mason.nvim<a href="#masonnvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>A language server management tool. It is by the same author of <code>nvim-lsp-installer</code>, and I find Mason to be mature enough to be used over the outgoing <code>nvim-lsp-installer</code>. Install a language server of your choice, activate it in the <code>nvim-lspconfig</code>, and boom, you will see all the warning messages and feel horrible about your code.</p>
+<h3 id="nvim-cmp">nvim-cmp<a href="#nvim-cmp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Auto-completion program that can receive snippets from</p>
+<ol>
+<li>LSP server</li>
+<li><code>cmp-</code> plug-ins that I will introduce shortly</li>
+<li>Snippet engine like <code>LuaSnip</code></li>
+</ol>
+<p>It also supports a tab completion as well with a little tweak.</p>
+<h3 id="cmp-buffer-cmp-path-cmp-cmdline">cmp-buffer, cmp-path, cmp-cmdline<a href="#cmp-buffer-cmp-path-cmp-cmdline" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Completion engines for words in the current buffer, the file path of your computer, and Vim command lines. <code>cmp-cmdline</code> is a plug-in that I didn&rsquo;t know I needed until I started using it. So much better than the built-in command line completion.</p>
+<h3 id="cmp-luasnip-cmp-nvim-lsp">cmp-luasnip, cmp-nvim-lsp<a href="#cmp-luasnip-cmp-nvim-lsp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Bridge plug-ins between <code>nvim-cmp</code> and <code>luasnip</code>/<code>nvim-lspconfig</code>.</p>
+<h3 id="luasnip">LuaSnip<a href="#luasnip" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>LuaSnip is a snippet <em>engine</em>. By itself, it does not add anything to <code>nvim-cmp</code>, which I will talk about later. However, once you feed a collection of snippets into it, it will parse them and recommend them through <code>nvim-cmp</code> when appropriate.</p>
+<h3 id="friendly-snippets">friendly-snippets<a href="#friendly-snippets" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The collection of snippets. The repository contains a lot of good VS Code style snippets. I am using my own fork of it because the original C snippet does not put the opening curly brace next to the function header (<code>int main(int good, char* programmer[]) {</code>).</p>
+<h3 id="troublenvim">Trouble.nvim<a href="#troublenvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>JetBrains IDE style view of errors, warnings, etc from the LSP server.</p>
+<h3 id="lspsaganvim">Lspsaga.nvim<a href="#lspsaganvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It bundles LSP-related actions like refactoring, code actions for warning/error items, reference finder, etc.</p>
+<h2 id="note-taking">Note Taking<a href="#note-taking" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I am planning on using Neovim for my notes next semester and here are some plug-ins that will assist me with that (and also with general markdown editing).</p>
+<h3 id="glownvim">Glow.nvim<a href="#glownvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Glow is a command line markdown previewer, and this plug-in displays the preview in a pop-up window inside of Neovim. I was worried since Fedora DNF repository does not ship with Glow and I don&rsquo;t like binary installs, but the plug-in provides a binary file of Glow in <code>~/.local/bin/</code>, which is nice.</p>
+<h3 id="vimwiki">vimwiki<a href="#vimwiki" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Vimwiki is a personal wiki management plug-in for Vim/Neovim. It offers a lot of features, but I mainly use it for its quick file reference feature. I do not like the fact that Vimwiki is completely written in Vimscript and that it does not play nicely with the markdown LSP/tree-sitter server, and I am considering making the vanilla Vim to be the dedicated note taker. I have tried <code>neorg</code> to take notes, but Vimwiki still offers the best functionality for me.</p>
+<h3 id="vim-figlet">Vim-figlet<a href="#vim-figlet" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It connects to the command line tool <code>figlet</code> and generates ASCII text art within Vim. Fun and potentially useful for making more engaging notes (I am a sucker for ASCII art. Take a look at my dotfiles).</p>
+<h2 id="others">Others<a href="#others" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="packernvim">Packer.nvim<a href="#packernvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The package manager for Neovim. Makes this all possible. Mwah.</p>
+<h3 id="plenarynvim">Plenary.nvim<a href="#plenarynvim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Lua function library for Neovim. I believe Telescope and Gitsigns need this as a dependency.</p>
+<h3 id="nvim-web-devicon">nvim-web-devicon<a href="#nvim-web-devicon" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Have no clue why it&rsquo;s named like that, but it&rsquo;s an icon pack for Barbar, Lualine, and NvimTree.</p>
+<h2 id="minimalist-ish-approach">Minimalist-ish approach<a href="#minimalist-ish-approach" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I am not opposed of having plug-ins if it significantly improves my workflow (or if they are cute), but I also try to rely on Vim&rsquo;s built-in feature if they don&rsquo;t have a significant downside. One example is using custom keybindings instead of <code>nvim-autopairs</code>. The bindings are</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- I am also sharing this for loop way of setting keybindings</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">vim_map</span>(mode, shortcut, target)
+</span></span><span style="display:flex;"><span>  vim.keymap.set(mode, shortcut, target, { noremap <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> key_opt <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- Stuffs ...</span>
+</span></span><span style="display:flex;"><span>  { <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#34;(&#34;</span>, <span style="color:#e6db74">&#34;()&lt;LEFT&gt;&#34;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#34;[&#34;</span>, <span style="color:#e6db74">&#34;[]&lt;LEFT&gt;&#34;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#34;{&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;{&lt;CR&gt;}&lt;ESC&gt;&lt;S-o&gt;&lt;ESC&gt;&lt;S-i&gt;&lt;TAB&gt;&#34;</span> },
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">-- Stuffs ...</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _, v <span style="color:#66d9ef">in</span> ipairs(key_opt) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  vim_map(v[<span style="color:#ae81ff">1</span>], v[<span style="color:#ae81ff">2</span>], v[<span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it&rsquo;s a very simple and clean solution that I don&rsquo;t have many complaints about (I also experienced some weird bugs when using <code>nvim-autopairs</code>, such as &quot; not being inserted when it&rsquo;s adjacent to parentheses).</p>
+<p><code>nvim-cmp</code> comes with a <a href="https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-codicons-to-the-menu">way</a> to customize menu appearance, including VS-Code like pictogram. This eliminates the need for plug-ins like <code>lspkind.nvim</code>.</p>
+<p>Neovim has several built-in LSP-related commands. On example is <code>vim.lsp.buf.hover()</code> to view LSP hover doc. All you have to do is map <code>&lt;CMD&gt;lua vim.lsp...</code> to your choice of keybindings, and you can view hover docs for code components without extra plug-in (although plug-in like LSPSage makes it easier to access the LSP features).</p>
+<p>I also utilize Packer&rsquo;s lazy load features to minimize boot time, particularly <code>ft</code> keyword. You can specify plug-ins to be loaded in a certain file using <code>ft</code> keyword, so I block tree-sitter to be launched only with files I have language servers for and markdown-related plug-ins to markdown files.</p>
+<h2 id="you-got-more-things-to-say">You got more things to say?<a href="#you-got-more-things-to-say" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>No. Not for now. I am trying to keep the number of plug-ins around 30 - 33, and I am really happy with the current setup. Two things I am considering now are moving Vimwiki to Vim and integrating a CLI PDF reader for LaTeX editing. Other than that, I am significantly more productive when I use and tweak Neovim, compared to any other IDE/text editor (including VS Code).</p>
+<p><code>:q!</code></p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Theo Park</span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
