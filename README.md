@@ -8,14 +8,13 @@ This repository holds Hugo sources for my website.
 
 ```sh
 # Clone the repository and initialize submodules
-git clone --recurse-submodules https://github.com/theopn/theo-website.git
-cd theo-website
-git submodule update --remote
+git clone --recurse-submodules https://github.com/theopn/theopn.github.io.git
 
-# After making changes
+# Testing server locally
+hugo server
+
+# No longer relevant due to the use of GitHub action - building HTML/CSS contents in /public directory
 hugo -D
-cd public
-git checkout main
-git add . # then commit push operation
+hugo -t terminal # If config.toml does not specify the "theme" variable
 ```
 
