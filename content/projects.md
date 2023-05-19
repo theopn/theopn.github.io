@@ -57,7 +57,7 @@ Linear algebra is fun, but it can be more fun with the right LaTeX template.
 
 ## vimrc Guides
 
-[*Part 1 ⧉*]({{< ref "/writing/2022-06-20_vimrc_guide" >}} "vimrc Guide Part 1")
+[*Part 1 ⧉*]({{< ref "/writing/2022-06-20-vimrc-guide" >}} "vimrc Guide Part 1")
 
 Guides to create a personal Vim environment and boosting your productivity. Right here on this website.
 
@@ -67,5 +67,5 @@ Guides to create a personal Vim environment and boosting your productivity. Righ
 
 17 pages of C.
 
-{{< figure src="/img/projects/2022-05-03_CS240Review_joke.jpg" alt="Joke of the century" position="center" >}}
+{{< figure src="/img/projects/2022-05-03-cs240-review-the-end.jpg" alt="Joke of the century" position="center" >}}
 

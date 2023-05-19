@@ -13,7 +13,7 @@ hideComments = false
 
 If you know me, chances are you heard about how much I love Vim. I love its portability and expandability. About 3 months ago, I made a switch to Neovim. Neovim is a "fork" of Vim (now they are too different from each other to be considered a fork, in my opinion. Consider them as cousins) that tries to make the project community-driven and extensible by utilizing Lua as a built-in language. Vimscript is still supported, and many people simply migrate their old `.vimrc` while enjoying all the new Lua plug-ins. This is totally okay, but I wanted to take full advantage of Neovim by building a 100% Lua configuration. As with all migration of framework, it's not porting the old base configuration that is difficult; it is the process of optimizing the settings and programs around it to take full advantage of the new framework (think of the migration process from i3 WM to Sway). The result was my half-baked Neovim configuration that I stuck for a month. I migrated all the settings and keybindings to Lua, but I got stuck with complex Neovim LSP and tree-sitter framework, so I kept using `coc.nvim` and traditional highlighting. Sure they worked well, but I wanted more efficient and improved features of Neovim. Coincidentally, I have been working on my Awesome WM setup, and as the project grew, I felt a need for a stronger Lua IDE. So I set down for the weekend and worked on improving my Neovim.
 
-{{< figure src="/img/writing/neovim_c.jpg" alt="C Editing in Neovim" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/img/writing/neovim-c.jpg" alt="C Editing in Neovim" position="center" style="border-radius: 8px;" >}}
 
 The result? A simple yet powerful IDE for C, Lua, or any language you want (except for Java. That thing is just too bloated). I will go through 30 plug-ins that make up my Neovim.
 
@@ -43,7 +43,7 @@ It redirects all the bottom notification (basically whenever `vim.notify` is cal
 
 Must have.
 
-{{< figure src="/img/writing/vim_pets.jpg" alt="C Editing in Neovim" position="center" style="border-radius: 8px;" >}}
+{{< figure src="/img/writing/vim-pets.jpg" alt="C Editing in Neovim" position="center" style="border-radius: 8px;" >}}
 
 ## File et Search
 

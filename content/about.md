@@ -5,7 +5,7 @@ draft: false
 
 # Hi! My name is Theo, and I do... a lot of different things.
 
-{{< figure src="/img/about/my_portrait.jpg" alt="Me looking at you" position="center" style="border-radius: 8px;" caption="Me looking at you" captionPosition="left" captionStyle="color: black;" >}}
+{{< figure src="/img/about/my-portrait.jpg" alt="Me looking at you" position="center" style="border-radius: 8px;" caption="Me looking at you" captionPosition="left" captionStyle="color: black;" >}}
 
 ## Academics
 

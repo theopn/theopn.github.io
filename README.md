@@ -1,6 +1,21 @@
-# theopn.github.io
+# Theo Website
 
-This is my personal website hosting repository!
-Visit https://theopark.me or https://theopn.github.io/ !
+This repository holds Hugo sources for my website.
 
-[Hugo Source codes](https://github.com/theopn/theo_website) are also public, and I highly recommend Hugo for anyone interested in a powerful and fast static site generator.
+[My website](https://theopark.me/) or (https://theopn.github.io) is hosted through GitHub.
+
+## Usage
+
+```sh
+# Clone the repository and initialize submodules
+git clone --recurse-submodules https://github.com/theopn/theo-website.git
+cd theo-website
+git submodule update --remote
+
+# After making changes
+hugo -D
+cd public
+git checkout main
+git add . # then commit push operation
+```
+
