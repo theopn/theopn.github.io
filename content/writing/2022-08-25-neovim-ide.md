@@ -10,6 +10,9 @@ tags = ["Vim", "Neovim"]
 cover = ""
 readingTime = true
 showFullContent = false
+
+toc = true
+tocTItle = "Plug-ins"
 +++
 
 # 30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE

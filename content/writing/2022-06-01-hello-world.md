@@ -10,6 +10,9 @@ tags = []
 cover = "favicon.png"
 readingTime = true
 showFullContent = false
+
+toc = false
+tocTItle = "Table of Contents"
 +++
 
 I just made a website yay! Hugo is a life saver.

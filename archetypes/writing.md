@@ -10,5 +10,8 @@ tags = ["", ""]
 cover = ""
 readingTime = true
 showFullContent = false
+
+toc = false
+tocTItle = "Table of Contents"
 +++
 

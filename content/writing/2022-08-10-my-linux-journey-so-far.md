@@ -10,6 +10,9 @@ tags = ["i3", "Sway", "AwesomeWM", "Vim", "Linux"]
 cover = ""
 readingTime = true
 showFullContent = false
+
+toc = false
+tocTItle = "Table of Contents"
 +++
 
 {{< figure src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at my ThinkPad" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;" >}}
