@@ -75,7 +75,7 @@ paginate = 5
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "Theo's Park"
+      logoText = "Theo's Park (づ｡◕‿‿◕｡)づ"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -106,7 +106,7 @@ paginate = 5
         weight = 0 # Unset weight, can be omitted
       [[languages.en.menu.main]]
         identifier = "linkedin"
-        name = "LinkedIn"
+        name = "LinkedIn -- boring place with no memes"
         url = "https://www.linkedin.com/in/theo-park/"
 
 # [params.logo]
