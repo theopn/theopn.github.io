@@ -37,6 +37,7 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 │   ├── about.md
 │   ├── projects.md
 │   └── writing
+│       ├── _index.md
 │       ├── 20xx-xx-xx-fun-post.md
 │       └── 20yy-yy-yy-not-so-fun-post.md
 ├── public
@@ -83,11 +84,13 @@ Copy of the default configuration from [the theme repository](https://github.com
 
 ### content
 
-- `_index.md`: For the front-page, root directory request. If the content from `contentTypeName` folder exists (refer to `config.toml`), they will be appended after `_index.md` content. In my usage, there is no contents in `contentTypeName` (which is `content/posts` -- directory that does not exist for my setup), purely `_index.md` content will be displayed for the root directory
+- `_index.md`: For the front-page, root directory request. The theme defaults to server `post` directory for root request. In my setup, `post` directory does not exist, so list of contents in `post` is omitted (see 6 lines down), displaying the front index page only.
 - `about.md`: "About Me" page content
 - `projects.md`
 
 `writing` is a folder with all my posts. When a new content is created using `hugo new writing/yyyy-mm-dd-title.md` command, writing archetype will be used.
+
+Also, you can have `_index.md` for a content type. This will be followed by list of contents.
 
 #### Deleting/Renaming a content
 
@@ -114,7 +117,7 @@ The files are not tied to Hugo structure. If a post needs to be deleted or renam
 
 Hugo recognizes multiple markdown contents in a folder and group them. For example, everything in `writing` folders are displayed under writing section.
 
-If I create a new content using `hugo new blah/hi.md`, default template ("post" template from the theme author) will be used, `content/blah/hi.md` will be created, and `http://localhost:1313/blah/hi/` will be accessible. To display it in the menu, modify `languages.en.menu` section in the config.toml, as following:
+If I create a new content using `hugo new blog/hi.md`, default template ("post" template from the theme author) will be used, `content/blog/hi.md` will be created, and `http://localhost:1313/blog/hi/` will be accessible. To display it in the menu, modify `languages.en.menu` section in the config.toml, as following:
 
 ```toml
     [languages.en.menu]
@@ -122,21 +125,30 @@ If I create a new content using `hugo new blah/hi.md`, default template ("post" 
         identifier = "about"
         name = "About Me"
         url = "/about"
+        weight = 1
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "writing"
         name = "Writing"
         url = "/writing"
+        weight = 3
       [[languages.en.menu.main]]
-        identifier = "blah"
-        name = "Blah"
-        url = "/blah"
+        identifier = "contact"
+        name = "Contact Me"
+        url = "/contact"
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog posts"
+        url = "/blog"
+        weight = 0 # 0 weight is considered unset weight
 ```
 
-In `http://localhost:1313/blah/`, the list view of all contents within the folder will be displayed.
+In `http://localhost:1313/blog`, the list view of all contents within the folder will be displayed.
 
 **To create a standalone document like `about.md` or `projects.md`**, simply follow how they are created. Hugo recognizes a standalone markdown file in `content` directory as standalone document.
 
