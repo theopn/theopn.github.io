@@ -62,7 +62,7 @@ paginate = 5
     title = "Theo's Park"
     subtitle = "Welcome to Theo's Website"
     owner = "Theo Park"
-    keywords = ""
+    keywords = "Theo Park"
     copyright = "©2023 Theo Park"
     menuMore = "Show more"
     readMore = "Read more"
@@ -75,7 +75,7 @@ paginate = 5
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "Theo's Park (づ｡◕‿‿◕｡)づ"
+      logoText = "Theo's Park ᓚᘏᗢ"
       logoHomeLink = "/"
 
     [languages.en.menu]
