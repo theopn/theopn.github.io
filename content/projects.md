@@ -2,9 +2,9 @@
 title: "My Projects"
 draft: false
 color: "orange"
+toc:   true
+TocTitle: "TOC"
 ---
-
-#
 
 > Collection of my projects, both for career and fun (often overlapping with each other).
 
@@ -28,7 +28,7 @@ Theovim is a Neovim IDE configuration aimed toward CS majors. More description c
 
 Hunted Tiles is a collection of tiling Wayland compositor configurations along with other scripts to provide a DE-like Wayland experience. Currently, Sway and Hyprland (work in progress) are supported. More description coming soon...
 
-{{< figure src="/img/projects/2022-09-05_Hunted-Tiles_Screenshot.png" alt="Hunted Tiles screenshot" position="center" >}}
+{{< image src="/img/projects/2022-09-05_Hunted-Tiles_Screenshot.png" alt="Hunted Tiles screenshot" position="center" >}}
 
 ## My Dotfiles
 
@@ -48,7 +48,7 @@ Collection of commands, keybindings, and recommended applications for i3 or Sway
 
 [*GitHub Repository ⧉*](https://github.com/theopn/pytranscript)
 
-This A-worthy-cs-freshman-level Python project is a simple CLI GPA calculator I use when I cannot wait a week for my professors to finalize my grades.
+This A+-worthy-cs-freshman-level Python project is a simple CLI GPA calculator I use when I cannot wait a week for my professors to finalize my grades.
 
 ## Clean Linear Algebra Homework Template
 
