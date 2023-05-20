@@ -1,6 +1,6 @@
 # Theo Website
 
-My website(https://theopark.me/) ([or](https://theopn.github.io)) built with Hugo!
+My website(https://theopark.me) (or https://theopn.github.io) built with Hugo!
 
 ## Usage
 
@@ -11,7 +11,7 @@ git clone --recurse-submodules https://github.com/theopn/theopn.github.io.git
 # Testing server locally
 hugo server
 
-# No longer relevant due to the use of GitHub action - building HTML/CSS contents in /public directory
+# Building HTML/CSS contents in /public directory -- no longer relevant due to the use of GitHub action
 hugo -D
 hugo -t terminal # If config.toml does not specify the "theme" variable
 ```
@@ -24,6 +24,8 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 .
 ├── .git
 ├── .github                                         (*)
+├── .gitignore
+├── .gitmodules
 ├── CNAME                                           (*)
 ├── README.md
 ├── archetypes                                      (*)
@@ -35,13 +37,11 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 │   ├── about.md
 │   ├── projects.md
 │   └── writing
-│       ├── 20xx-xx-xx-blah-blah-0.md
-│       └── 20yy-yy-yy-blah-blah-1.md
+│       ├── 20xx-xx-xx-fun-post.md
+│       └── 20yy-yy-yy-not-so-fun-post.md
 ├── public
 │   ├── <Hugo generated HTML files>
 │   └── <Does not exist if GitHub action is used>
-├── resources
-│   └── <Hugo generated temp files>
 ├── static                                          (*)
 │   ├── favicon.png
 │   └── img
@@ -51,8 +51,8 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 │       ├── index
 │       │   └── epic-image.jpg
 │       ├── projects
-│       │   ├── 20xx-xx-xx-epic-image.jpg
-│       │   └── 20yy-yy-yy-epic-image-2.png
+│       │   ├── 20xx-xx-xx-awesome-project.jpg
+│       │   └── 20yy-yy-yy-cool-project.png
 │       └── writing
 │           ├── 20xx-xx-xx-funny-meme.jpg
 │           └── 20yy-yy-yy-another-funny-meme.jpg
@@ -63,13 +63,13 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 
 ### .github and CNAME
 
-Custom GitHub workflow is from the [official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/). With it, GitHub action automatically builds the website for every `git push`.
+Custom GitHub workflow from the [official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/). With this, GitHub Action automatically builds the website for every `git push`.
 
 For having a custom domain, have the domain in `CNAME`.
 
 ### archetypes
 
-Archetypes are templates for Hugo contents. When archetypes are not specified, `default.md` archetype is used. Otherwise, an appropriate archetype will be used. In the beginning of the archetype (and every documents generated from the archetype) there is "Front Matter". Hugo supports YAML (`---\n date: ...\n description: ...\n ---`), TOML (`+++\n date: ...\n description: ...\n +++`), and JSON ({\n "date": "...",\n "description": "..."\n }), and I use YAML.
+Archetypes are templates for Hugo contents. When archetypes are not specified, `default.md` archetype is used. Otherwise, an appropriate archetype will be used. In the beginning of the archetype (and every documents generated from the archetype) there is "Front Matter". Hugo supports YAML (`---\n date: ...\n description: ...\n ---`), TOML (`+++\n date: ...\n description: ...\n +++`), and JSON (`{\n "date": "...",\n "description": "..."\n }`). I use TOML to keep it consistent with the Terminal theme contents.
 
 To initialize a new content under `content/<archetypes>`, use the following command:
 
@@ -79,7 +79,7 @@ hugo new <archetypes>/<name>.md
 
 ### config.toml
 
-Copy of the default configuration from [the theme repository](https://github.com/panr/hugo-theme-terminal#how-to-configure). 
+Copy of the default configuration from [the theme repository](https://github.com/panr/hugo-theme-terminal#how-to-configure).
 
 ### content
 
@@ -99,9 +99,9 @@ The files are not tied to Hugo structure. If a post needs to be deleted or renam
 
 ```html
  <!-- Image simply displays the image -->
-{{< image src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at Thinkpad" position="center" style="border-radius: 8px;" >}}
- <!-- Figure can decorate the image-->
-{{< figure src="/img/writing/ollie-thinkcat.jpg" alt="ThinkPad and Oliver" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;">}}
+{{< image src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at my Thinkpad" position="center" style="border-radius: 8px;" >}}
+ <!-- Figure can decorate the image -->
+{{< figure src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at my ThinkPad" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;" >}}
 ```
 
 #### Referencing other posts
@@ -136,14 +136,14 @@ If I create a new content using `hugo new blah/hi.md`, default template ("post" 
         url = "/blah"
 ```
 
-When `http://localhost:1313/blah/` is accessed, the list view of all contents within the folder will be displayed.
+In `http://localhost:1313/blah/`, the list view of all contents within the folder will be displayed.
 
 **To create a standalone document like `about.md` or `projects.md`**, simply follow how they are created. Hugo recognizes a standalone markdown file in `content` directory as standalone document.
 
 ### static
 
-- `favicon.png`: Needs to be specified in the `config.toml` //TODO
-- `img`: arbitrary organization for my sanity
+- `favicon.png`: Needs to be specified in the `config.toml`'s `favicon` variable
+- `img`: I organize images by content types for my sanity
 
 ### themes
 
