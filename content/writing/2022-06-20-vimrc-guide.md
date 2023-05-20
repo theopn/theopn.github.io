@@ -1,15 +1,16 @@
----
-draft: false
-title: "Vimrc Guide Part 1"
-date: "2022-06-20T18:58:40-04:00"
-author: "Theo"
-tags: ["Vim"]
-description: ".vimrc Guide for Beginners"
-showFullContent: false
-readingTime: true
-hideComments: false
-#color: "red"
----
++++
+draft = false
+title = "Vimrc Guide Part 1"
+date = "2022-06-20T18:58:40-04:00"
+
+author = "Theo"
+description = ".vimrc Guide for Beginners"
+tags = ["Vim"]
+
+cover = ""
+readingTime = true
+showFullContent = false
++++
 
 Hopefully you have decided to use Vim after attending our passionate lecture and seeing other people's cool Vim setup. However, when you open up Vim on your computer, it looks nothing like other people's Vim. Why is that?
 

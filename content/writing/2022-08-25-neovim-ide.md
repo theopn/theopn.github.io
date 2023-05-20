@@ -1,15 +1,16 @@
----
-draft: false
-title: "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
-date: "2022-08-25T13:39:11-04:00"
-author: "Theo"
-tags: ["Vim", "Neovim"]
-description: "List and descriptions of plug-ins I use with Neovim"
-showFullContent: false
-readingTime: true
-hideComments: false
-#color: "red"
----
++++
+draft = false
+title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
+date = "2022-08-25T13:39:11-04:00"
+
+author = "Theo"
+description = "List and descriptions of plug-ins I use with Neovim"
+tags = ["Vim", "Neovim"]
+
+cover = ""
+readingTime = true
+showFullContent = false
++++
 
 # 30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE
 
