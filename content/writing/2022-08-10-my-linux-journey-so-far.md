@@ -1,13 +1,14 @@
-+++
-title = "My Linux Journey So Far"
-date = "2022-08-10T23:48:34-04:00"
-author = "Theo"
-tags = ["i3", "Sway", "AwesomeWM", "Vim", "Linux"]
-description = "Long, boring writing on how nerdy I have become in the past 8 months. You HAVE to click it because there is a cute picture of Oliver"
-showFullContent = false
-readingTime = true
-hideComments = false
-+++
+---
+draft: false
+title: "My Linux Journey So Far"
+date: "2022-08-10T23:48:34-04:00"
+author: "Theo"
+tags: ["i3", "Sway", "AwesomeWM", "Vim", "Linux"]
+description: "Long, boring writing on how nerdy I have become in the past 8 months. You HAVE to click it because there is a cute picture of Oliver"
+showFullContent: false
+readingTime: true
+hideComments: false
+---
 
 {{< figure src="/img/writing/ollie-thinkcat.jpg" alt="ThinkPad and Oliver" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;">}}
 

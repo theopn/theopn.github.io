@@ -1,10 +1,11 @@
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = "{{ .Date }}"
-author = "Theo"
-tags = ["", ""]
-description = ""
-showFullContent = false
-readingTime = true
-hideComments = false
-+++
+---
+draft: true
+title: "{{ replace .Name "-" " " | title }}"
+date: "{{ .Date }}"
+author: "Theo"
+tags: ["vim", "linux"]
+description: "Short description for the index.html"
+showFullContent: false
+readingTime: true
+hideComments: false
+---
