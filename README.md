@@ -13,7 +13,7 @@ hugo server
 
 # No longer relevant due to the use of GitHub action - building HTML/CSS contents in /public directory
 hugo -D
-hugo -t terminal # If config.yml does not specify the "theme" variable
+hugo -t terminal # If config.toml does not specify the "theme" variable
 ```
 
 ## Directory Structure
@@ -63,7 +63,7 @@ File/directory with `(*)` mark are somethings you (meaning I) should know.
 
 ### .github and CNAME
 
-Custom GitHub workflow //TODO
+Custom GitHub workflow is from the [official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/). With it, GitHub action automatically builds the website for every `git push`.
 
 For having a custom domain, have the domain in `CNAME`.
 
