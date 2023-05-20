@@ -8,4 +8,5 @@ description: "Short description for the index.html"
 showFullContent: false
 readingTime: true
 hideComments: false
+#color: "red"
 ---

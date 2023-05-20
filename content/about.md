@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 draft: false
+color: "blue"
 ---
 
 # Hi! My name is Theo, and I do... a lot of different things.

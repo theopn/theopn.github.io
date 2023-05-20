@@ -8,6 +8,7 @@ description: "List and descriptions of plug-ins I use with Neovim"
 showFullContent: false
 readingTime: true
 hideComments: false
+#color: "red"
 ---
 
 # 30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE

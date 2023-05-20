@@ -1,6 +1,7 @@
 ---
 title: "My Projects"
 draft: false
+color: "orange"
 ---
 
 #
@@ -57,7 +58,7 @@ Linear algebra is fun, but it can be more fun with the right LaTeX template.
 
 ## vimrc Guides
 
-[*Part 1 ⧉*]({{< ref "/writing/2022-06-20-vimrc-guide" >}} "vimrc Guide Part 1")
+[*Part 1 ⧉*]({{< ref "/writing/2022-06-20-vimrc-guide.md" >}} "vimrc Guide Part 1")
 
 Guides to create a personal Vim environment and boosting your productivity. Right here on this website.
 

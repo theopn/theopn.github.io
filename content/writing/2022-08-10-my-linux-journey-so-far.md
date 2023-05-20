@@ -8,6 +8,7 @@ description: "Long, boring writing on how nerdy I have become in the past 8 mont
 showFullContent: false
 readingTime: true
 hideComments: false
+#color: "red"
 ---
 
 {{< figure src="/img/writing/ollie-thinkcat.jpg" alt="ThinkPad and Oliver" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;">}}

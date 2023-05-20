@@ -8,6 +8,7 @@ description: ""
 showFullContent: false
 readingTime: true
 hideComments: false
+#color: "red"
 ---
 
 I just made a website yay! Hugo is a life saver.
