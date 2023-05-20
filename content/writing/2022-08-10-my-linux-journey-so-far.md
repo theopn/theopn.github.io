@@ -11,7 +11,7 @@ hideComments: false
 #color: "red"
 ---
 
-{{< figure src="/img/writing/ollie-thinkcat.jpg" alt="ThinkPad and Oliver" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;">}}
+{{< figure src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at my ThinkPad" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;" >}}
 
 This spring semester, I took a C Programming class with, hmm, "Dr. T." Before meeting him, I have never seen a person in real life using Linux. In the first lecture, he emphasized the importance of command line editors when coding in C and announced that TA won't help the student if they are not using Vim or other command line text editors during office hours. Many students seemed to hate this, with many of them discovering the "hack" of using VS Code to connect to the SSH server and doing the homework in a GUI environment. I barely knew what Vim was at the time, let alone other command line tools and debuggers. Nevertheless, Dr. T's transparent terminal was enough to persuade me (It's a known fact that your programming credibility directly correlates to the number of monitors you have and how "riced" out your window manager is), and my life in the terminal has begun.
 
