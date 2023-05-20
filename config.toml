@@ -75,7 +75,7 @@ paginate = 5
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "Theo's Park ᓚᘏᗢ"
+      logoText = "Theo's Park /ᐠ｡‸｡ᐟ\\"
       logoHomeLink = "/"
 
     [languages.en.menu]
