@@ -3,18 +3,10 @@ title: "My Projects"
 draft: false
 color: "orange"
 toc:   true
-TocTitle: "TOC"
+tocTitle: "Project List:"
 ---
 
 > Collection of my projects, both for career and fun (often overlapping with each other).
-
-- [Theovim](#theovim)
-- [Hunted Tiles](#hunted-tiles)
-- [My Dotfiles](#my-dotfiles)
-- [i3 & Sway Tips](#i3--sway-tips)
-- [Clean Linear Algebra Homework Template](#clean-linear-algebra-homework-template)
-- [vimrc Guide](#vimrc-guides)
-- [CS240 Comprehensive Review](#CS240-Comprehensive-Review)
 
 ## Theovim
 
@@ -68,5 +60,5 @@ Guides to create a personal Vim environment and boosting your productivity. Righ
 
 17 pages of C.
 
-{{< figure src="/img/projects/2022-05-03-cs240-review-the-end.jpg" alt="Joke of the century" position="center" >}}
+{{< image src="/img/projects/2022-05-03-cs240-review-the-end.jpg" alt="Joke of the century" position="center" >}}
 
