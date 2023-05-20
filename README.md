@@ -13,7 +13,7 @@ hugo server
 
 # No longer relevant due to the use of GitHub action - building HTML/CSS contents in /public directory
 hugo -D
-hugo -t terminal # If config.toml does not specify the "theme" variable
+hugo -t terminal # If config.yml does not specify the "theme" variable
 ```
 
 ## Directory Structure
@@ -89,7 +89,12 @@ Copy of the default configuration from [the theme repository](https://github.com
 
 `writing` is a folder with all my posts. When a new content is created using `hugo new writing/yyyy-mm-dd-title.md` command, writing archetype will be used.
 
-- The files are not tied to Hugo structure. If a post needs to be deleted or renamed, do so using a system file manager. There is no special command needed
+#### Deleting/Renaming a content
+
+The files are not tied to Hugo structure. If a post needs to be deleted or renamed, do so using a system file manager. There is no special command needed
+
+#### Inserting an image to a post
+
 - To insert an image, first copy the image in `static/img/writing` directory. Then, use `figure` or `image` accordingly:
 
 ```html
@@ -97,6 +102,12 @@ Copy of the default configuration from [the theme repository](https://github.com
 {{< image src="/img/writing/ollie-thinkcat.jpg" alt="Oliver looking at Thinkpad" position="center" style="border-radius: 8px;" >}}
  <!-- Figure can decorate the image-->
 {{< figure src="/img/writing/ollie-thinkcat.jpg" alt="ThinkPad and Oliver" position="center" style="border-radius: 8px;" caption="I told you it's a cute picture" captionPosition="left" captionStyle="color: black;">}}
+```
+
+#### Referencing other posts
+
+```html
+{{< ref "/writing/yyyy-mm-dd-title.md" >}}
 ```
 
 #### Creating a new content type
@@ -136,5 +147,5 @@ When `http://localhost:1313/blah/` is accessed, the list view of all contents wi
 
 ### themes
 
-I use [hugo-theme-terminal](https://github.com/panr/hugo-theme-terminal). The repository README contains a great documentation.
+I use [hugo-theme-terminal](https://github.com/panr/hugo-theme-terminal). The repository README contains a great documentation. Within the directory, the repository is cloned as a submodule with a folder named `terminal`. Refer to the theme name as `terminal`.
 
