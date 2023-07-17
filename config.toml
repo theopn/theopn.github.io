@@ -56,75 +56,54 @@ paginate = 5
   # can be overridden in a page's front-matter
   # TocTitle = "Table of Contents" # default
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "Theo's Park"
-    subtitle = "Welcome to Theo's Website"
-    owner = "Theo Park"
-    keywords = "Theo Park"
-    copyright = "©2023 Theo Park"
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
-    minuteReadingTime = "min read"
-    words = "words"
+  title = "Theo's Park"
+  subtitle = "Welcome to Theo's Website"
+  owner = "Theo Park"
+  keywords = "Theo Park"
+  copyright = "©2023 Theo Park"
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+  newerPosts = "Newer posts"
+  olderPosts = "Older posts"
+  missingContentMessage = "Page not found..."
+  missingBackButtonLabel = "Back to home page"
+  minuteReadingTime = "min read"
+  words = "words"
 
-    [languages.en.params.logo]
-      logoText = "Theo's Park /ᐠ｡‸｡ᐟ\\"
-      logoHomeLink = "/"
+  [params.logo]
+    logoText = "Theo's Park /ᐠ｡‸｡ᐟ\\"
+    logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About Me"
-        url = "/about"
-        weight = 1
-      [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/projects"
-        weight = 2
-      [[languages.en.menu.main]]
-        identifier = "writing"
-        name = "Writing"
-        url = "/writing"
-        weight = 3
-      [[languages.en.menu.main]]
-        identifier = "contact"
-        name = "Contact Me"
-        url = "/contact"
-        weight = 4
-      [[languages.en.menu.main]]
-        identifier = "github"
-        name = "GitHub"
-        url = "https://github.com/theopn"
-      [[languages.en.menu.main]]
-        identifier = "linkedin"
-        name = "LinkedIn"
-        url = "https://www.linkedin.com/in/theo-park/"
-
-# [params.logo]
-#   logoText = "Theo's Park"
-#   logoHomeLink = "/"
-#
-# [menu]
-#   [[menu.main]]
-#     identifier = "about"
-#     name = "About Me"
-#     url = "/about"
-#   [[menu.main]]
-#     identifier = "writing"
-#     name = "Writing"
-#     url = "/writing"
-#   [[menu.main]]
-#     identifier = "projects"
-#     name = "Projects"
-#     url = "/projects"
+  [menu]
+    [[menu.main]]
+      identifier = "about"
+      name = "About Me"
+      url = "/about"
+      weight = 1
+    [[menu.main]]
+      identifier = "projects"
+      name = "Projects"
+      url = "/projects"
+      weight = 2
+    [[menu.main]]
+      identifier = "writing"
+      name = "Writing"
+      url = "/writing"
+      weight = 3
+    [[menu.main]]
+      identifier = "contact"
+      name = "Contact Me"
+      url = "/contact"
+      weight = 4
+    [[menu.main]]
+      identifier = "github"
+      name = "GitHub"
+      url = "https://github.com/theopn"
+    [[menu.main]]
+      identifier = "linkedin"
+      name = "LinkedIn"
+      url = "https://www.linkedin.com/in/theo-park/"
 
 # https://github.com/panr/hugo-theme-terminal/issues/425
 [markup.goldmark.renderer]
