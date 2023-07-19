@@ -4,7 +4,7 @@ title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
 date = "2022-08-25T13:39:11-04:00"
 
 author = "Theo"
-description = "List and descriptions of plug-ins I use with Neovim"
+description = "List and descriptions of plug-ins I use with Neovim. There is also an one-year-update!"
 tags = ["Vim", "Neovim"]
 
 cover = ""
@@ -14,6 +14,12 @@ showFullContent = false
 toc = true
 tocTItle = "Plug-ins"
 +++
+
+# Almost-One-Year (2023-07-19) Update
+
+I know more Lua, I know more Neovim, and as a result, my Neovim setup looks quite different now. In fact, I separated my Neovim configuration into a separate repository [Theovim](https://github.com/theopn/theovim/). **Check out how different my configuration has become in [my new update post]({{< ref "/writing/2023-07-18-neovim-update.md" >}}).**
+
+---
 
 # 30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE
 
