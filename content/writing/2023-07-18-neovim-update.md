@@ -15,7 +15,7 @@ toc = false
 tocTItle = "Table of Contents"
 +++
 
-This article is still in process! Only public because Hugo won't let me set it to draft without deleting the references...
+This article is still in progress! Only public because Hugo won't let me set it as a draft without deleting the references...
 
 ## Wait, what happened?
 

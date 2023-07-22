@@ -15,13 +15,11 @@ toc = true
 tocTItle = "TOC"
 +++
 
-{{< figure src="/img/writing/2023-07-22-vim-ui-select/with-dressing-nui-theme.jpg" alt="Finished Product" position="center" style="border-radius: 8px;" caption="Finished product, decorated with Dressing.nvim NUI theme" captionPosition="left" captionStyle="color: black;" >}}
-
-## Emacs Rant -- You Probably Should Skip This Part
+## Emacs Rant (You Can Skip This Section)
 
 I have been using both (Doom) Emacs and (Neo)vim for a year now. They both have pros and cons, but I use Emacs for Org-mode (I am a slave to Org-agenda and Org-roam) exclusively, and Neovim is my main text editor, IDE, and configuration playground. You have Evil mode and an experience with Emacs, why not use Emacs as your primary text editor, one might ask: well, out of many reasons, **I don't like Emacs keybindings**.
 
-To begin with, Emacs has too many keybindings. If you have used Vim and Emacs, you know one has substantially more keybindings than the other, even when you double/triple-count modal bindings in Vim. Even worse, most Emacs packages I encountered create tons of keybindings *for you*. Because there are so many keybindings, I almost always hit a random keystroke and execute a random function. I consider that an "undefined behavior" (C reference), and **I would rather see an error message than delete 3 random words in the buffer**.
+To begin with, Emacs has too many keybindings. If you have used Vim and Emacs, you know one has significantly more keybindings than the other, even when you double/triple-count modal bindings in Vim. Even worse, most Emacs packages I encountered create tons of keybindings *for you*. Because there are so many keybindings, I almost always hit a random keystroke and execute a random function. I consider that an "undefined behavior" (C reference), and **I would rather see an error message than delete 3 random words in the buffer**.
 
 This would be less of a problem if those keybindings were good and intuitive. Vim keybindings are great -- I don't need to talk about how good `hjkl` is, and even bindings like `[d]elete [a] [w]ord`, `[d]elete [t]ill`, and `[w]ord`, are very easy to memorize and fit my fingers like they were meant to be. On the other hand, Emacs keybindings are... well, navigation keybindings (e.g. `C-p/n/f/b`), which should focus more on ergonomics instead of mnemonics, are difficult to use because of how far apart they are, and feature keybindings (e.g. `C-x +` to balance windows) often completely ignores mnemonics and are impossible to memorize (and it's even worse with keybindings that come with packages). I am slightly cherry-picking examples here, but I believe that there are reasons why 80% of Emacs tutorial starts by installing `evil` and completely ignores stock keybindings.
 
@@ -31,7 +29,7 @@ In my opinion, Vim used to have a toned-down version of this problem. Vimscript 
 
 ## The Problem
 
-Okay, enough of dissing Emacs, how is it relevant to the post? Here's the problem: I want want to avoid the Emacs keybinding situation in my Neovim configuration. I **only want to have keybindings that are easy to memorize** and **avoid having too many keybindings**.
+Okay, enough of dissing Emacs, how is it relevant to the post? Here's the problem: I want to avoid the Emacs keybinding situation in my Neovim configuration. I **only want to have keybindings that are easy to memorize** and **avoid having too many keybindings**.
 
 However, Neovim and its plug-in ecosystem offer far too many functionalities to easily achieve that. Let's use [`telescope`](https://github.com/nvim-telescope/telescope.nvim) as an example. Following is the list of features and keybindings that I frequently use.
 
@@ -50,7 +48,7 @@ Maybe Emacs was right all along!
 
 ## The Solution
 
-Of course not. To tackle this problem, I use `vim.ui.select()` and make a custom menu to bundle all these "often-used" features. And here's the code for this.
+Of course not. To tackle this problem, I use `vim.ui.select()` and make a custom menu to bundle all these "often-used" features. Thoroughly read the following code and have them in your config file.
 
 ```lua
 --[[ create_select_menu()
@@ -110,8 +108,8 @@ end
 A few things to note:
 
 1. Always have a function header comment! Your future self will thank you
-2. In this example, I made it as a local function, but you can have it as a part of module (I personally have it as a module function in `util.lua` and call `require(util).create_select_menu(...)`)
-3. My version requires `n. ` in front of each option name for sorting purpose. If you have a better solution, please let me know in (Reddit) comments
+2. In this example, I made it as a local function, but you can have it as a part of module (I have it as a module function in `util.lua` and call `require(util).create_select_menu(...)`)
+3. My version requires numbering (`n. `) in front of each option name for sorting purposes. If you have a better solution, please let me know in (Reddit) comments
     - It will be more performant if you populate the `option_names` array as a local variable out of the function
 
 ### Usage
@@ -134,19 +132,19 @@ And when I hit `<leader>fa`, I get a nice menu like this:
 
 From here, these features are one keystroke away!
 
-{{< figure src="/img/writing/2023-07-22-vim-ui-select/telescope-help-tag.jpg" alt="//TODO" position="center" style="border-radius: 8px;" caption="Using Help Tags options" captionPosition="left" captionStyle="color: black;" >}}
+{{< figure src="/img/writing/2023-07-22-vim-ui-select/telescope-help-tag.jpg" alt="//TODO" position="center" style="border-radius: 8px;" caption="Using the Help Tags option" captionPosition="left" captionStyle="color: black;" >}}
 
 You can also use a plug-in like [`dressing.nvim`](https://github.com/stevearc/dressing.nvim) to make it look nicer.
 
-{{< figure src="/img/writing/2023-07-22-vim-ui-select/with-dressing-nui-theme.jpg" alt="with dressing.nvim NUI theme" position="center" style="border-radius: 8px;" caption="With dressing.nvim" captionPosition="left" captionStyle="color: black;" >}}
+{{< figure src="/img/writing/2023-07-22-vim-ui-select/with-dressing-nui-theme.jpg" alt="with dressing.nvim" position="center" style="border-radius: 8px;" caption="With dressing.nvim NUI theme" captionPosition="left" captionStyle="color: black;" >}}
 
-One might say that they can make "longer" keybindings like `<leader>[f]ind [s]earch [h]istory` or `<leader>[f]ind [c]ol[o]`. However, I disagree. It won't solve the keybinding pollution problem I mentioned earlier, and I would certainly not remember any of the keybindings.
+One might say that they can make "longer" keybindings like `<leader>[f]ind [s]earch [h]istory` or `<leader>[f]ind [c]ol[o]`. I disagree. It won't solve the keybinding pollution problem I mentioned earlier, and I would certainly not remember any of the keybindings.
 
 It makes sense to have keybindings for features that are frequently used and demanded instantly (like buffer switching and finding files), but I can afford an extra keystroke for changing colorscheme.
 
 ## Conclusion
 
-This might not be your cup of tea, but I absolutely love making custom menus. I never forget these "often-used" functionalities while not spending 30 seconds trying to figure keybindings out. I have ones for LSP functions (`<SPC>[c]ode [a]ctions`), Git features (`<SPC>[g]it [a]ctions`), and terminal.
+This might not be your cup of tea, but I love making custom menus. I no longer forget these "often-used" functionalities while not spending 30 seconds trying to figure keybindings out. I have ones for LSP functions (`<SPC>[c]ode [a]ctions`), Git features (`<SPC>[g]it [a]ctions`), and terminal.
 
 If you have found this post helpful and want to know more about my Neovim setup, leave a star on my [Theovim](https://github.com/theopn/theovim) repository! It is full of fun features like this.
 
