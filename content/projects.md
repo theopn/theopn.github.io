@@ -13,15 +13,7 @@ tocTitle: "Project List:"
 
 [*GitHub Repository ⧉*](https://github.com/theopn/dsa-mini-textbook)
 
-Handbook for data structures & algorithms, based on Purdue CS251 class.
-
-Work in progress.
-
-## Haunted Tiles
-
-[*GitHub Repository ⧉*](https://github.com/theopn/haunted-tiles)
-
-Haunted Tiles is my Sway configuration with useful Wayland tools.
+A handbook for data structures & algorithms, based on Purdue CS251 class.
 
 Work in progress.
 
@@ -33,24 +25,44 @@ Work in progress.
 >
 > -- Theovim README
 
-It feels special to be able to configure a text editor to fit my exact preference as a programmer while having fun in the process. I do not doubt that Theovim will be my life-long project, constantly evolving and adapting to my new interests and needs.
+It feels special to be able to configure a text editor to fit my exact preference as a programmer while having fun in the process.
+I believe that Theovim will be my life-long project, constantly evolving and adapting to my new interests and needs.
 
-{{< figure src="https://github.com/theopn/theovim/raw/main/assets/theovim-banner.jpg" alt="Theovim Banner" position="center" caption="Theovim Banner" captionPosition="center" captionStyle="color: black;" >}}
+{{< figure src="https://raw.githubusercontent.com/theopn/theovim/main/assets/theovim-banner.jpg" alt="Theovim Banner" position="center" caption="Theovim Banner" captionPosition="center" captionStyle="color: black;" >}}
+
+## Haunted Tiles
+
+[*GitHub Repository ⧉*](https://github.com/theopn/haunted-tiles)
+
+
+> Haunted Tiles is my personal i3 WM and Sway setup, along with essential tiling WM tools like notification daemon, app launcher, and Bash/Python scripts to bring some of the DE experience to minimal tiling WMs.
+> It used to be a part of my [dotfiles repository](#dotfiles), and with the growing size of configurations and shared scripts between i3 and Sway, I made a separate repository for it.
+> 
+> Both sets of configuration strive to be a minimal setup that gets out of your way while providing practical features and being aesthetically pleasing.
+> The overall theme is [Dracula](https://draculatheme.com/contribute), hence the name "Haunted"-tiles (it's also partially because I like naming everything).
+
+I love Linux tiling WM, and I have tried a number of them (Awesome, Xmonad, QTile, etc.). But I keep coming back to i3 and Sway for their simplicity.
+The repository contains Drcaula-themed configurations for i3/Sway and surrounding tiling WM tools, as well as Bash/Python scripts to provide the "sane default" tiling WM experience.
+
+{{< figure src="https://raw.githubusercontent.com/theopn/haunted-tiles/main/assets/i3-sc.png" alt="Haunted Tiles i3 SC" position="center" caption="Haunted Tiles i3 Screenshot" captionPosition="center" captionStyle="color: black;" >}}
+
+{{< figure src="https://raw.githubusercontent.com/theopn/haunted-tiles/main/assets/sway-sc.png" alt="Haunted Tiles Sway SC" position="center" caption="Haunted Tiles Sway Screenshot" captionPosition="center" captionStyle="color: black;" >}}
+
 
 ## Dotfiles
 
 [*GitHub Repository ⧉*](https://github.com/theopn/dotfiles)
 
-Well, some might say it is not a project, but I say it's a lifelong project. My dotfiles repository includes configurations for (mostly) open-source tools I use in day-to-day life as a programmer, including:
+Well, some might say it is not a project, but I say it's a lifelong project.
+My dotfiles repository includes configurations for (mostly) open-source tools I use in day-to-day life as a programmer, including but not limited to:
 
 - Shell trifecta: Bash, Zsh, and Fish
 - Terminal emulators: Wezterm and Kitty + Tmux
 - Text editors other than Neovim: Doom Emacs, vanilla vim
-- i3 essentials: i3, Dunst, Polybar, Rofi
 - Weirdos: Neofetch, lf, and Qutebrowser
 - Other dev tools: Git, Homebrew, etc.
 
-{{< figure src="https://github.com/theopn/dotfiles/raw/main/assets/2023-03-12-fedora-rice-sc.png" alt="Dotfiles Fedora Screenshot" position="center" caption="Dotfiles Fedora Screenshot" captionPosition="center" captionStyle="color: black;" >}}
+{{< figure src="https://raw.githubusercontent.com/theopn/dotfiles/main/assets/macos-rice-sc.jpg" alt="Dotfiles macOS Screenshot" position="center" caption="Dotfiles Fedora Screenshot" captionPosition="center" captionStyle="color: black;" >}}
 
 ## Vim Contents
 
@@ -64,14 +76,21 @@ I write about (neo)vim on this website.
 
 ---
 
-Below projects are no longer actively maintained.
+The following projects are no longer actively maintained.
 
+## Theosume
+
+[*GitHub Repository ⧉*](https://github.com/theopn/theosume)
+
+{{< figure src="https://raw.githubusercontent.com/theopn/theosume/main/screenshot.png" alt="Resume screenshot" position="center" caption="Sample resume" captionPosition="center" captionStyle="color: black;" >}}
+
+My personal resume template as a CS major.
 
 ## i3 & Sway Tips
 
 [*GitHub Repository ⧉*](https://github.com/theopn/i3-sway-tips)
 
-Collection of commands, keybindings, and recommended applications for i3 or Sway window manager beginners. Some of the recommendations are subjective and does not contain all the information you might need, but I would love to make this a community project so feel free to suggest or correct information through repository issues or PR!
+Collection of commands, keybindings, and recommended applications for i3 and way window manager.
 
 ## Pytranscript
 
