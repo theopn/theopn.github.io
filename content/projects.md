@@ -34,7 +34,6 @@ I believe that Theovim will be my life-long project, constantly evolving and ada
 
 [*GitHub Repository ⧉*](https://github.com/theopn/haunted-tiles)
 
-
 > Haunted Tiles is my personal i3 WM and Sway setup, along with essential tiling WM tools like notification daemon, app launcher, and Bash/Python scripts to bring some of the DE experience to minimal tiling WMs.
 > It used to be a part of my [dotfiles repository](#dotfiles), and with the growing size of configurations and shared scripts between i3 and Sway, I made a separate repository for it.
 > 
@@ -62,7 +61,7 @@ My dotfiles repository includes configurations for (mostly) open-source tools I 
 - Weirdos: Neofetch, lf, and Qutebrowser
 - Other dev tools: Git, Homebrew, etc.
 
-{{< figure src="https://raw.githubusercontent.com/theopn/dotfiles/main/assets/macos-rice-sc.jpg" alt="Dotfiles macOS Screenshot" position="center" caption="Dotfiles Fedora Screenshot" captionPosition="center" captionStyle="color: black;" >}}
+{{< figure src="https://raw.githubusercontent.com/theopn/dotfiles/main/assets/macos-sc.jpg" alt="Dotfiles macOS Screenshot" position="center" caption="Dotfiles Fedora Screenshot" captionPosition="center" captionStyle="color: black;" >}}
 
 ## Vim Contents
 
