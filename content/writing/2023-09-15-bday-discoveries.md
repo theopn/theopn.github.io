@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Small Discoveries that Made Me Happy On My 21st Birthday"
+title = "Small Discoveries That Made Me Happy On My 21st Birthday"
 date = "2023-09-15T23:05:39+09:00"
 
 author = "Theo"
@@ -14,8 +14,6 @@ showFullContent = false
 toc = false
 tocTItle = "Table of Contents"
 +++
-
-# Small Discoveries that Made Me Happy On My 21st Birthday
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6W8no5Fmogo?si=8Rk3aYxtszF5ykc9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen; style=""></iframe>
