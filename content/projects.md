@@ -4,6 +4,9 @@ draft: false
 color: "orange"
 toc:   true
 tocTitle: "Project List:"
+
+date: "2023-09-09"
+author: "Theo"
 ---
 
 > Collection of my projects, both for career and fun (often overlapping with each other).
