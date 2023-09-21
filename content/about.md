@@ -3,6 +3,10 @@ title: "About Me"
 draft: false
 color: "blue"
 toc: true
+
+date: "2023-09-21"
+author: "Theo"
+readingTime: true
 ---
 
 # Hi! My name is Theo, and I do... things.
@@ -15,9 +19,9 @@ I am an undergraduate student at [Purdue University](https://www.purdue.edu/), m
 
 - Academic Interests (CS): CS theories, systems programming, programming language, CS education
 - Academic Interests (Phil): Philosophy of science, metalogic, set theory, metaphysics
-- 5 favorite classes each year,  bold are my absolute favorites:
-    - Undergrad year 1: CS180 (Java OOP), CS182 (discrete math), CS240 (C), **MA351 (Linear Algebra)**, ugh that is it
-    - Undergrad year 2: CS251 (DSA), **PHIL302 (Hist of Medieval Phil)**, CS252 (Systems Programming), PHIL303 (Hist of Modern Phil), **PHIL553 (Mathematical Logic)**
+- 3 - 5 favorite classes each year,  bold are my absolute favorites:
+    - Undergrad year 1: CS180 (Java OOP), CS182 (discrete math), CS240 (C), **MA351 (linear algebra)**
+    - Undergrad year 2: CS251 (DSA), **PHIL302 (hist of medieval phil)**, CS252 (systems programming), PHIL303 (hist of modern phil), **PHIL553 (mathematical logic)**
 
 I am a member of [Undergraduate Student Board](https://purdueusb.com/) (USB) for the CS department.
 
@@ -38,7 +42,7 @@ In the winter of 2022, I worked as a course content developer for CS18200: Found
 I was in charge of designing a new homework template using LaTeX.
 I also developed and tested assignment questions for first-order logic, discrete probabilities, and runtime analysis.
 
-Throughout the 2022 - 2023 school year, I worked as an instructor for CS19000: Tools.
+Throughout the 2022 - 2023 school year, I worked as an instructor for CS19300: Tools.
 CS193 is an awesome class managed by the [CS193 initiative in USB](https://purdueusb.com/initiatives/).
 I delivered weekly lectures on fundamental development tools, including Git, Unix shell commands, and Vim, to first-year CS, DS, and AI students.
 I managed 437 students across three sections, and it was a great experience communicating with freshmen and being in charge of a large technical course.
@@ -59,7 +63,7 @@ https://codegolf.stackexchange.com/questions/180187/build-ascii-podiums
 
 List of programming languages I am proficient in, ordered by the approximate lines of code I have written:
 
-- Java: working as a TA and a content dev for a Java OOP class means I have done almost two years of Java class homework.
+- Java: working as a TA and a content dev for a Java OOP class means I have done almost two years of Java homework.
     Java is the first language I have ever learned, I loved it passionately for some time, and now we hate each other.
 - LaTeX: All my academic writings (homework, review materials, etc.) are in LaTeX.
     And before you say it, yes it is Turing complete:
@@ -154,4 +158,5 @@ My other hobbies and interests are:
 - Milk tea
 - Turquoise color (or what I believe to be turquoise -- I have a pretty severe color blindness)
 - Vim, again, because it is a lifestyle
+
 
