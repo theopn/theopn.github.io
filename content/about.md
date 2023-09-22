@@ -17,7 +17,7 @@ readingTime: true
 
 I am an undergraduate student at [Purdue University](https://www.purdue.edu/), majoring in computer science and philosophy.
 
-- Academic Interests (CS): CS theories, systems programming, programming language, CS education
+- Academic Interests (CS): CS theories, systems programming, programming language, operating systems, CS education
 - Academic Interests (Phil): Philosophy of science, metalogic, set theory, metaphysics
 - 3 - 5 favorite classes each year,  bold are my absolute favorites:
     - Undergrad year 1: CS180 (Java OOP), CS182 (discrete math), CS240 (C), **MA351 (linear algebra)**
@@ -104,7 +104,7 @@ Q: Does spending more time finding the perfect gap margins between windows make 
 A: ... Yes.
 Okay, in my defense, tiling WM is essential for my workflow.
 
-- In Linux, I have tried i3, Sway, AwesomeWM, QTile, and extensions for GNOME before I settled with Sway.
+- In Linux, I have tried i3, Sway, AwesomeWM, XMonad, and extensions for GNOME before I settled with Sway.
     Check out my Dracula-themed i3 and Sway configuration: [Haunted Tiles](https://github.com/theopn/haunted-tiles).
 - In macOS, I juggle between my Yabai + Skhd + Sketchybar setup and more "stock" solutions like Rectangle and Amethyst.
     You can find the configuration for my macOS in my [dotfiles repository](https://github.com/theopn/dotfiles).
@@ -144,7 +144,7 @@ I enjoy calisthenics and jogging in the morning.
 I also lift from time to time!
 
 I love cold showers and meditation.
-I don't really do them for any self-improvement reason, I do them because they are refreshing and make me feel good.
+I don't really do them for any self-improvement reason, I do them because they are refreshing and make me feel better.
 
 Salmon, I love salmon.
 
@@ -158,5 +158,4 @@ My other hobbies and interests are:
 - Milk tea
 - Turquoise color (or what I believe to be turquoise -- I have a pretty severe color blindness)
 - Vim, again, because it is a lifestyle
-
 
