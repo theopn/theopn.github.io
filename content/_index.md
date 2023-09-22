@@ -4,7 +4,7 @@ cover: /img/portrait.jpg
 draft: false
 ---
 
-{{< figure src="/img/index/blurry-me.jpg" alt="Blurry me" position="center" style="border-radius: 8px;" caption="Blurry me. Nicer photo in the about me section" captionPosition="left" captionStyle="color: black;" >}}
+{{< figure src="/img/index/solitude-oliver.png" alt="Oliver in solitude" position="center" style="border-radius: 8px;" caption="Say hi to Oliver" captionPosition="left" captionStyle="color: black;" >}}
 
 # I am Theo, and welcome to my website!
 
