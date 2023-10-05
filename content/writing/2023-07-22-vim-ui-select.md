@@ -4,7 +4,7 @@ title = "Using vim.ui.select to Group Features and Fix Keybinding Problems"
 date = "2023-07-22T18:49:46+09:00"
 
 author = "Theo"
-description = "Emacs diss disguised as a friendly Neovim help"
+description = "[I DO NOT RECOMMEND THIS ANYMORE] Emacs diss disguised as a friendly Neovim help"
 tags = ["Neovim", "Lua"]
 
 cover = "/img/writing/2023-07-22-vim-ui-select/with-dressing-nui-theme.jpg"
@@ -14,6 +14,34 @@ showFullContent = false
 toc = true
 tocTItle = "TOC"
 +++
+
+## Confession
+
+
+**I have to admit, this post aged like milk.**
+
+After sharing this post, some people suggested trying the [Which Key](https://github.com/folke/which-key.nvim) plugin.
+For those of you who do not know, Which-Key is a plugin that displays a pop-up with possible keybindings when you start typing in normal and visual mode.
+
+I refused to use Which Key, thinking "good keybindings should be memorable without a guide."
+But the truth is, with the number of LSP, Treesitter, and Telescope features in the modern Neovim users' configurations, some sort of visual guide for keybindings is a must.
+My `vim.ui.select()` solution in this post is essentially one of the visual guides.
+An inefficient one, I should say, because it is creating yet another set of keybindings in the form of `<leader>f` + `1, 2, 3, ...` and displaying them using `vim.ui.select()`.
+After realizing this, I concede that Which-Key is a better and more efficient solution.
+
+{{< figure src="/img/writing/2023-07-22-vim-ui-select/which-key.jpg" alt="Which Key" position="center" style="border-radius: 8px;" caption="My Which Key setup" captionPosition="left" captionStyle="color: black;" >}}
+
+With the right amount of `timeoutlen` (mine is 300ms), Which-Key can guide you through keybinding efficiently.
+Also, if you use keybinding chains for groups of features (e.g., `<leader>f<char>` for all Telescope keybindings, `<leader>g<char>` for all Git keybindings), you can [register group name](https://github.com/folke/which-key.nvim#%EF%B8%8F-mappings) to show up in Which-Key.
+
+Which-key also provides extra functionalities, such as:
+
+- better UI for spell suggestion (`z=`)
+- displaying registers when using `C-r` in the insert mode
+
+I got half of the equation right by using keybinding chains when making keybindings, though, and **I still think this post has value as a "fun Lua hack", just not as a good way to use Neovim**.
+
+Now, back to the original post:
 
 ## Emacs Rant (You Can Skip This Section)
 
