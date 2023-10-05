@@ -146,6 +146,8 @@ I also lift from time to time!
 I love cold showers and meditation.
 I don't really do them for any self-improvement reason, I do them because they are refreshing and make me feel better.
 
+I like Haribo and tried all the variations released in North America (at least from 2015 to 2023).
+
 Salmon, I love salmon.
 
 My other hobbies and interests are:
