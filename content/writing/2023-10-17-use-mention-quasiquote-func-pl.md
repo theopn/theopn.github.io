@@ -116,7 +116,7 @@ You are basically making up problems here.
 I will go ahead and collect my sweet SWE salary.
 Well, wait, Quasi-quotation is a concept in computer science too!
 
-In Lisp (in Common Lisp and Scheme), we have [quasiquote](), the adoption of philosophical quasi-quotation in metaprogramming.
+In Lisp (in Common Lisp, Scheme, Racket), we have quasiquote, the adoption of philosophical quasi-quotation in metaprogramming.
 
 ```scheme
 '(1 2 x)   ;  ==> (list 1 2 x)
