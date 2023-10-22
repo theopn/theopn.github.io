@@ -4,7 +4,7 @@ title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
 date = "2022-08-25T13:39:11-04:00"
 
 author = "Theo"
-description = "List and descriptions of plug-ins I use with Neovim. There is also an one-year-update!"
+description = "List and descriptions of plug-ins I use with Neovim (2022). Let's go over what stuck with me and what did not in 2023"
 tags = ["Neovim"]
 
 cover = ""
@@ -15,9 +15,11 @@ toc = true
 tocTItle = "Plug-ins"
 +++
 
-# Almost-One-Year (2023-07-19) Update
+## One-Year (2023-10-21) Update
 
-I know more Lua, I know more Neovim, and as a result, my Neovim setup looks quite different now. In fact, I separated my Neovim configuration into a separate repository [Theovim](https://github.com/theopn/theovim/). **Check out how different my configuration has become in [my new update post]({{< ref "/writing/2023-07-18-neovim-update.md" >}}).**
+I know more Lua, I know more Neovim, and as a result, my Neovim setup looks quite different now.
+In fact, I separated my Neovim configuration into a separate repository [Theovim](https://github.com/theopn/theovim/).
+I made comments on what plugins stuck with me and what did not in each section.
 
 ---
 
@@ -29,27 +31,66 @@ If you know me, chances are you heard about how much I love Vim. I love its port
 
 The result? A simple yet powerful IDE for C, Lua, or any language you want (except for Java. That thing is just too bloated). I will go through 30 plug-ins that make up my Neovim.
 
+> 1. I do not know if "many people simply migrate their old `.vimrc`..." is still true.
+>      Neovim has grown quite significantly over the past year.
+>      Stack Overflow developer survey shows that the percentage of Neovim users (who responded to the Stack Overflow survey) increased from [6%](https://survey.stackoverflow.co/2022#section-most-popular-technologies-integrated-development-environment) to [11%](https://survey.stackoverflow.co/2023/#section-most-popular-technologies-integrated-development-environment) in 2023.
+>      Subsequently, there are more and more people who start their Vim journey in Neovim compared to transitioning from Vim.
+> 2. I still have 28 plug-ins in my Neovim configuration, but the contents of them are quite different.
+> 3. I will make updates in quote blocks like this each section!
+>
+> -- 2023 Theo
+
 ## Appearance
 
 ### OneDark.nvim
 
 My choice of theme. It offers 6 different color tones and configurable styles for components. Supports transparency too!
 
+> I still like OneDark, but I primarily use TokyoNight these days.
+> Lately, I have been thinking about using a simpler colorscheme like Base 16 to minimize distraction and focus on highlights that actually matter.
+>
+> -- 2023 Theo
+
 ### Lualine.nvim
 
 Lightweight and customizable status line plug-in. I do not use a whole lot of features and would be perfectly happy with building a status line with built-in features as I did with the vanilla Vim, but LSP integration (to show the number of warnings, errors, etc) is essential for me.
+
+> I wrote my own Statusline based on Mini.Statusline.
+> I really like customizing the looks of my own Neovim, and Statusline is the most prominent feature of it.
+>
+> -- 2023 Theo
 
 ### Barbar.nvim
 
 "Tabbar" plug-in. The built-in tab/buffer system of Vim/Neovim is a bit untraditional and frankly not very productive for me. Barbar is very simple and offers a more "traditional" approach to the tab system. I am planning on trying out `bufferline.nvim`, which seems to be an improved approach to Vim buffer management.
 
+> I no longer agree with "the built-in tab/buffer system of Vim/Neovim is ... not very productive for me" once I started to think of tabs as "workspaces" in your macOS/Window desktop/Linux window managers.
+> Vim's built-in tab and buffer system is better than VS-Code-like bufferlines **as long as you have a good way to navigate between buffers**.
+> For me, that is `:Telescope buffers`, which is bound to `<Space><Space>` in my config.
+>
+> For the actual "Tabline," I wrote my own while I was writing my Statusline.
+> It does not change the built-in tab system, but it provides nice additions like icons, number of open windows in a tab, modified status, and number of tabs and buffers.
+> Needless to say, I love the look of combined Tabline and Statusine, and they make me much more productive.
+>
+> -- 2023 Theo
+
 ### Dashboard-nvim
 
 Very customizable startup screen.
 
+> I wrote my own Dashboard based on NvChad Dash.
+> It was the most unnecessary and complicated UI components I wrote, but I had fun doing it.
+>
+> -- 2023 Theo
+
 ### Nvim-notify
 
 It redirects all the bottom notification (basically whenever `vim.notify` is called) to the top right, prettier notification. `vim.notify` is a Neovim-only protocol, and not all plug-ins utilize it, but plug-ins like `Telescope` and LSP components can display useful information. If you have a lot of Vimscript-based plug-ins or are okay with bottom error messages, you can skip this plug-in.
+
+> Sure, it makes the notification pretty, but I did not think it was very useful.
+> I simply use `:messages` command to retrieve all the previous error messages and notifications from Neovim.
+>
+> -- 2023 Theo
 
 ### vim-pets
 
@@ -57,27 +98,55 @@ Must have.
 
 {{< image src="/img/writing/2022-08-25-neovim-ide/vim-pets.jpg" alt="C Editing in Neovim" position="center" style="border-radius: 8px;" >}}
 
+> It was cute, but I never really used it.
+> Sorry digital Oliver.
+>
+> -- 2023 Theo
+
 ## File et Search
 
 ### Gitsigns.nvim
 
 It displays git diff and blame information, and much more useful Git information within the file.
 
+> I still use it, and it is the only Git plugin I use!
+> Gitsigns also have fantastic features like hunk preview, diff preview, and Git information variables that power my Statusline Git information.
+>
+> -- 2023 Theo
+
 ### nvim-treesitter
 
 Tree sitter is an incremental parsing library. Long story short, it provides much more useful syntax highlighting and information about the source code. Like LSP, it is a built-in back-end feature of Neovim that needs to be enabled through the official plug-in.
+
+> Treesitter is still the core part of my configuration, and I use a lot more features including incremental selection.
+>
+> -- 2023 Theo
 
 ### nvim-ts-rainbow
 
 Rainbow matches for parentheses that utilize the tree-sitter library.
 
+> I never really understood what this plugin did.
+> I typically use `%` keybinding to jump between matching parenthesis.
+>
+> -- 2023 Theo
+
 ### nvim-tree.lua
 
 Basically NERD Tree but written in Lua.
 
+> I no longer use any file tree plugin.
+> I use Oil.nvim to manage my files.
+>
+> -- 2023 Theo
+
 ### Telescope.nvim
 
 A fuzzy finder within Vim. It not only can be used for finding files and text within the file, but also can be used for browsing commands, Git commits, LSP information, and much more. It is one of the essential plug-ins for my Neovim setup.
+
+> It still is one of the essential plug-ins for my Neovim setup.
+>
+> -- 2023 Theo
 
 ### Telescope-file-browser.nvim
 
@@ -125,9 +194,18 @@ The collection of snippets. The repository contains a lot of good VS Code style 
 
 JetBrains IDE style view of errors, warnings, etc from the LSP server.
 
+> 1. Most of its functionalities can be done with built-in `vim.lsp`/`vim.diagnostics` functions.
+>
+> -- 2023 Theo
+
 ### Lspsaga.nvim
 
 It bundles LSP-related actions like refactoring, code actions for warning/error items, reference finder, etc.
+
+> 1. Most of its functionalities can be done with built-in `vim.lsp`/`vim.diagnostics` functions.
+> 2. It was like 10 plug-ins jammed into one, and I frankly would use one plug-in that does one thing.
+>
+> -- 2023 Theo
 
 ## Note Taking
 
@@ -137,19 +215,38 @@ I am planning on using Neovim for my notes next semester and here are some plug-
 
 Glow is a command line markdown previewer, and this plug-in displays the preview in a pop-up window inside of Neovim. I was worried since Fedora DNF repository does not ship with Glow and I don't like binary installs, but the plug-in provides a binary file of Glow in `~/.local/bin/`, which is nice.
 
+> I no longer take notes with Neovim.
+> I rewrote my vanilla Vim config to be a focused note taker using Vimwiki.
+>
+> -- 2023 Theo
+
 ### vimwiki
 
 Vimwiki is a personal wiki management plug-in for Vim/Neovim. It offers a lot of features, but I mainly use it for its quick file reference feature. I do not like the fact that Vimwiki is completely written in Vimscript and that it does not play nicely with the markdown LSP/tree-sitter server, and I am considering making the vanilla Vim to be the dedicated note taker. I have tried `neorg` to take notes, but Vimwiki still offers the best functionality for me.
 
+> I no longer take notes with Neovim.
+> I rewrote my vanilla Vim config to be a focused note taker using Vimwiki.
+>
+> -- 2023 Theo
+
 ### Vim-figlet
 
 It connects to the command line tool `figlet` and generates ASCII text art within Vim. Fun and potentially useful for making more engaging notes (I am a sucker for ASCII art. Take a look at my dotfiles).
+
+> I just use the command line `figlet`
+>
+> -- 2023 Theo
 
 ## Others
 
 ### Packer.nvim
 
 The package manager for Neovim. Makes this all possible. Mwah.
+
+> Everyone migrated to Lazy.nvim, so did I.
+> The only thing I gained was a better syntax though, I think Lazy loading is overhyped.
+>
+> -- 2023 Theo
 
 ### Plenary.nvim
 
@@ -182,13 +279,26 @@ for _, v in ipairs(key_opt) do
 end
 ```
 
+> I do not do this anymore (although I still have this in my minimal vanilla Vim configuration), I use `nvim-autopairs`.
+
 It can get a bit annoying when you try to insert one parenthesis or curly bracket, but it's a very simple and clean solution that I don't have many complaints about (I also experienced some weird bugs when using `nvim-autopairs`, such as " not being inserted when it's adjacent to parentheses).
+
+> The "bug" I described of `nvim-autopairs` was a feature actually, and `nvim-autopairs` does a lot of nice things other than inserting the matching parentheses.
 
 `nvim-cmp` comes with a [way](https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-codicons-to-the-menu) to customize menu appearance, including VS-Code like pictogram. This eliminates the need for plug-ins like `lspkind.nvim`.
 
+> Yep, this is still nice!
+
 Neovim has several built-in LSP-related commands. On example is `vim.lsp.buf.hover()` to view LSP hover doc. All you have to do is map `<CMD>lua vim.lsp...` to your choice of keybindings, and you can view hover docs for code components without extra plug-in (although plug-in like LSPSage makes it easier to access the LSP features).
 
+> Yeah Theo, why did you even use LspSaga if you were going to mix them up with built-in functions?
+
 I also utilize Packer's lazy load features to minimize boot time, particularly `ft` keyword. You can specify plug-ins to be loaded in a certain file using `ft` keyword, so I block tree-sitter to be launched only with files I have language servers for and markdown-related plug-ins to markdown files.
+
+> This was the only form of lazy loading I do (and Lazy does this automatically), and it is not even the tip of the iceberg compared to other lazy loading techniques like setting priorities between plug-ins, etc.
+> I think sacrificing the readability and simplicity of your configuration files for a couple milliseconds of gain in startup time (if there is any) is an unnecessary trade-off.
+>
+> -- 2023 Theo
 
 ## You got more things to say?
 
@@ -196,4 +306,9 @@ No. Not for now. I am trying to keep the number of plug-ins around 30 - 33, and 
 
 `:q!`
 
+> It was fun seeing how my thoughts has changed over the year.
+> I went from "use whatever plugin is popular" to "maximize built-in features and keep the config minimal."
+> Until the next time I make a Neovim related post, `:q!`
+>
+> -- 2023 Theo
 
