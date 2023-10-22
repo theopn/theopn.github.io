@@ -143,6 +143,6 @@ And this is one of many examples of why you should not overlook philosophy and l
 
 - Metalogic: An Introduction to the Metatheory of Standard First Order Logic by Geoffrey Hunter
 - U of Washington CSE341 website on Scheme quoting: https://courses.cs.washington.edu/courses/cse341/04wi/lectures/14-scheme-quote.html
-- Wikipedia and Quasi-quotation
-- Wikipedia and Lisp self-evaluating form (quasiquote and )
+- Wikipedia Quasi-quotation: https://en.wikipedia.org/wiki/Quasi-quotation
+- Wikipedia Lisp self-evaluating form: https://en.wikipedia.org/wiki/Lisp_(programming_language)#Self-evaluating_forms_and_quoting
 
