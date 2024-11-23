@@ -5,7 +5,7 @@ googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 languageCode = "en-us"
 theme = "hugo-classic"
-title = "Classic"
+title = "Theo's Park"
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -34,11 +34,23 @@ weight = 1
 name = "Tags"
 url = "/tags/"
 weight = 2
+[[menu.main]]
+name = "projects"
+url = "/projects/"
+weight = 3
+[[menu.main]]
+name = "about"
+url = "/about/"
+weight = 4
+[[menu.main]]
+name = "Posts"
+url = "/post/"
+weight = 5
 [[menu.feed]]
-name = "Subscribe"
-url = "/index.xml"
+name = "GitHub"
+url = "https://github.com/theopn"
 
 [params]
 custom_css = ["css/theme-override.css"]
-description = "A simple, minimal blog for those who love text."
+description = "Theo's Website"
 footer = "Open-Source | [Github](https://github.com/goodroot/hugo-classic) | [Keybase](https://keybase.io/goodroot)"
