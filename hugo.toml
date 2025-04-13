@@ -60,7 +60,7 @@ enableRobotsTXT = true
   # "herman". The former is what you see on Bear Cub's demo (an optimized
   # version of Hugo Bear Blog), while the latter has a more modern look based on
   # Herman Martinus's version of the Blogster Minimal theme for Astro.
-  themeStyle = "herman"
+  themeStyle = "original"
 
   # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
   # for posts that don't have `images` defined in their front matter; By setting
@@ -77,6 +77,6 @@ enableRobotsTXT = true
   # Author metadata. This is mostly used for the RSS feed of your site, but the
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
-  # [params.author]
-  #   name = "John Doe" # Your name as shown in the RSS feed metadata
-  #   email = "me@example.com" # Added to the footer so readers can reply to posts
+  [params.author]
+    name = "Theo P." # Your name as shown in the RSS feed metadata
+    #email = "me@example.com" # Added to the footer so readers can reply to posts
