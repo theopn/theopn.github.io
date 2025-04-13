@@ -1,7 +1,8 @@
-+++
-title = "Projects"
-menu = "main"
-+++
+---
+title: "Projects"
+menu: "main"
+weight: 4
+---
 
 ## Dotfiles
 
