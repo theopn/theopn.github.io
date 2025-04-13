@@ -4,11 +4,11 @@ menu: "main"
 weight: 2
 ---
 
-![Sample](/images/share.png)
+![TODO: insert image](/images/todo.png)
 
 ## Academics
 
-[*My Résumé ⧉* ... which has not been uploaded yet so just my LinkedIn](https://www.linkedin.com/in/theo-park/)
+[*My Résumé ⧉* ... which has not been uploaded yet](/images/todo.pdf)
 
 I am an undergraduate student at [Purdue University](https://www.purdue.edu/), majoring in computer science and philosophy.
 
@@ -51,7 +51,7 @@ I use Fedora, btw.
 Did you just ask what DE/WM I use in Fedora? Thank you for asking!
 I love tiling window managers and have spent lots of time making them look pretty.
 
-- On Linux, I have tried i3, Sway, AwesomeWM, before I settled with Sway
+- On Linux, I have tried i3, Sway, AwesomeWM, Hyprland, and I found myself keep returning to i3/Sway for its simplicity
 - On macOS, I have tried Amethyst, Yabai + Skhd + Sketchybar, and Aerospace, and Aerospace suited my workflow the best; perhaps not surprising since it is heavily inspired by i3
 
 > Q: Does spending more time finding the perfect gap margins between windows make me more productive?

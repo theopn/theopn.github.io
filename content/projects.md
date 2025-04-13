@@ -27,7 +27,7 @@ A launch point for your personal vim configuration (Vimscript version of https:/
 
 Dracula-themed configurations for i3/Sway and surrounding tiling WM tools.
 
-![Haunted Tiles i3 Screenshot](https://raw.githubusercontent.com/theopn/haunted-tiles/refs/heads/main/assets/i3-sc.png)
+![Haunted Tiles Sway Screenshot](https://raw.githubusercontent.com/theopn/haunted-tiles/refs/heads/main/assets/sway-sc.png)
 
 ## i3 & Sway Tips
 
