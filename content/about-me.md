@@ -1,13 +1,14 @@
-+++
-title = "About Me"
-menu = "main"
-+++
+---
+title: "About Me"
+menu: "main"
+weight: 2
+---
 
-# About Me
+![Sample](/images/share.png)
 
 ## Academics
 
-[*My Résumé ⧉*](/images/share.png)
+[*My Résumé ⧉* ... which has not been uploaded yet so just my LinkedIn](https://www.linkedin.com/in/theo-park/)
 
 I am an undergraduate student at [Purdue University](https://www.purdue.edu/), majoring in computer science and philosophy.
 
