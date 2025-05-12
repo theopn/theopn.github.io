@@ -77,6 +77,9 @@ return {
 }
 ```
 
+Now, with `<leader>s.`, you are prompted with the list of parent directories to choose from.
+Upon a selection, it opens the `fzf` file picker in the selected directory.
+
 ### Bonus: Receiving a path from the user input
 
 Credit: https://www.reddit.com/r/neovim/comments/1k56ih4/custom_fzflua_function_to_select_a_parent/mogbz1b/?context=3
