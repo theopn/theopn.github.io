@@ -8,7 +8,7 @@ tags = ["Neovim"]
 ## The Problem
 
 I use [GNU Stow](https://www.gnu.org/software/stow/) to manage and deploy my [Dotfiles](https://github.com/theopn/dotfiles).
-That means that my dotfiles repository has lots of nested directories:
+This means that there is a lot of nested directories in my Dotfiles repository:
 
 ```
 dotfiles/
@@ -39,10 +39,10 @@ dotfiles/
 └── ...
 ```
 
-Often I am working inside of the nested directory (e.g., `dotfiles/nvim/.config/nvim/lua/plugins`) and need to access files in the root directory (e.g., `dotfiles/README.md`).
+Often I am working inside the nested directories (e.g., `dotfiles/nvim/.config/nvim/lua/plugins`) and need to access files in the root directory (e.g., `dotfiles/README.md`).
 It gets annoying to manually type `:cd ..` until I reach the desired parent directory.
 When I was using Telescope, I used the [file-browser extension](https://github.com/nvim-telescope/telescope-file-browser.nvim) and navigated to the parent directories within the Telescope window, but it was not exactly the behavior I was hoping for.
-So during the process of migrating to fzf-lua, I wrote a custom picker to select a parent directory to launch the file picker from, and it is the single most used fzf-lua function in my use case.
+So, during the migration to fzf-lua, I wrote a custom picker to select a parent directory to launch the file picker from. This is the single most used fzf-lua function in my use case.
 
 ## Solution
 
@@ -77,8 +77,8 @@ return {
 }
 ```
 
-Now, with `<leader>s.`, you are prompted with the list of parent directories to choose from.
-Upon a selection, it opens the `fzf` file picker in the selected directory.
+With `<leader>s.`, you are prompted with the list of parent directories to choose from.
+Upon selection, the `fzf` file picker opens in the selected directory.
 
 ### Bonus: Receiving a path from the user input
 
@@ -102,8 +102,4 @@ Credit: https://www.reddit.com/r/neovim/comments/1k56ih4/custom_fzflua_function_
     end)
   end, { desc = "[S]earch the Given Directory" })
 ```
-
-> [!Note]
-> I believe that the path validation using `fs.normalize()` and `uv.fs_stat()` is not necessary in my parent directory selector.
-> because the `dirs` table will simply be empty if either `vim.uv.cwd()` somehow returns an invalid directory.
 
