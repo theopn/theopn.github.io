@@ -2,7 +2,7 @@
 title = "9 Things I Love About Aerospace"
 date = "2025-04-05"
 description = "I love Aerospace"
-tags = ["macOS"]
+tags = ["macOS", "tilingWM"]
 +++
 
 > It is about the [Aerospace](https://nikitabobko.github.io/AeroSpace/guide) tiling WM manager on macOS, not the field of engineering!

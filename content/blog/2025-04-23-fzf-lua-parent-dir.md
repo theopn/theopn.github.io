@@ -2,7 +2,7 @@
 date = '2025-04-23'
 draft = false
 title = 'Custom fzf-lua Picker to Search Files in the Parent Directory'
-tags = ["Neovim"]
+tags = ["Neovim", "Lua"]
 +++
 
 ## The Problem

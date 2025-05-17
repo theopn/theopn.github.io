@@ -6,13 +6,6 @@ date = "2023-07-22T18:49:46+09:00"
 author = "Theo"
 description = "[I DO NOT RECOMMEND THIS ANYMORE] Emacs diss disguised as a friendly Neovim help"
 tags = ["Neovim", "Lua"]
-
-cover = "/images/2023-07-22-vim-ui-select/with-dressing-nui-theme.jpg"
-readingTime = true
-showFullContent = false
-
-toc = true
-tocTItle = "TOC"
 +++
 
 ## Confession
