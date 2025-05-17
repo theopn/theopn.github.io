@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "[I DO NOT RECOMMEND THIS ANYMORE] Using vim.ui.select to Group Features and Fix Keybinding Problems"
+title = "[this post aged like milk] Using vim.ui.select to Group Features and Fix Keybinding Problems"
 date = "2023-07-22T18:49:46+09:00"
 
 author = "Theo"
