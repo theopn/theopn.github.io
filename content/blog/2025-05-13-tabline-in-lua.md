@@ -3,7 +3,7 @@ date = '2025-05-13'
 title = 'Wrote my own Tabline in Lua (with clickable buttons + buffers in the current tab)'
 draft = false
 description = 'Showing off my custom tabline (+ Winbar + Statusline)'
-tags = ['Neovim']
+tags = ['Neovim', 'Lua']
 +++
 
 ![tabline-demo](/images/2025-05-13-tabline-in-lua/tabline-demo.gif)
