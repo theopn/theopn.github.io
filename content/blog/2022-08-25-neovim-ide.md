@@ -1,7 +1,7 @@
 +++
-title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE + commentary in 2025"
+title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
 date = "2022-08-25"
-description = "List and descriptions of plug-ins I use with Neovim (2022)"
+description = "List and descriptions of plug-ins I use with Neovim (2022) + Commentary in 2025"
 tags = ["Neovim", "Lua"]
 +++
 
@@ -13,16 +13,11 @@ I know more Lua, I know more Neovim, and my Neovim looks quite different now.
 
 A couple of things in this article that I no longer do/agree with:
 
-- Using a "bufferline" plugin (because I did not understand the native tab system): once I started to think of tabs as *workspaces* in window managers and buffers as *open applications*, it made all sense.
-    I [wrote a custom tabline](blog/2025-05-13-tabline-in-lua.md) and bound `<space><space>` to launch `:FzfLua buffers` to quickly switch between buffers.
-    This allows me to use Neovim in one continuous session without needing to close and open new Neovim sessions.
-- In fact, I removed most UI-related plugins (lualine.nvim, barbar.nvim, dashboard-nvim, etc.) and wrote my own UI elements (statusline, winbar, tabline, and even dashboard at one point, though I removed it now).
-    It was an opportunity to learn the Neovim API and made Neovim feel more personal.
-- Using a file tree plugin: I switched to [Oil.nvim](https://github.com/stevearc/oil.nvim), and I now cannot live without it
-- I replaced Telescope.nvim with [fzf-lua](https://github.com/ibhagwan/fzf-lua) and Telescope-file-browser.nvim with [a custom function](/blog/2025-04-23-fzf-lua-parent-dir.md)
-- I cut out a lot of LSP plugins (trouble.nvim, lspsaga.nvim) and replaced them with the native `vim.lsp` and `vim.lsp.buf` module methods
-- I migrated to [lazy.nvim](https://github.com/folke/lazy.nvim)
-- Overall, the config is better organized and actually maintainable
+- Using a "bufferline" plugin: try to think of the native tabs as *workspaces* in window managers and buffers as *open applications*. You will understand the native tab system better
+- Using a file tree plugin: [Oil.nvim](https://github.com/stevearc/oil.nvim) rules
+- Using LSP UI plugins (Trouble.nvim, Lspsaga.nvim, etc.): they can be helpful, but try to explorer native `vim.lsp` and `vim.lsp.buf` modules before jumping into using a plugin
+
+More details in [2025 Neovim journey post](/blog/2025-05-23-neovim-over-time.md).
 
 Nonetheless, hope you enjoy me geeking out.
 
