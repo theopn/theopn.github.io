@@ -7,6 +7,8 @@ title = 'My Neovim Config Over Time'
 [I started using Vim in 2021 and Neovim in the summer of 2022](blog/2022-08-10-my-linux-journey-so-far.md).
 Over the past three years, Neovim remained as my main text editor and IDE, and a lot has changed in my config.
 
+![I'm literally Neovim](/images/2025-05-23-neovim-over-time/im-literally-neovim.jpg)
+
 Following the [Nordfox migration post](blog/2025-05-18-nordfox.md), I thought it would be interesting to see how my Neovim changed over the past years.
 
 ## 2022 - early 2023: playground opened (Onedark era)
