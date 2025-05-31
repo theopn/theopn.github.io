@@ -2,6 +2,7 @@
 date = '2025-05-23'
 draft = false
 title = 'My Neovim Config Over Time'
+tags = ['Neovim', 'Lua']
 +++
 
 [I started using Vim in 2021 and Neovim in the summer of 2022](blog/2022-08-10-my-linux-journey-so-far.md).
