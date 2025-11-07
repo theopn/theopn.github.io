@@ -5,20 +5,20 @@ title = 'I got Framework 13! (2 months ago)'
 tags = ["laptop", "tilingWM", "KDE", "Gnome", "Linux"]
 +++
 
-{{< figure src="/images/2025-11-06-framework/framework-oliver-exiftool-stripped.jpg" position="center" caption="Mr. Oliver showing his support for free and open-source software and consumer friendly, reparable hardware"  >}}
+{{< figure src="/images/2025-11-06-framework/framework-oliver-exiftool-stripped.JPG" position="center" caption="Mr. Oliver showing his support for free and open-source software and consumer friendly, reparable hardware"  >}}
 
 I have been wanting Framework since 2021.
 And 2 months ago, 2 weeks before my birthday, I ordered a Framework Laptop 13 to celebrate my birthday and return to school.
 Despite the estimated shipping time saying "Ships Within 2-3 Weeks," it was shipped in 2 days and arrived at my doorstep in less than a week.
 
-{{< figure src="/images/2025-11-06-framework/framework-box-exiftool-stripped.jpg" position="center" caption="How it arrived"  >}}
+{{< figure src="/images/2025-11-06-framework/framework-box-exiftool-stripped.JPG" position="center" caption="How it arrived"  >}}
 
 Ever since, I have been using it daily as my primary laptop.
 Here is a short write-up about how it is doing.
 
 ## Specs & Peripherals
 
-{{< figure src="/images/2025-11-06-framework/framework-internal-exiftool-stripped.jpg" position="center" caption=""  >}}
+{{< figure src="/images/2025-11-06-framework/framework-internal-exiftool-stripped.JPG" position="center" caption=""  >}}
 
 - AMD Ryzen ~AI~ 5 340
 - 2.8K 120Hz Display
@@ -35,7 +35,7 @@ Accessories:
 - Inateck laptop bag for 13.3 inch laptop: the best laptop sleeve I found that (almost) perfectly fits this laptop
 - Dbrand Holo White skin: So overpriced, but so mesmerizing
 
-{{< figure src="/images/2025-11-06-framework/framework-dbrand-exiftool-stripped.jpg" position="center" caption="Look at her!"  >}}
+{{< figure src="/images/2025-11-06-framework/framework-dbrand-exiftool-stripped.JPG" position="center" caption="Look at her!"  >}}
 
 ## How is the Hardware?
 
@@ -67,7 +67,7 @@ To name a few:
 Sure, I can install and configure all these tools and services on my own with Sway (and that is what my config repository tries to do), but I reckon that it would be a never-ending project.
 As much as I love the simplicity of pure WM, the last thing I want is having to debug why Flatpak Zoom won't let me share my screen in the middle of a meeting (I had to restart XDG Desktop Portal with `DISPLAY` variable set, adjust the permissions in Flatseal, ... you get the point).
 
-{{< figure src="/images/2025-11-06-framework/framework-gnome-exiftool-stripped.jpg" position="center" caption="Gnome + PaperWM"  >}}
+{{< figure src="/images/2025-11-06-framework/framework-gnome-exiftool-stripped.JPG" position="center" caption="Gnome + PaperWM"  >}}
 
 I *cannot* function without a [tiling window management](./2025-04-05-aerospace.md), so I explored some options.
 I started with Gnome and [PaperWM](https://github.com/paperwm/PaperWM), but I got frustrated with them for a couple of reasons:
@@ -85,7 +85,7 @@ I started with Gnome and [PaperWM](https://github.com/paperwm/PaperWM), but I go
 
 ### And here comes KDE + [Krohnkite by anametologin](https://github.com/anametologin/krohnkite)
 
-{{< figure src="/images/2025-11-06-framework/framework-kde-exiftool-stripped.jpg" position="center" caption="KDE + Krohnkite" >}}
+{{< figure src="/images/2025-11-06-framework/framework-kde-exiftool-stripped.JPG" position="center" caption="KDE + Krohnkite" >}}
 
 - KDE is *very* customizable, but you don't have to customize it if you don't want to
     - My setup is kept simple: moving the panel to the top, adding a couple of widgets (virtual desktop, current window name, media playback, and system monitors), applying the Nordic theme, and changing a few keymaps in Krohnkite
@@ -98,7 +98,7 @@ I started with Gnome and [PaperWM](https://github.com/paperwm/PaperWM), but I go
 
 ## What About My Old Laptops?
 
-{{< figure src="/images/2025-11-06-framework/lana-del-rice-exiftooled.jpg" position="center" caption="Lana Del Rice?"  >}}
+{{< figure src="/images/2025-11-06-framework/lana-del-rice-exiftooled.JPG" position="center" caption="Lana Del Rice?"  >}}
 
 My Macbook Air has become a desktop, mainly used to play YouTube videos in the background or to use the MS Office suite.
 With 256GB of SSD almost maxed out, I am considering replacing it with an M4 Mac Mini or other mini PC.
