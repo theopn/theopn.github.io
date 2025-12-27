@@ -5,6 +5,13 @@ title = 'Upgrading My Framework 13 With Suspicious Intel AX210 Network Card'
 tags = ["laptop", "framework", "Linux"]
 +++
 
+> Update on 2025-12-27:
+>
+> After using my laptop for a month, I can tell you that the connection has been so much more reliable, it feels like a different laptop now.
+> It almost instantly connects to the school WiFi after being awaken from sleep, and it has never dropped a connection, even in a very crowded library during the final's week.
+>
+> It clearly was a worthy upgrade for under $25.
+
 MediaTek RZ616 network cards that ship with Framework laptops with AMD Ryzen 7040 series or Ryzen "AI" 300 series CPU are [known](https://community.frame.work/t/solved-rz616-wifi-issues/42240) [to](https://www.reddit.com/r/framework/comments/1bavjic/friendly_psa_the_ax210_does_work_in_the_amd_7040/) [be](https://community.frame.work/t/intel-ax210-solved-my-wifi-issues/72880) [unreliable](https://community.frame.work/t/mediatek-rz616-very-slow).
 I too, have been experiencing issues with it in my Framework 13.
 The speed is acceptable, but establishing connection, especially with my school Wi-Fi that uses 802.1x authentication, would take minutes, and in many densely populated areas, it would disconnect frequently.
@@ -65,4 +72,7 @@ This is obviously not the most scientific testing, but a simple test in my schoo
 
 The real test is whether it can holds a reliable connection even in crowded areas, which was my biggest issue with the MediaTek.
 I cannot test that until next week when the Thanksgiving break ends, so fingers crossed.
+
+> And it was a worthy upgrade for sure!
+> Read the update in the top of the post!
 
