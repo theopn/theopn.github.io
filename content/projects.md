@@ -1,10 +1,12 @@
 ---
 title: "Projects"
 menu: "main"
-weight: 4
+weight: 3
 ---
 
-## Dotfiles
+## Linux & CLI Tools
+
+### Dotfiles
 
 [*GitHub Repository ⧉*](https://github.com/theopn/dotfiles)
 
@@ -13,7 +15,7 @@ My dotfiles repository includes plain text configurations for (mostly) open-sour
 
 ![My macOS Screenshot](https://raw.githubusercontent.com/theopn/dotfiles/main/assets/macos-sc.jpg)
 
-## Kickstart.vim
+### Kickstart.vim
 
 [*GitHub Repository ⧉*](https://github.com/theopn/kickstart.vim)
 
@@ -21,24 +23,49 @@ A launch point for your personal vim configuration (Vimscript version of https:/
 
 ![kickstart.vim Screenshot](https://raw.githubusercontent.com/theopn/kickstart.vim/refs/heads/main/kickstart-vim-screenshot.jpg)
 
-## Haunted Tiles
+### Haunted Tiles
 
 [*GitHub Repository ⧉*](https://github.com/theopn/haunted-tiles)
 
 Dracula-themed configurations for i3/Sway and surrounding tiling WM tools.
 
-![Haunted Tiles Sway Screenshot](https://raw.githubusercontent.com/theopn/haunted-tiles/refs/heads/main/assets/sway-sc.png)
-
-## i3 & Sway Tips
+### i3 & Sway Tips
 
 [*GitHub Repository ⧉*](https://github.com/theopn/i3-sway-tips)
 
 Collection of commands, keybindings, and recommended applications for i3 and way window manager.
 
-## CS240 Comprehensive Review
+## $\LaTeX$
+
+### Theosume
+
+[*GitHub Repository ⧉*](https://github.com/theopn/theosume)
+
+My resume template
+
+![theosume](https://raw.githubusercontent.com/theopn/theosume/main/screenshot.png)
+
+### My Homework Template
+
+[*GitHub Repository ⧉*](https://github.com/theopn/my-tex-template)
+
+### DSA Review
+
+[*GitHub Repository ⧉*](https://github.com/theopn/dsa-review)
+
+Emphasis on elementary graph theory.
+
+### Linear Algebra Review
+
+[*GitHub Repository ⧉*](https://github.com/theopn/linear-algebra-review)
+
+Somewhat incomplete.
+
+### CS240 Comprehensive Review
 
 [*GitHub Repository ⧉*](https://github.com/theopn/cs240-comprehensive-review)
 
-My review of Purdue CS240: C Programming
+Written with a bad sense humor.
 
+![bad](/images/cs240-review-the-end.jpg)
 

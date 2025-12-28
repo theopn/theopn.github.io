@@ -1,11 +1,10 @@
 ---
 title: "Links"
 menu: "main"
-weight: 5
+weight: 4
 ---
 
-- [My GitHub](https://github.com/theopn)
-- [My LinkedIn](https://www.linkedin.com/in/theo-park/)
-- [Startpage](/startpage)
+- [GitHub](https://github.com/theopn)
+- [Startpage](https://theopark.me/startpage)
     - [Startpage Repository](https://github.com/theopn/startpage)
 
