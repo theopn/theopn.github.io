@@ -1,14 +1,15 @@
 +++
 date = '2025-12-27T12:25:26-05:00'
 draft = false
-title = 'I spent $30 on the monospaced Comic Sans'
+title = 'I spent $30 on a monospaced Comic Sans'
 tags = ["Linux", "macos"]
 +++
 
-I have been a subscriber of [Wolfgang's Channel](https://www.youtube.com/@WolfgangsChannel) since he was a real alpha male using ThinkPad T440p with Gentoo, long before he became a [soyboy latte sipping gender studies college kid](https://www.youtube.com/watch?v=X0DIHlnD_S0) using his filthy Apple Silicon MacBook.
+I have been a subscriber of [Wolfgang's Channel](https://www.youtube.com/@WolfgangsChannel) since he was a real alpha male using ThinkPad T440p with Gentoo, long before he became a [soyboy latte sipping gender studies college kid](https://www.youtube.com/watch?v=X0DIHlnD_S0) with his filthy Apple Silicon MacBook.
 
 YouTube recently recommended his old video: [Why I Use a Paid Terminal Font](https://www.youtube.com/watch?v=1zvWXT53puQ).
-Wait a minute, it gets even worse, Comic Code is not only a paid terminal font, but as the name suggests, it tries to be the MONOSPACED COMIC SANS!
+Wait a minute, it gets even worse.
+Comic Code is not only a paid terminal font, but as the name suggests, it tries to be a MONOSPACED COMIC SANS!
 
 Hear me out.
 As terrible as it sounds, I would rather have a chuckle than a sigh when I look at my computer.
@@ -17,10 +18,10 @@ Also, even though other free projects like [Comic Shanns](https://github.com/sha
 (Comic Code "only takes inspiration from Comic Sans and was drawn entirely from scratch and legally distinct.")
 
 I remembered the urge to buy the font when I first watched the video ~3~ 4 years ago, but I was a responsible college freshman who did not want to waste my parents' hard-earned money on a \$30 font.
-Instead, I used [Fantasque Sans](https://github.com/belluzj/fantasque-sans) for a while, which is another Comic-Sans-esque, fun, monospaced font, but the itch never went away.
+Instead, I used [Fantasque Sans](https://github.com/belluzj/fantasque-sans) for a while, which is another Comic Sans-esque, fun, monospaced font, but the itch never went away.
 I also noticed that Wolfgang is still using the font to this day (7:24 in [his latest video](https://www.youtube.com/watch?v=J9dBOx1CD4w)).
 
-4 years later, I am much more numb to irresponsible purchases, and I have decided that my terminal deserved some fun.
+4 years later, I am much more numb to irresponsible purchases, and I have decided that my terminal deserves some fun.
 
 {{< figure src="/images/2025-12-27-comic-code/new-macos-sc.jpg" caption="Screenshot taken from my MacBook Air sitting at a local cafe sipping matcha"  >}}
 
