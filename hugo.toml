@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "/"
 theme = "hugo-bearcub"
-copyright = "Copyright © 2025, Theo P."
+copyright = "Copyright © 2026, Theo P."
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
