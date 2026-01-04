@@ -1,20 +1,20 @@
 +++
 date = '2025-11-28T22:40:33-05:00'
 draft = false
-title = 'Upgrading My Framework 13 With Suspicious Intel AX210 Network Card'
+title = 'Upgrading My Framework 13 With A Suspicious Intel AX210 Network Card'
 tags = ["laptop", "framework", "Linux"]
 +++
 
 > Update on 2025-12-27:
 >
-> After using my laptop for a month, I can tell you that the connection has been so much more reliable, it feels like a different laptop now.
+> After using my laptop for a month, I can say that the connection has been so much more reliable, it feels like a different laptop now.
 > It almost instantly connects to the school WiFi after being awaken from sleep, and it has never dropped a connection, even in a very crowded library during the final's week.
 >
 > It clearly was a worthy upgrade for under $25.
 
 MediaTek RZ616 network cards that ship with Framework laptops with AMD Ryzen 7040 series or Ryzen "AI" 300 series CPU are [known](https://community.frame.work/t/solved-rz616-wifi-issues/42240) [to](https://www.reddit.com/r/framework/comments/1bavjic/friendly_psa_the_ax210_does_work_in_the_amd_7040/) [be](https://community.frame.work/t/intel-ax210-solved-my-wifi-issues/72880) [unreliable](https://community.frame.work/t/mediatek-rz616-very-slow).
 I too, have been experiencing issues with it in my Framework 13.
-The speed is acceptable, but establishing connection, especially with my school Wi-Fi that uses 802.1x authentication, would take minutes, and in many densely populated areas, it would disconnect frequently.
+The speed is acceptable, but establishing connection, especially with my school WiFi that uses 802.1x authentication, would take minutes, and in many densely populated areas, it would disconnect frequently.
 Since it was on Black Friday sale, I bought the Intel AX210 from the Amazon link in [this Framework forum thread](https://community.frame.work/t/intel-ax210-solved-my-wifi-issues/72880).
 It seemed to be a popular upgrade, and as long as you get one *without* the Intel vPro, it is a simple and effective upgrade.
 
@@ -36,21 +36,21 @@ Please invest a little bit of time and money to proofread your company name when
 
 After verifying that I probably was not scammed, I proceeded with the installation.
 
-{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-00.JPG" position="center" caption="So easy to work with"  >}}
+{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-00.JPG" position="center" caption="I love Framework"  >}}
 
-{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-01.JPG" position="center" caption="Comparison with the MediaTek RZ616 -- ignore the mess, I dusted the internals out before closing"  >}}
+{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-01.JPG" position="center" caption="Comparison with the MediaTek RZ616"  >}}
 
-{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-02.JPG" position="center" caption="Seems to be a genuine Intel chip, phew"  >}}
+{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-02.JPG" position="center" caption="Seems like a genuine Intel chip, phew"  >}}
 
-{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-03.JPG" position="center" caption="Antenna organized, ready to go!" >}}
+{{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/reduced-stripped-intel-ax-210-installation-03.JPG" position="center" caption="Antennas organized" >}}
 
-I used `lspci -k` to verify that it was indeed the Intel AX 210.
+I used `lspci -k` to verify that it was indeed Intel AX 210.
 
 {{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/lspci-network-controller.png" position="center" caption="" >}}
 
 ## Massive Speed Improvement?
 
-I used `speedtest-cli` in my apartment Wi-Fi (unknown spec) before and after the installation.
+I used `speedtest-cli` in my apartment WiFi (unknown spec) before and after the installation.
 
 Here is the before:
 
@@ -60,7 +60,7 @@ And here is the result after the upgrade!
 
 {{< figure src="/images/2025-11-28-framework-intel-ax-210-upgrade/speedtest-apartment-intel.png" position="center" caption="Intel AX210" >}}
 
-And the crowd goes... mild *<insert that one GIF of ants starring at something from Bug's Life that you cannot find anywhere online because Disney>*
+And the crowd goes... mild *<insert that GIF from Bug's Life that you cannot find anywhere online because Disney>*
 
 For the reference, this is the same test on my M1 MacBook Air:
 
