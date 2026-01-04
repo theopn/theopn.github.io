@@ -33,9 +33,22 @@ You can find all other tools and config files in my [dotfiles repository](https:
 ### k. what else do you like?
 
 - I love taking photos, portraits in particular. I own Canon EOS M50 with EF-M 22m f/2 pancake lens
-- I collect, modify, and make mechanical watches (mainly Seiko or microbrands with Seiko NH movements)
-- I have been writing a journal/diary (I call it "Daily Writing", written using Vimwiki) almost every day since September 2021. As of 2025-12-27, I have only skipped 7 days (all during my military service)
-- I love weightlifting. I have gone through multiple routines (5-day PPLUL, 4-day full-body push-pull, 3-day full-body), and I have settled on a 4-day upper-lower split
+- I collect, modify, and make mechanical watches (mainly Seiko or microbrands watches with Seiko NH movements)
+- I have been writing a journal/diary (I call it "Daily Writing", written using Vimwiki) almost every day since September 2021. As of 2026-01-04, I have only skipped 7 days (all during my military service)
+- I love weightlifting. I have gone through multiple routines and settled on the 4-day upper-lower split
+- I have a weird music taste. My top 12 favorite artists in 2025 were:
+    1. The Strokes
+    2. Lorde
+    3. Daft Punk
+    4. Phoebe Bridgers
+    5. Tame Impala
+    6. Lana Del Rey
+    7. Muse
+    8. Radiohead
+    9. Gracie Abrams
+    10. The Killers
+    11. RHCP
+    12. Paramore
 - I love salmon
 - I love cleaning and organization
 - I am colorblind
