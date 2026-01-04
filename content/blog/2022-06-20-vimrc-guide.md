@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Vimrc Guide Part 1"
 date = "2022-06-20T18:58:40-04:00"
 
