@@ -1,11 +1,11 @@
 +++
-title = "30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
+title = "[Including an update] 30 Plug-ins and 700 Lines of Code Later, Neovim is my favorite IDE"
 date = "2022-08-25"
 description = "List and descriptions of plug-ins I use with Neovim (2022) + Commentary in 2025"
 tags = ["Neovim", "Lua"]
 +++
 
-## *Looking back on this post after two years (2025-05-23)*
+## *Looking back on this post three years later (2025-05-23)*
 
 I know more Lua, I know more Neovim, and my Neovim looks quite different now.
 
@@ -17,7 +17,7 @@ A couple of things in this article that I no longer do/agree with:
 - Using a file tree plugin: [Oil.nvim](https://github.com/stevearc/oil.nvim) rules
 - Using LSP UI plugins (Trouble.nvim, Lspsaga.nvim, etc.): they can be helpful, but try to explorer native `vim.lsp` and `vim.lsp.buf` modules before jumping into using a plugin
 
-More details in [2025 Neovim journey post](/blog/2025-05-23-neovim-over-time.md).
+More details in the [2025 Neovim journey post](/blog/2025-05-23-neovim-over-time.md).
 
 Nonetheless, hope you enjoy me geeking out.
 
