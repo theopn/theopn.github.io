@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Small Discoveries That Made Me Happy On My 21st Birthday"
 #date = "2023-09-15T23:05:39+09:00"
 date = "2023-09-16T23:05:39+09:00"
