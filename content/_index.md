@@ -15,14 +15,19 @@ I am an undergraduate student at [Purdue University](https://www.purdue.edu/), m
 
 ### me and 'puter
 
-{{< figure src="/images/2025-12-27-comic-code/new-macos-sc.jpg" caption="the font is [Comic Code](./blog/2025-12-27-comic-code.md)"  >}}
+{{< figure src="https://raw.githubusercontent.com/theopn/haunted-tiles/refs/heads/main/assets/sway-sc.png" caption="my Framework 13 running Fedora with SwayFX"  >}}
 
 My machines:
 
-- M1 MacBook Air: runs the latest macOS
-- [Framework Laptop 13](/blog/2025-11-06-framework.md): runs the latest Fedora KDE Spin
-- ThinkPad X270: retired for now
-- UGreen DXP2800: my NAS
+| Hostname       | Make & Model        | CPU / RAM / Storage                           | OS                     | Date Acquired | Usage        |
+|----------------|---------------------|-----------------------------------------------|------------------------|---------------|--------------|
+| `wittgenstein` | Framework Laptop 13 | AMD "AI" Ryzen 5 340 / 32GB / 1TB             | latest Fedora KDE Spin | 2025-08-31    | Main laptop  |
+| `beauvoir`     | Apple Mac Mini      | M4 (base 10-core CPU & GPU) / 16GB / 256GB    | latest macOS           | 2026-01-08    | Main desktop |
+| i forgor       | UGreen DXP2800      | I don't know / idk / 500GB NVMe x2 in RAID1   | ??                     | 2025-11-26    | NAS          |
+| `darksaber`    | ThinkPad X270       | Intel i5-6300u / 16GB / 1TB                   | NixOS                  | 2023-02-18    | TBD          |
+| `lighsaber`    | Apple Macbook Air   | M1 (base 8-core CPU 7-core GPU)               | latest macOS           | 2021-11-22    | TBD          |
+
+(yeah, I quickly ran out of \*saber names and switched to the philosopher names).
 
 I spend a lot of time in my terminal emulator and [(Neo)](/tags/neovim) [vim](/tags/vim).
 
