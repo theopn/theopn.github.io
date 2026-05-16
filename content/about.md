@@ -13,7 +13,7 @@ I am an undergraduate student at [Purdue University](https://www.purdue.edu/), m
 
 ## me and 'puter
 
-{{< figure src="https://raw.githubusercontent.com/theopn/haunted-tiles/refs/heads/main/assets/niri-sc.png" caption="my Framework 13 running NixOS with Niri"  >}}
+{{< figure src="/images/2026-03-15-desk.jpg" caption="my desk" >}}
 
 My computers:
 
@@ -22,8 +22,7 @@ My computers:
 | `wittgenstein` | Framework Laptop 13 | AMD ~AI~ Ryzen 5 340 / 32GB / 1TB             | NixOS              | 2025-08-31    | Main laptop  |
 | `beauvoir`     | Apple Mac Mini      | M4 (base 10-core CPU & GPU) / 16GB / 256GB    | macOS + nix-darwin | 2026-01-08    | Main desktop |
 | i forgor       | UGreen DXP2800      | I don't know / idk / 500GB NVMe x2 in RAID1   | ??                 | 2025-11-26    | NAS          |
-| `darksaber`    | ThinkPad X270       | Intel i5-6300u / 16GB / 1TB                   | NixOS              | 2023-02-18    | TBD          |
-| `lighsaber`    | Apple Macbook Air   | M1 (base 8-core CPU 7-core GPU)               | macOS + nix-darwin | 2021-11-22    | TBD          |
+| `lighsaber`    | Apple Macbook Air   | M1 (base 8-core CPU 7-core GPU)               | macOS + nix-darwin | 2021-11-22    | Spare laptop |
 
 - My love for operating systems began in middle school, when I would download vintage operating system images from [WinWorld](https://winworldpc.com/home) and install them in VMs.
 - I spend a lot of time in my terminal emulator and [(Neo)](/tags/neovim) [vim](/tags/vim).
@@ -35,13 +34,18 @@ My computers:
 
 ## k. what else do you like?
 
-- taking photos, portraits in particular. I own Canon EOS M50 with EF-M 22m f/2 pancake lens
-- collecting and modifying mechanical watches (mainly Seiko or microbrands watches with Seiko NH movements)
-- writing a journal/diary (I call it "Daily Writing", written using Vimwiki). I have been writing one since August 2021. As of 2026-01-04, I have only skipped 7 days (all during my military service)
-- weightlifting. I have gone through multiple routines and settled on the 4-day upper-lower split
-- my weird music taste. The Strokes, Lorde, Daft Punk, Phoebe Bridgers, LDR, ...
-- salmon
-- cleaning and organization
-- being colorblind
-- my girlfriend Naomi (who made the favicon of this website) since 2018
+1. collecting and modifying mechanical watches (mainly Seiko or microbrands watches with Seiko NH movements)
+2. photography, portraits in particular.
+    My main camera is Canon EOS M50 + various modern lenses (EF-M 22mm f/2, EF 50mm f/1.8).
+    I often shoot with vintage lenses, like Pentax Takumar SMC 50mm f/1.4 coated in thorium that is slowly giving me a cancer.
+    I also started doing film photography with my Nikon FE and Nikkor 50mm f/1.4 AI.
+3. weightlifting & calisthenics. I have gone through multiple routines and settled on the 4-day upper-lower split.
+4. writing a journal/diary (I call it "Daily Writing", written using Vimwiki). I have been writing one since August 2021. As of 2026-01-04, I have only skipped 7 days (all during my military service).
+5. collecting fountain pens & mechanical pencils
+6. sudoku
+7. my weird music taste. The Strokes, Lorde, Daft Punk, Phoebe Bridgers, LDR, ...
+8. salmon
+9. cleaning and organization
+10. being colorblind
+11. my ~girlfriend~ fiancee Naomi (who made the favicon of this website) whom I have been with since 2018
 
