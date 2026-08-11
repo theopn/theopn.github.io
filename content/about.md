@@ -17,12 +17,11 @@ I am an undergraduate student at [Purdue University](https://www.purdue.edu/), m
 
 My computers:
 
-| Hostname       | Make & Model        | CPU / RAM / Storage                           | OS                 | Date Acquired | Usage        |
-|----------------|---------------------|-----------------------------------------------|--------------------|---------------|--------------|
-| `wittgenstein` | Framework Laptop 13 | AMD ~AI~ Ryzen 5 340 / 32GB / 1TB             | NixOS              | 2025-08-31    | Main laptop  |
-| `beauvoir`     | Apple Mac Mini      | M4 (base 10-core CPU & GPU) / 16GB / 256GB    | macOS + nix-darwin | 2026-01-08    | Main desktop |
-| i forgor       | UGreen DXP2800      | I don't know / idk / 500GB NVMe x2 in RAID1   | ??                 | 2025-11-26    | NAS          |
-| `lighsaber`    | Apple Macbook Air   | M1 (base 8-core CPU 7-core GPU)               | macOS + nix-darwin | 2021-11-22    | Spare laptop |
+| Hostname       | Make & Model        | CPU / RAM / Storage                                 | OS                            | Date of Acquisition | Usage        |
+|----------------|---------------------|-----------------------------------------------------|-------------------------------|---------------------|--------------|
+| `wittgenstein` | Framework Laptop 13 | AMD ~AI~ Ryzen 5 340 / 32GB / 1TB                   | NixOS                         | 2025-08-31          | Main laptop  |
+| `beauvoir`     | Apple Mac Mini      | M4 (base 10-core CPU & GPU) / 16GB / 256GB          | macOS + nix-darwin            | 2026-01-08          | Main desktop |
+| `grene`        | UGreen DXP2800      | Intel N1000 / 8GB / 500GB WD Red SN700 x2 in RAID1  | UGOS (Debian 12 afaik tell)   | 2025-11-26          | NAS          |
 
 - My love for operating systems began in middle school, when I would download vintage operating system images from [WinWorld](https://winworldpc.com/home) and install them in VMs.
 - I spend a lot of time in my terminal emulator and [(Neo)](/tags/neovim) [vim](/tags/vim).
