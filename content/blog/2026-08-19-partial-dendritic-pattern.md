@@ -1,9 +1,11 @@
 +++
 date = '2026-08-19T11:06:00-04:00'
 draft = false
-title = 'Partial(?) Dendritic Pattern: My new NixOS Config Organization Scheme'
+title = 'Partial(?) Dendritic Pattern for My NixOS Config'
 tags = ["NixOS", "Nix", "Linux"]
 +++
+
+> See my [Nix Config](https://github.com/theopn/nix-conf) repository for more details.
 
 I migrated to [NixOS](https://nixos.org/) (and [nix-darwin](https://github.com/nix-darwin/nix-darwin)) about 6 months ago, and it quickly became *the* operating system for me.
 Even before discovering Nix, I meticulously organized my Dotfiles and did regular system cleanups, operating on the philosophy: "if it's not in my dotfiles repo, it doesn't exist on my system."
@@ -166,6 +168,8 @@ Frankly, I like this pattern.
 I recommend it to anyone who wants to avoid unnecessary complications in their config.
 However, it suffers from one fatal flaw: scattered configuration.
 
+### Problem with the Previous Pattern
+
 Let's say I'm configuring Swaylock.
 I can just make `swaylock.nix` with the following config and add it to `home.nix`, right?
 
@@ -218,7 +222,7 @@ This creates a readability and organization problem, especially as you scale up 
 You might think importing the home-manager module is enough to get a working setup on a new laptop, only to have it break because you forgot the 5-line system-level PAM config buried in another directory.
 
 
-### Partial(?) Dendritic Pattern
+## Partial(?) Dendritic Pattern
 
 The [Dendritic pattern](https://github.com/mightyiam/dendritic) by mightyiam has become quite popular within the Nix community - and for good reasons.
 While there are a few ways to achieve this architecture, most users use [flake-parts](https://github.com/hercules-ci/flake-parts) to split configurations into modules and pair it with [import-tree](https://github.com/denful/import-tree) to automatically scan and merge them.
@@ -256,7 +260,7 @@ $ tree
         └── more-modules...
 ```
 
-#### Adding a New Module
+### Adding a New Module
 
 Let's go back to the Swaylock example.
 With the Dendritic pattern, I can define both the system-level and user-level configurations in a single file:
@@ -305,7 +309,7 @@ I typically avoid this, though, because it sacrifices granularity.
 If I for some reason decide to swap Swaylock for Hyprlock on just one machine, having them bundled together makes that much harder.
 
 
-#### Adding a New Module & a New System (Flake Output)
+### Adding a New Module & a New System (Flake Output)
 
 Once you've declared a module, adding it to a system is self-explanatory.
 Here is a look at the Flake output portion of my `flake.nix`:
@@ -351,7 +355,7 @@ Looking at this, you can also see how easy it is to add a completely new system.
 You just copy and paste a default `configuration.nix` into a new directory under `/hosts`, create a new flake output, and add the modules you need for that specific machine.
 
 
-### Why Not Full Dendritic Pattern?
+## Why Not Full Dendritic Pattern?
 
 The strict Dendritic pattern turns *everything*, including core system configurations, into Flake modules of equal importance.
 Everything lives in the `modules/` directory, and your host-specific hardware configuration is no exception.
