@@ -2,6 +2,7 @@
 date = '2026-07-13T13:40:03-04:00'
 draft = false
 title = ' Fitting a Ugreen Find My tracker (AirTag-ish) into an expansion card'
+tags = ["laptop", "framework"]
 +++
 
 > This is a crosspost of [my Framework forum post](https://community.frame.work/t/fitting-a-ugreen-find-my-tracker-airtag-ish-into-an-expansion-card/83492).
